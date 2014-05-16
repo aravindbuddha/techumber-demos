@@ -14,7 +14,7 @@ Like and follow the http://techumber.com at
 Copyrights
 ==========================
 
-All scripts are under MIT. So use it for free. It woulb be appriciate if you give us the cradentials.
+All scripts are under MIT. So use it for free. It woulb be appriciate if you give us the credit by showing our site link.
 
 
 
