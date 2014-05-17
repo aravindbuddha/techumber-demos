@@ -1,92 +1,29 @@
 ﻿<!DOCTYPE html>
- <!--
-
-    o           		                      			    o8      
-   o8                   		             			    88      
-  o88oo ooooooo   oooo 88	  88	ooo  ooo  oo   oo    oo 88oooo.  ooooooo  ooooodb
-   88   88	     88	   88	  88    88   88   88P"Y8bP"Y8b  d8   8b  88  	   88 
-   88   8888888  88	   888888888    88   88   88   88  88   88   88  88888     88
-   88   88 		 88	   88	  88	88   88   88   88   88  88   88  88   	   88    
-   888  ooooooo   8ooo 88	  88	 V888V   o88o o88o o88o  Y8b8P   oooooooo   d88b   
-
-@url: www.techumber.com
--->
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>Demos of techumber.com</title>
-
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Techumber-demos : " />
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-    <title>Techumber-demos</title>
-    <meta content='techumber is a tutoiral blog focused on Programming, Jquery, Ajax, Web Design, Javascript.' name='description'/>
-    <meta content='java script, web development, web design, web programming, jquery ajax, ajax php, jquery ajax demos, jquery demos' name='keywords'/>
- 
-    <link href='http://www.techumber.com/favicon.ico' rel='icon' type='image/x-icon'/>
+	<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+  <meta name="description" content="This site contains html5,css3,javascript,jquery,ajax,webdesign realted aricals demos." />
+	<meta content='java script, web development, web design, web programming, jquery ajax, ajax php, jquery ajax demos, jquery demos' name='keywords'/>
+ 	<title>Techumber Demos Home</title>
+  <link href='http://www.techumber.com/favicon.ico' rel='icon' type='image/x-icon'/>
 	<link rel="stylesheet" type="text/css" href="asserts/css/style.css" />
-	<style type="text/css">
-	.logo{
-		text-align: center;
-	}
-	body {
-	font:  13px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-	background: #E6EAE9;
-	}
-	.mini-layout{
-		background: #fff;text-transform: uppercase;
-	}
-	.mini-layout {}
-	</style>
-
-
 </head>
 <body>
-	<div class="container">
-		<div class="row">
+	<div class="wrap">
+		<header class="header">
 			<div class="logo">
 				<a href="http:/www.techumber.com">
-					<img src="asserts/img/logostd.png" alt="techumber.com logo"/> 
+					<img src="asserts/img/logo.png" alt="techumber.com logo"/> 
 				</a>
+				<div class="logocircle"></div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="span8 offset2 mini-layout">
+		</header>
+		<section class="content">
 				<div id="result"></div>
-			</div>
+		</section>
 	</div>
-
-	<script type="text/javascript">
-	function posts(json) {
-		var html='<table class="table table-striped"><tr><th>#</th><th>Title</th><th>Post</th></tr>';
-		for(var i in json.feed.entry){ 
-		var entry = json.feed.entry[i];
-        var posttitle = entry.title.$t;
-        var url = entry.link[4].href;
-        html+='<tr><td>'+i+'</td><td>'+posttitle+'</td><td><a href="'+url+'" target="_blank" title="" >Article</a></td></tr>';
-       }
-       html+='</table>';
-       document.getElementById('result').innerHTML=html;
-    
-	}
-
-	</script>
-	<script src="http://www.techumber.com/feeds/posts/default?orderby=published&max-results=2000&alt=json-in-script&callback=posts"></script>
-	<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-34492638-1']);
-  _gaq.push(['_setDomainName', 'techumber.com']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
+	<script type="text/javascript" src="asserts/js/script.js"></script>
 </body>
 </html>
 

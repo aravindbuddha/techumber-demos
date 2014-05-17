@@ -1,0 +1,225 @@
+/* line 17, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 2, ../scss/style.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 6, ../scss/style.scss */
+body {
+  font: 13px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+  background: #E6EAE9;
+}
+
+/* line 11, ../scss/style.scss */
+.logo {
+  text-align: center;
+  position: relative;
+  width: 200px;
+  margin: 20px auto;
+}
+
+/* line 18, ../scss/style.scss */
+.logocircle {
+  -webkit-animation: spin 1s infinite linear;
+  -moz-animation: spin 1s infinite linear;
+  -ms-animation: spin 1s infinite linear;
+  -o-animation: spin 1s infinite linear;
+  animation: spin 1s infinite linear;
+  background-color: transparent;
+  border: 5px solid rgba(0, 0, 0, 0.9);
+  border-left: 5px solid transparent;
+  border-radius: 110px;
+  border-right: 5px solid transparent;
+  height: 84px;
+  opacity: .9;
+  width: 83px;
+  top: -3px;
+  left: 1px;
+  position: absolute;
+}
+
+@-webkit-keyframes spin {
+  /* line 37, ../scss/style.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 44, ../scss/style.scss */
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spin {
+  /* line 53, ../scss/style.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 60, ../scss/style.scss */
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-ms-keyframes spin {
+  /* line 69, ../scss/style.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 76, ../scss/style.scss */
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes spin {
+  /* line 85, ../scss/style.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 92, ../scss/style.scss */
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  /* line 101, ../scss/style.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 108, ../scss/style.scss */
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* line 117, ../scss/style.scss */
+#result {
+  width: 600px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 20px;
+  display: block;
+}
+/* line 126, ../scss/style.scss */
+#result tr {
+  border-bottom: 1px solid #ccc;
+}
+/* line 129, ../scss/style.scss */
+#result td:first-child, #result th:first-child {
+  padding-right: 11px;
+  text-align: center;
+}
