@@ -14,6 +14,9 @@ body {
 	width: 200px;
 	margin: 20px auto;
 }
+.clear{
+	clear:both;
+}
 
 .logocircle {
 -webkit-animation: spin 1s infinite linear;
@@ -123,11 +126,41 @@ transform: rotate(360deg);
 	overflow: hidden;
 	padding: 20px;
 	display: block;
-	tr{
-		border-bottom: 1px solid #ccc;
-	}
-	td:first-child,th:first-child {
-		padding-right: 11px;
-		text-align: center;
+	.inner {
+		li{
+			border-bottom:1px solid #ddd;
+			&:hover .content{
+				-webkit-transition: all 2s;
+				-moz-transition: all 2s;
+				-ms-transition: all 2s;
+				-o-transition: all 2s;
+				transition: all 2s;
+				display:block;
+			}
+		}
+		a{
+			float:right;
+		}
+		i{
+			padding-right: 11px;
+			text-align: center;
+		}
+		.content{
+			-webkit-transition: all 2s;
+				-moz-transition: all 2s;
+				-ms-transition: all 2s;
+				-o-transition: all 2s;
+				transition: all 2s;
+			display:none;
+			.separator a{
+				float:none;
+			}
+			img{
+				width: 400px;
+				height: 200px;
+				display: block;
+				margin: 0 auto;
+			}
+		}
 	}
 }
