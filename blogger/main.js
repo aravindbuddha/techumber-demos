@@ -3,7 +3,7 @@ requirejs.config({
   //  urlArgs: "bust=" + (new Date()).getTime(),
   baseUrl: 'http://demos.techumber.com/blogger/',
   paths: {
-    jQuery: "//http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
+    jQuery: "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
   }
 
 });
