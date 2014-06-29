@@ -7,6 +7,6 @@ requirejs.config({
   }
 
 });
-require(['app/dpage.js'], function (Dpage) {
+require(['http://demos.techumber.com/blogger/app/dpage.js'], function (Dpage) {
   Dpage.init();
 });
