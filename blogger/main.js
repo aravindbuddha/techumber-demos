@@ -8,5 +8,6 @@ requirejs.config({
 
 });
 require(['//demos.techumber.com/blogger/app/dpage.js'], function (Dpage) {
+  console.log(Dpage);
   Dpage.init();
 });
