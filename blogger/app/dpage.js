@@ -7,6 +7,7 @@ define([
     $main = $('#main-wrapper');
   return {
     inti: function () {
+      alert("hi");
       this.event();
     },
     event: function () {
