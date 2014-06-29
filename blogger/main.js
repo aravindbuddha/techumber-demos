@@ -7,6 +7,6 @@ requirejs.config({
   }
 
 });
-require(['dPage'], function (Dpage) {
-
+require(['app/dpage.js'], function (Dpage) {
+  Dpage.init();
 });
