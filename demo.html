@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title><?php echo htmlentities(stripcslashes($_GET["title"]))  ?>-Download- demo.techumber.com</title>
+	<style type="text/css">
+	*{margin:0px; padding:0px}
+	.header{
+		display: block;
+		background: #F2F2F2;
+        border-bottom: #DEDEDE solid 2px;
+        min-width: 700px;
+        width: 100%;
+        position: fixed;
+        top:0px;
+	}
+	
+	.logo a img{
+		
+		border: 0;
+		margin:0;
+
+	}
+	.backto{
+		float: right;
+		margin-top: -47px;
+		margin-right: 20px;
+	}
+	.backto a{
+		color: #000;
+		text-decoration: none;
+		
+	}
+	.backto a:hover{
+		text-decoration: underline;
+	}
+	
+	iframe{display:block;margin-top:70px;width:100%;height:850px;z-index:10;-webkit-box-sizing:border-box; }
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="logo">
+			<a href="http://www.techumber.com" title="techumber.com">
+				<img src="asserts/img/logo.png" alt="techumber.com-logo" />
+			</a>
+		</div>
+		<div class="backto">
+			<a href="<?php echo htmlentities(stripcslashes($_GET["backto"]))?>">Back to <?php echo htmlentities(stripcslashes($_GET["title"]))?> </a>
+		</div>
+	</div>
+	<div>
+	<iframe scrolling="no" src="<?php echo htmlentities(stripcslashes($_GET["of"]))?>" frameborder="0" noresize="noresize" noscroll="noscroll"></iframe>
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34492638-1']);
+  _gaq.push(['_setDomainName', 'techumber.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
+   

@@ -3,8 +3,7 @@
   margin: 20px 0 120px;
   text-align: center;
 }
-
-/* line 6, ../scss/404.scss */
+/* line 4, ../scss/404.scss */
 #fof div {
   position: fixed;
   width: 100%;
@@ -13,10 +12,8 @@
   left: 0;
   background: #000;
 }
-
-/* line 17, ../scss/404.scss */
-#fof canvas,
-#fof img {
+/* line 12, ../scss/404.scss */
+#fof canvas, #fof img {
   position: relative;
   width: 960px;
   height: 480px;
