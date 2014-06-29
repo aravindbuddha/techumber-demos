@@ -6,14 +6,23 @@ var tudemo = (function () {
       this.loadTUBlogger();
     },
     loadContent: function (json) {
-      var html = '<table class="table table-striped"><tr><th>#</th><th>Title</th><th>Post</th></tr>';
+      console.log(json);
+      var html = '<ul class="inner"><li><i>#</i><b>Title</b><a>Post</a></li>';
       for (var i in json.feed.entry) {
-        var entry = json.feed.entry[i];
-        var posttitle = entry.title.$t;
-        var url = entry.link[4].href;
-        html += '<tr><td>' + i + '</td><td>' + posttitle + '</td><td><a href="' + url + '" target="_blank" title="" >Article</a></td></tr>';
+        var entry = json.feed.entry[i],
+          posttitle = entry.title.$t,
+          url = entry.link[4].href;
+        content = entry.content.$t;
+        html +=
+          '<li>' +
+          '<i>' + i + '</i>' +
+          '<b>' + posttitle + '</b>' +
+          '<a href="' + url + '" target="_blank" title="" >Article</a>' +
+          '<div class="content">' + content + '</div>' +
+          '<div class="clear"></div>' +
+          '</li>';
       }
-      html += '</table>';
+      html += '</ul>';
       document.getElementById('result').innerHTML = html;
     },
     loadGoogleau: function () {

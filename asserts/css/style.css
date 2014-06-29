@@ -1,4 +1,4 @@
-/* line 17, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -87,19 +87,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background: #000;
 }
 
-/* line 8, ../scss/style.scss */
+/* line 6, ../scss/style.scss */
 html, body {
   width: 100%;
   height: 100%;
 }
 
-/* line 12, ../scss/style.scss */
+/* line 10, ../scss/style.scss */
 body {
   font: 13px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
   background: #e6eae9;
 }
 
-/* line 16, ../scss/style.scss */
+/* line 14, ../scss/style.scss */
 .logo {
   text-align: center;
   position: relative;
@@ -107,7 +107,12 @@ body {
   margin: 20px auto;
 }
 
-/* line 24, ../scss/style.scss */
+/* line 20, ../scss/style.scss */
+.clear {
+  clear: both;
+}
+
+/* line 25, ../scss/style.scss */
 .logocircle {
   -webkit-animation: spin 1s infinite linear;
   -moz-animation: spin 1s infinite linear;
@@ -128,7 +133,7 @@ body {
 }
 
 @keyframes spin {
-  /* line 39, ../scss/style.scss */
+  /* line 40, ../scss/style.scss */
   0% {
     -webkit-transition: rotate(0deg);
     -moz-transition: rotate(0deg);
@@ -137,7 +142,7 @@ body {
     transition: rotate(0deg);
   }
 
-  /* line 42, ../scss/style.scss */
+  /* line 43, ../scss/style.scss */
   100% {
     -webkit-transition: rotate(360deg);
     -moz-transition: rotate(360deg);
@@ -148,7 +153,7 @@ body {
 }
 
 @-webkit-keyframes spin {
-  /* line 39, ../scss/style.scss */
+  /* line 40, ../scss/style.scss */
   0% {
     -webkit-transition: rotate(0deg);
     -moz-transition: rotate(0deg);
@@ -157,7 +162,7 @@ body {
     transition: rotate(0deg);
   }
 
-  /* line 42, ../scss/style.scss */
+  /* line 43, ../scss/style.scss */
   100% {
     -webkit-transition: rotate(360deg);
     -moz-transition: rotate(360deg);
@@ -168,7 +173,7 @@ body {
 }
 
 @-moz-keyframes spin {
-  /* line 39, ../scss/style.scss */
+  /* line 40, ../scss/style.scss */
   0% {
     -webkit-transition: rotate(0deg);
     -moz-transition: rotate(0deg);
@@ -177,7 +182,7 @@ body {
     transition: rotate(0deg);
   }
 
-  /* line 42, ../scss/style.scss */
+  /* line 43, ../scss/style.scss */
   100% {
     -webkit-transition: rotate(360deg);
     -moz-transition: rotate(360deg);
@@ -188,7 +193,7 @@ body {
 }
 
 @-ms-keyframes spin {
-  /* line 39, ../scss/style.scss */
+  /* line 40, ../scss/style.scss */
   0% {
     -webkit-transition: rotate(0deg);
     -moz-transition: rotate(0deg);
@@ -197,7 +202,7 @@ body {
     transition: rotate(0deg);
   }
 
-  /* line 42, ../scss/style.scss */
+  /* line 43, ../scss/style.scss */
   100% {
     -webkit-transition: rotate(360deg);
     -moz-transition: rotate(360deg);
@@ -208,7 +213,7 @@ body {
 }
 
 @-o-keyframes spin {
-  /* line 39, ../scss/style.scss */
+  /* line 40, ../scss/style.scss */
   0% {
     -webkit-transition: rotate(0deg);
     -moz-transition: rotate(0deg);
@@ -217,7 +222,7 @@ body {
     transition: rotate(0deg);
   }
 
-  /* line 42, ../scss/style.scss */
+  /* line 43, ../scss/style.scss */
   100% {
     -webkit-transition: rotate(360deg);
     -moz-transition: rotate(360deg);
@@ -227,7 +232,7 @@ body {
   }
 }
 
-/* line 47, ../scss/style.scss */
+/* line 48, ../scss/style.scss */
 #result {
   width: 600px;
   margin: 0 auto;
@@ -238,191 +243,4 @@ body {
   padding: 20px;
   display: block;
   trborder-bottom: 1px solid #cccccc;
-}
-
-/* line 59, ../scss/style.scss */
-td:first-child, th:first-child {
-  padding-right: 11px;
-  text-align: center;
-}
-
-/* line 69, ../scss/style.scss */
-.loader {
-  width: 1em;
-  height: 1em;
-  font-size: 10em;
-  border: 0.025em solid rgba(14, 13, 13, 0.5);
-  -webkit-animation: turn 0.7s infinite, corner 0.7s infinite;
-  -moz-animation: turn 0.7s infinite, corner 0.7s infinite;
-  -ms-animation: turn 0.7s infinite, corner 0.7s infinite;
-  -o-animation: turn 0.7s infinite, corner 0.7s infinite;
-  animation: turn 0.7s infinite, corner 0.7s infinite;
-  transform-origin: right;
-  border-radius: .075em;
-  margin: 0 auto;
-}
-
-@keyframes turn {
-  /* line 81, ../scss/style.scss */
-  100% {
-    -webkit-transition: rotate(90deg) translate(0.5em, 0.5em);
-    -moz-transition: rotate(90deg) translate(0.5em, 0.5em);
-    -ms-transition: rotate(90deg) translate(0.5em, 0.5em);
-    -o-transition: rotate(90deg) translate(0.5em, 0.5em);
-    transition: rotate(90deg) translate(0.5em, 0.5em);
-  }
-}
-
-@-webkit-keyframes turn {
-  /* line 81, ../scss/style.scss */
-  100% {
-    -webkit-transition: rotate(90deg) translate(0.5em, 0.5em);
-    -moz-transition: rotate(90deg) translate(0.5em, 0.5em);
-    -ms-transition: rotate(90deg) translate(0.5em, 0.5em);
-    -o-transition: rotate(90deg) translate(0.5em, 0.5em);
-    transition: rotate(90deg) translate(0.5em, 0.5em);
-  }
-}
-
-@-moz-keyframes turn {
-  /* line 81, ../scss/style.scss */
-  100% {
-    -webkit-transition: rotate(90deg) translate(0.5em, 0.5em);
-    -moz-transition: rotate(90deg) translate(0.5em, 0.5em);
-    -ms-transition: rotate(90deg) translate(0.5em, 0.5em);
-    -o-transition: rotate(90deg) translate(0.5em, 0.5em);
-    transition: rotate(90deg) translate(0.5em, 0.5em);
-  }
-}
-
-@-ms-keyframes turn {
-  /* line 81, ../scss/style.scss */
-  100% {
-    -webkit-transition: rotate(90deg) translate(0.5em, 0.5em);
-    -moz-transition: rotate(90deg) translate(0.5em, 0.5em);
-    -ms-transition: rotate(90deg) translate(0.5em, 0.5em);
-    -o-transition: rotate(90deg) translate(0.5em, 0.5em);
-    transition: rotate(90deg) translate(0.5em, 0.5em);
-  }
-}
-
-@-o-keyframes turn {
-  /* line 81, ../scss/style.scss */
-  100% {
-    -webkit-transition: rotate(90deg) translate(0.5em, 0.5em);
-    -moz-transition: rotate(90deg) translate(0.5em, 0.5em);
-    -ms-transition: rotate(90deg) translate(0.5em, 0.5em);
-    -o-transition: rotate(90deg) translate(0.5em, 0.5em);
-    transition: rotate(90deg) translate(0.5em, 0.5em);
-  }
-}
-
-@keyframes corner {
-  /* line 86, ../scss/style.scss */
-  0% {
-    border-top-right-radius: .5em;
-  }
-
-  /* line 89, ../scss/style.scss */
-  25% {
-    border-bottom-right-radius: .5em;
-  }
-
-  /* line 92, ../scss/style.scss */
-  50% {
-    border-bottom-left-radius: .5em;
-  }
-
-  /* line 95, ../scss/style.scss */
-  75% {
-    border-top-left-radius: .5em;
-  }
-}
-
-@-webkit-keyframes corner {
-  /* line 86, ../scss/style.scss */
-  0% {
-    border-top-right-radius: .5em;
-  }
-
-  /* line 89, ../scss/style.scss */
-  25% {
-    border-bottom-right-radius: .5em;
-  }
-
-  /* line 92, ../scss/style.scss */
-  50% {
-    border-bottom-left-radius: .5em;
-  }
-
-  /* line 95, ../scss/style.scss */
-  75% {
-    border-top-left-radius: .5em;
-  }
-}
-
-@-moz-keyframes corner {
-  /* line 86, ../scss/style.scss */
-  0% {
-    border-top-right-radius: .5em;
-  }
-
-  /* line 89, ../scss/style.scss */
-  25% {
-    border-bottom-right-radius: .5em;
-  }
-
-  /* line 92, ../scss/style.scss */
-  50% {
-    border-bottom-left-radius: .5em;
-  }
-
-  /* line 95, ../scss/style.scss */
-  75% {
-    border-top-left-radius: .5em;
-  }
-}
-
-@-ms-keyframes corner {
-  /* line 86, ../scss/style.scss */
-  0% {
-    border-top-right-radius: .5em;
-  }
-
-  /* line 89, ../scss/style.scss */
-  25% {
-    border-bottom-right-radius: .5em;
-  }
-
-  /* line 92, ../scss/style.scss */
-  50% {
-    border-bottom-left-radius: .5em;
-  }
-
-  /* line 95, ../scss/style.scss */
-  75% {
-    border-top-left-radius: .5em;
-  }
-}
-
-@-o-keyframes corner {
-  /* line 86, ../scss/style.scss */
-  0% {
-    border-top-right-radius: .5em;
-  }
-
-  /* line 89, ../scss/style.scss */
-  25% {
-    border-bottom-right-radius: .5em;
-  }
-
-  /* line 92, ../scss/style.scss */
-  50% {
-    border-bottom-left-radius: .5em;
-  }
-
-  /* line 95, ../scss/style.scss */
-  75% {
-    border-top-left-radius: .5em;
-  }
 }

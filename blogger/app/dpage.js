@@ -1,4 +1,7 @@
-var Dpage = (function () {
+define([
+  'jQuery',
+  'widgets/RelatedPosts/RelatedPosts'
+], function ($, RelatedPosts) {
   var
   $myDomain = window.location.host,
     $main = $('#main-wrapper');
@@ -52,16 +55,20 @@ var Dpage = (function () {
       prettyPrint();
     },
     loadRelatedPost: function () {
-      relatedPostsWidget({
+      var self = this;
+      RelatedPosts({
         related_title: "Related Posts",
         containerSelector: "#related_posts",
         maxPosts: 6,
         loadingClass: "loadingxx",
-        rlt_thumb: 70
+        rlt_thumb: 70,
+        callback: function () {
+          self.init();
+        }
       });
     },
     loadComments: function () {
       BLOG_CMT_createIframe('https://www.blogger.com/rpc_relay.html', '05812328105391254280');
     }
   }
-}());
+});

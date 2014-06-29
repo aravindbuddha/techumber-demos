@@ -1,8 +1,6 @@
 @import "compass/reset";
-@import 'mixions/animation';
+@import "mixions/animation";
 @import "404.scss";
-
-
 
 
 html, body {
@@ -18,6 +16,9 @@ body {
 	position: relative;
 	width: 200px;
 	margin: 20px auto
+}
+.clear{
+	clear:both;
 }
 
 
@@ -55,45 +56,80 @@ body {
 	display: block;
 	trborder-bottom: 1px solid #ccc
 }
-td,th{
-	&:first-child{
-		padding-right: 11px;
-		text-align: center	
-	}
-}
+// td,th{
+// 	&:first-child{
+// 		padding-right: 11px;
+// 		text-align: center;	
+// 	.inner {
+// 		li{
+// 			border-bottom:1px solid #ddd;
+// 			&:hover .content{
+// 				-webkit-transition: all 2s;
+// 				-moz-transition: all 2s;
+// 				-ms-transition: all 2s;
+// 				-o-transition: all 2s;
+// 				transition: all 2s;
+// 				display:block;
+// 			}
+// 		}
+// 		a{
+// 			float:right;
+// 		}
+// 		i{
+// 			padding-right: 11px;
+// 			text-align: center;
+// 		}
+// 		.content{
+// 			-webkit-transition: all 2s;
+// 				-moz-transition: all 2s;
+// 				-ms-transition: all 2s;
+// 				-o-transition: all 2s;
+// 				transition: all 2s;
+// 			display:none;
+// 			.separator a{
+// 				float:none;
+// 			}
+// 			img{
+// 				width: 400px;
+// 				height: 200px;
+// 				display: block;
+// 				margin: 0 auto;
+// 			}
+// 		}
+// 	}
+// }
 
 
 
-$s: 10em;
-$speed: .7s;
-.loader{
-  width: 1em;
-  height: 1em;
-  font-size: $s;
-  border: 0.025em solid rgba(14, 13, 13, 0.5);
-  @include animation(turn $speed infinite, corner $speed infinite);
-  transform-origin: right;
-  border-radius: .075em;
-  margin: 0 auto;
-}
+// $s: 10em;
+// $speed: .7s;
+// .loader{
+//   width: 1em;
+//   height: 1em;
+//   font-size: $s;
+//   border: 0.025em solid rgba(14, 13, 13, 0.5);
+//   @include animation(turn $speed infinite, corner $speed infinite);
+//   transform-origin: right;
+//   border-radius: .075em;
+//   margin: 0 auto;
+// }
 
-@include keyframes(turn){
-	100%{
-		@include transform(rotate(90deg) translate(0.5em, 0.5em));
-	}
-}
-@include keyframes(corner){
-	0%{
-    border-top-right-radius: .5em;
-  }
-	25% {
-    border-bottom-right-radius: .5em;
-  }
-  50% {
-    border-bottom-left-radius: .5em;
-  }
-  75% {
-    border-top-left-radius: .5em;
-  }
-
-}
+// @include keyframes(turn){
+// 	100%{
+// 		@include transform(rotate(90deg) translate(0.5em, 0.5em));
+// 	}
+// }
+// @include keyframes(corner){
+// 	0%{
+//     border-top-right-radius: .5em;
+//   }
+// 	25% {
+//     border-bottom-right-radius: .5em;
+//   }
+//   50% {
+//     border-bottom-left-radius: .5em;
+//   }
+//   75% {
+//     border-top-left-radius: .5em;
+//   }
+// }
