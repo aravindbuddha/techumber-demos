@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title><?php echo htmlentities(stripcslashes($_GET["title"]))  ?>-Download- demo.techumber.com</title>
+	<title></title>
 	<style type="text/css">
 	*{margin:0px; padding:0px}
 	.header{
@@ -46,7 +46,7 @@
 				<img src="asserts/img/logo.png" alt="techumber.com-logo" />
 			</a>
 		</div>
-		<div class="backto">
+		<div class="backto" id="backto">
 			<a href="<?php echo htmlentities(stripcslashes($_GET["backto"]))?>">Back to <?php echo htmlentities(stripcslashes($_GET["title"]))?> </a>
 		</div>
 	</div>
@@ -66,6 +66,21 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
+</script>
+
+<script type="text/javascript">
+	var 
+		hash={},
+		url_data=location.search.split("?")[1].split('&');
+	for (var i = 0; i < url_data.length; i++) {
+		var s=url_data[i].split("=");
+		hash[s[0]]=s[1];
+	};
+	document.title=hash.title+ "- demos.techumber.com";
+	var backto=document.getElementById("backto");
+	var html='<a href="'+hash.backto+'">'+hash.of+'</a>';
+	backto.innerHTML=html;
+	
 </script>
 </body>
 </html>
