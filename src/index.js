@@ -17,6 +17,24 @@ fs.writeFile("out/index.html", html, function(err) {
     }
 }); 
 
+
+var rss=require('node-rss');
+
+
+var feed_url = 'http://www.techumber.com/feeds/posts/default?orderby=published&max-results=2000&alt=json';
+
+var response = rss.parseURL(feed_url, function(articles) {
+    sys.puts(articles.length);
+    for(i=0; i<articles.length; i++) {
+    sys.puts("Article: "+i+", "+
+         articles[i].title+"\n"+
+         articles[i].link+"\n"+
+         articles[i].description+"\n"+
+         articles[i].content
+        );
+    }
+});
+
 // var http = require('http');
 // http.createServer(function (req, res) {
 //   res.writeHead(200, {'Content-Type': 'text/html'});
