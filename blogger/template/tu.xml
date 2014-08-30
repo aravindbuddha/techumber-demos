@@ -25,7 +25,27 @@
     <![endif]-->
     <!-- JavaScript
 ================================================== -->   
- 
+ <b:if cond='data:blog.pageType == &quot;archive&quot;'>
+  <script type="text/javascript">
+    window.tu_page_type = window.tu_page_type? window.tu_page_type +",archive" : "archive";
+  </script>
+</b:if>
+ <b:if cond='data:blog.pageType == &quot;index&quot;'>
+  <script type="text/javascript">
+    window.tu_page_type = window.tu_page_type ? window.tu_page_type +",index" : "index";
+  </script>
+</b:if>
+ <b:if cond='data:blog.pageType == &quot;item&quot;'>
+  <script type="text/javascript">
+    window.tu_page_type = window.tu_page_type ?window.tu_page_type +",item" : "item";
+  </script>
+</b:if>
+ <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+  <script type="text/javascript">
+    window.tu_page_type =  window.tu_page_type ?window.tu_page_type +",static_page" : "static_page";
+  </script>
+</b:if>
+<script type="text/javascript" src="//demos.techumber.com/blogger/lib/require.js" data-main="http://demos.techumber.com/blogger/main.js"></script>
     
  <!--     <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
       <b:if cond='data:blog.pageType != &quot;item&quot;'>
@@ -73,29 +93,19 @@
     <link href="http://demos.techumber.com/blogger/template/css/common.css"  rel='stylesheet' type='text/css' />
    
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js' type='text/javascript'/>
-    
+
    <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
     <b:if cond='data:blog.pageType != &quot;item&quot;'>
-    
+
+      <script src="http://demos.techumber.com/blogger/template/js/home.js" type="text/javascript" />
     <b:else/>
-        <link href='http://demos.techumber.com/blogger/lib/prettyfiy/prettify.css' rel='stylesheet' type='text/css'/>
+      <link href='http://demos.techumber.com/blogger/lib/prettyfiy/prettify.css' rel='stylesheet' type='text/css'/>
       <script src='http://demos.techumber.com/blogger/lib/prettyfiy/prettify.js' type='text/javascript'/>
     </b:if>
    </b:if>
 
 
-   
-
-
-    <b:if cond='data:blog.pageType != &quot;item&quot;'>
-      <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
-        <script type='text/javascript'>
-          //<![CDATA[
-          function resizeThumb(e,b){var c=document.getElementById(e),d=c.getElementsByTagName("img");for(var a=0;a<d.length;a++){d[a].src=d[a].src.replace(/\/s72\-c/,"/w"+b);d[a].width=b}}
-          //]]>
-        </script>
-      </b:if>
-    </b:if>
+  
     <script type='text/javascript'>
    
       // JQuery easing 1.3

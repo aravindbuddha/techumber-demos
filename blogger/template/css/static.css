@@ -1,5 +1,5 @@
-    #main-wrapper{padding:10px}
-        .post,#comments{margin:0 0 15px;border:1px solid #E0E0E0;-moz-box-shadow:0 2px 4px #E7E7E7;-webkit-box-shadow:0 2px 4px #E7E7E7;padding:0 10px 15px;box-shadow:0 2px 4px #E7E7E7;overflow:hidden}
-        .post h2.post-title{margin:5px 0 15px;border-bottom:4px solid #363636;padding:0 0 3px;font-size:200%;background-color:white}
-        .post h2.post-title a{color:#363636}
-        .post img{padding:5px;border:1px solid #C0BEBE}
+#main-wrapper{padding:10px}
+.post,#comments{margin:0 0 15px;border:1px solid #E0E0E0;-moz-box-shadow:0 2px 4px #E7E7E7;-webkit-box-shadow:0 2px 4px #E7E7E7;padding:0 10px 15px;box-shadow:0 2px 4px #E7E7E7;overflow:hidden}
+.post h2.post-title{margin:5px 0 15px;border-bottom:4px solid #363636;padding:0 0 3px;font-size:200%;background-color:white}
+.post h2.post-title a{color:#363636}
+.post img{padding:5px;border:1px solid #C0BEBE}
