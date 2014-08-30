@@ -15,7 +15,12 @@ requirejs.config({
     script:"template/js/scripts",
     app:"/app/app.js",
     scripts:"template/js/scripts"
-  }
+  },
+    shim: {
+        'easing': {
+            deps: ['jquery'] 
+          }
+        }
 });
 
 require(['jQuery','easing','require'],function($,easing,require){
