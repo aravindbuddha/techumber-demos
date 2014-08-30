@@ -25,5 +25,5 @@ require(['jQuery','easing','require'],function($,easing,require){
       if(page_type =="index"){
         require('css!template/css/page.css');
       }
-    }
+    
 });
