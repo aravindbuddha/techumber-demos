@@ -13,7 +13,7 @@ requirejs.config({
     css:"lib/requirejs/plugins/css.min",
     home:"template/js/home.js",
     script:"template/js/scripts",
-    app:"/app/app.js",
+    app:"app/app.js",
     scripts:"template/js/scripts"
   },
     shim: {
