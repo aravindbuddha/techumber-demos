@@ -18,6 +18,12 @@ requirejs.config({
   }
 });
 
-require(['app'],function(App){
-    App.init();
-  });
+require(['jQuery','easing','require'],function($,easing,require){
+    // App.init();
+      var page_type=window.tu_page_type;
+      require('css!template/css/common.css');
+      if(page_type =="index"){
+        require('css!template/css/page.css');
+      }
+    }
+});
