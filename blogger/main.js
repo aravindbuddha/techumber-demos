@@ -14,6 +14,6 @@ requirejs.config({
   }
 });
 
-requirejs(['app/app.js'],function(App){
+define(['app/app.js'],function(App){
       App.init();
   });
