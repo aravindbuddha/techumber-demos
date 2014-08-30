@@ -14,6 +14,6 @@ requirejs.config({
   }
 });
 
-define(['easing','app/app.js'],function(easing,App){
-      App.init();
+require(['easing'],function(easing){
+      // App.init();
   });
