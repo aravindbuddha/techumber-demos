@@ -10,7 +10,7 @@ requirejs.config({
     hoverxa:"lib/jquery.hoverxa",
     motio:"lib/jquery.motio",
     preload:"lib/jquery.preload",
-    css:"lib/require-css/css.min"
+    css:"lib/requirejs/plugins/css.min"
   }
   require(['app/app.js'],function(App){
   		App.init();
