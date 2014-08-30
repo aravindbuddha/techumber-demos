@@ -12,10 +12,8 @@ requirejs.config({
     preload:"lib/jquery.preload",
     css:"lib/requirejs/plugins/css.min"
   }
-  require(['app/app.js'],function(App){
-  		App.init();
-  })
 });
 
-
-
+  require(['app/app.js'],function(App){
+      App.init();
+  });
