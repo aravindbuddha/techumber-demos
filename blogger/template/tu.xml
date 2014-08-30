@@ -90,19 +90,7 @@
     <b:skin>
     </b:skin>
 
-    <link href="http://demos.techumber.com/blogger/template/css/common.css"  rel='stylesheet' type='text/css' />
-   
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js' type='text/javascript'/>
 
-   <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
-    <b:if cond='data:blog.pageType != &quot;item&quot;'>
-
-      <script src="http://demos.techumber.com/blogger/template/js/home.js" type="text/javascript" />
-    <b:else/>
-      <link href='http://demos.techumber.com/blogger/lib/prettyfiy/prettify.css' rel='stylesheet' type='text/css'/>
-      <script src='http://demos.techumber.com/blogger/lib/prettyfiy/prettify.js' type='text/javascript'/>
-    </b:if>
-   </b:if>
 
 
   
