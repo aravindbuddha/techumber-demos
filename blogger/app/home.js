@@ -1,4 +1,4 @@
-define(['jquery', 'datenya', 'isotope'], function ($, datenya) {
+define(['jquery', 'lib/jquery.isotope'], function ($, isotope) {
 
   return {
     init: function () {
@@ -20,7 +20,8 @@ define(['jquery', 'datenya', 'isotope'], function ($, datenya) {
       }
     },
     isonyax: function () {
-      var b, a = $(".blog-posts.hfeed");
+      var b,
+        a = $(".blog-posts.hfeed");
       if (a.width() < 320) {
         b = 1
       } else {
@@ -80,8 +81,8 @@ define(['jquery', 'datenya', 'isotope'], function ($, datenya) {
           var p = m.find(a).children(".date-outer");
           $(a).append(p);
           resizeThumb("Blog1", 200);
-          hoverxa();
-          datenya();
+          // hoverxa();
+          // datenya();
           if (window._gaq) {
             window._gaq.push(["_trackPageview", i])
           }

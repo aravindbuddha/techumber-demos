@@ -5,7 +5,7 @@ requirejs.config({
   paths: {
     jquery: "//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min",
     easing: "lib/easing",
-    isotope: "lib/isotope",
+    // isotope: "lib/isotope",
     hovertiemout: "lib/jquery.hovertimeout",
     preload: "lib/jquery.preload",
     home: "app/home",
@@ -24,6 +24,10 @@ requirejs.config({
     'lib/jquery.motio': {
       deps: ['//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'],
       exports: 'Motio'
+    },
+    'lib/jquery.isotope': {
+      deps: ['//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'],
+      exports: 'jQuery.fn.isotope'
     },
 
     'lib/jquery.preload': ['//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'],
