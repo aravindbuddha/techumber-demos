@@ -25,7 +25,7 @@ requirejs.config({
   }
 });
 
-require(['app/app.js'],function(App){
+require(['app'],function(App){
      App.init();
       // var page_type=window.tu_page_type;
       // require('css!template/css/common.css');
