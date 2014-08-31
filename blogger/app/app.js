@@ -1,4 +1,4 @@
-define(['require', 'util'], function (require, util) {
+define(['require'], function (require) {
   var page_type = window.tu_page_type;
   return {
     init: function () {
