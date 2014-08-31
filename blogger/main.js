@@ -21,8 +21,6 @@ requirejs.config({
       'css': 'lib/requirejs/plugins/require-css/css.min' // or whatever the path to require-css is
     }
   },
-
-
   shim: {
     'lib/easing': ['//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min'],
     'lib/jquery.hovertimeout': ['//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min'],
