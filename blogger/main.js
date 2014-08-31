@@ -3,7 +3,7 @@ requirejs.config({
   urlArgs: "bust=" + (new Date()).getTime(),
   baseUrl: '//demos.techumber.com/blogger/',
   paths: {
-    jquery: "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min",
+    jquery: "//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min",
     easing: "lib/easing",
     isotope: "lib/isotope",
     hovertiemout: "lib/jquery.hovertimeout",
@@ -20,16 +20,16 @@ requirejs.config({
     }
   },
   shim: {
-    'lib/easing': ['//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'],
-    'lib/jquery.hoverxa': ['//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'],
+    'lib/easing': ['//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'],
+    'lib/jquery.hoverxa': ['//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'],
     'lib/jquery.motio': {
-      deps: ['//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'],
+      deps: ['//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'],
       exports: 'Motio'
     },
 
-    'lib/jquery.preload': ['//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'],
+    'lib/jquery.preload': ['//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'],
     'lib/jquery.hovertimeout': {
-      deps: ['//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'],
+      deps: ['//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'],
       exports: 'jQuery.fn.hoverTimeout'
     }
   }

@@ -45,6 +45,7 @@
     window.tu_page_type =  window.tu_page_type ?window.tu_page_type +",static_page" : "static_page";
   </script>
 </b:if>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="//demos.techumber.com/blogger/lib/requirejs/require.js" data-main="http://demos.techumber.com/blogger/main.js"></script>
     
  <!--     <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
