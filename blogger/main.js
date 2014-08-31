@@ -10,15 +10,15 @@ requirejs.config({
     hoverxa:"lib/jquery.hoverxa",
     motio:"lib/jquery.motio",
     preload:"lib/jquery.preload",
-    // css:"lib/requirejs/plugins/css.min",
+    css:"lib/requirejs/plugins/css.min",
     home:"template/js/home.js",
     script:"template/js/scripts",
     app:"app/app",
     scripts:"template/js/scripts"
   },
-  map: {
+   map: {
     '*': {
-      'css': 'lib/requirejs/plugins/css.min' // or whatever the path to require-css is
+      'css': 'lib/requirejs/plugins/require-css/css.min' // or whatever the path to require-css is
     }
   },
 
