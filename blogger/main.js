@@ -11,7 +11,7 @@ requirejs.config({
     motio:"lib/jquery.motio",
     preload:"lib/jquery.preload",
     css:"lib/requirejs/plugins/css.min",
-    home:"template/js/home.js",
+    home:"template/js/home",
     script:"template/js/scripts",
     app:"app/app",
     scripts:"template/js/scripts"
