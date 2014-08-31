@@ -1,5 +1,5 @@
 define([
-  'jQuery',
+  'jquery',
   'widgets/RelatedPosts/RelatedPosts'
 ], function ($, RelatedPosts) {
   var
