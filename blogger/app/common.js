@@ -1,4 +1,4 @@
-define(['jquery', 'motio'], function ($, Motio) {
+define(['lib/jquery.motio'], function (Motio) {
   return {
     init: function () {
       var self = this;

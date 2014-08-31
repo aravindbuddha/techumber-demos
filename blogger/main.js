@@ -7,7 +7,6 @@ requirejs.config({
     easing: "lib/easing",
     isotope: "lib/isotope",
     hovertiemout: "lib/jquery.hovertimeout",
-    motio: "lib/jquery.motio",
     preload: "lib/jquery.preload",
     home: "app/home",
     common: "app/common",
