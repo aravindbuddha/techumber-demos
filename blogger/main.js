@@ -10,12 +10,19 @@ requirejs.config({
     hoverxa:"lib/jquery.hoverxa",
     motio:"lib/jquery.motio",
     preload:"lib/jquery.preload",
-    css:"lib/requirejs/plugins/css.min",
+    // css:"lib/requirejs/plugins/css.min",
     home:"template/js/home.js",
     script:"template/js/scripts",
     app:"app/app",
     scripts:"template/js/scripts"
   },
+  map: {
+    '*': {
+      'css': 'lib/requirejs/plugins/css.min' // or whatever the path to require-css is
+    }
+  },
+
+
   shim: {
     'lib/easing': ['//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min'],
     'lib/jquery.hovertimeout': ['//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min'],
