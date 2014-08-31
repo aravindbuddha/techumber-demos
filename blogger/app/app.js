@@ -2,9 +2,9 @@ define(['require'], function (require) {
   var page_type = window.tu_page_type;
   return {
     init: function () {
-      require(['lib/jquery.preload', 'css!template/css/common.css', 'scripts']);
+      require(['app/common', 'css!template/css/common.css', ]);
       if (page_type == "index") {
-        require(['home', 'css!template/css/page.css']);
+        require(['app/home', 'css!template/css/page.css']);
       }
     }
   }

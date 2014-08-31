@@ -9,12 +9,10 @@ requirejs.config({
     hovertiemout: "lib/jquery.hovertimeout",
     motio: "lib/jquery.motio",
     preload: "lib/jquery.preload",
-    css: "lib/requirejs/plugins/css.min",
     home: "app/home",
-    script: "template/js/scripts",
+    common: "app/common",
     app: "app/app",
-    scripts: "template/js/scripts",
-    util: "app/util"
+
   },
   map: {
     '*': {
@@ -24,7 +22,11 @@ requirejs.config({
   shim: {
     'lib/easing': ['//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'],
     'lib/jquery.hoverxa': ['//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'],
-    'lib/jquery.motio': ['//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'],
+    'lib/jquery.motio': {
+      deps: ['//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'],
+      exports: 'Motio'
+    },
+
     'lib/jquery.preload': ['//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'],
     'lib/jquery.hovertimeout': {
       deps: ['//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'],
