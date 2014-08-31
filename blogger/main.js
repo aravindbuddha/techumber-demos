@@ -22,11 +22,11 @@ requirejs.config({
     }
   },
   shim: {
-    'lib/easing': ['//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min'],
-    'lib/jquery.hovertimeout': ['//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min'],
-    'lib/jquery.hoverxa': ['//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min'],
-    'lib/jquery.motio': ['//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min'],
-    'lib/jquery.preload': ['//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min']
+    'lib/easing': ['//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'],
+    'lib/jquery.hovertimeout': ['//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'],
+    'lib/jquery.hoverxa': ['//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'],
+    'lib/jquery.motio': ['//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'],
+    'lib/jquery.preload': ['//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js']
   }
 });
 
