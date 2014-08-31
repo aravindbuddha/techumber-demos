@@ -17,8 +17,8 @@ requirejs.config({
     scripts:"template/js/scripts"
   },
     shim: {
-        'easing': {
-            deps: ['jquery'] 
+        'lib/easing': {
+            deps: ['jQuery'] 
           }
         }
 });
