@@ -1,5 +1,4 @@
 define(['jquery'], function ($) {
-
   return {
     accordx: function (b) {
       $(b + " .widget-content").hide();
