@@ -53,24 +53,33 @@ html,body{
 }
 
 .#{$ns}_main_wrap{
-	@include outer-container;
-
+	
 }
+
 
 .#{$ns}_main{
-	@include span-columns(12);
+	@include outer-container;
+	margin-top:20px;
 	.#{$ns}_content{
 		@include span-columns(9);
-		padding: 20px;
+		.#{$ns}_more_posts{
+			a{
+				@extend %button;
+			}
+		}
 	}	
 	.#{$ns}_side{
-		@include span-columns(3);
+		 @include span-columns(3);
 	}
 }
-
+.#{$ns}_post_row{
+	@include row();
+	// @include span-columns(12);
+}
 
 .#{$ns}_post{
-	@include span-columns(5,9);
+	@include span-columns(4,12);
+	@include omega(3n);
 	border: 1px solid #E0E0E0;
 	margin-bottom:20px;
 	.#{$ns}_post_thumbnail{
@@ -90,6 +99,10 @@ html,body{
 		text-decoration: none;
 	}
 }
+.#{$ns}_posts_loop{
+	 @extend %clearfix ;
+}
+
 .#{$ns}_post .#{$ns}_article_content{
 	margin-bottom:rem(20);
 	.#{$ns}_byline{

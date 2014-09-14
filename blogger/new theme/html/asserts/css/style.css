@@ -77,7 +77,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 1, ../scss/lib/base/extends/_button.scss */
 button,
-input[type="submit"] {
+input[type="submit"], .tu_main .tu_content .tu_more_posts a {
   -webkit-font-smoothing: antialiased;
   background-color: #477DCA;
   border-radius: 0.1875em;
@@ -91,13 +91,13 @@ input[type="submit"] {
 }
 /* line 13, ../scss/lib/base/extends/_button.scss */
 button:hover,
-input[type="submit"]:hover {
+input[type="submit"]:hover, .tu_main .tu_content .tu_more_posts a:hover {
   background-color: #2c5999;
   color: white;
 }
 
 /* line 15, ../scss/lib/bourbon/addons/_clearfix.scss */
-.tu_head_wrap:after, .tu_post .tu_article_content .tu_byline:after, .tu_post .tu_article_content .tu_tags:after {
+.tu_head_wrap:after, .tu_posts_loop:after, .tu_post .tu_article_content .tu_byline:after, .tu_post .tu_article_content .tu_tags:after {
   content: "";
   display: table;
   clear: both;
@@ -377,8 +377,8 @@ input[type="submit"] {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.eot?v=4.2.0");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.2.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.2.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.2.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular") format("svg");
+  src: url("//localdemos.techumber.com/blogger/new-theme/html/asserts/scss/lib/font-awesome/fonts/fontawesome-webfont.eot?v=4.2.0");
+  src: url("//localdemos.techumber.com/blogger/new-theme/html/asserts/scss/lib/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.2.0") format("embedded-opentype"), url("//localdemos.techumber.com/blogger/new-theme/html/asserts/scss/lib/font-awesome/fonts/fontawesome-webfont.woff?v=4.2.0") format("woff"), url("//localdemos.techumber.com/blogger/new-theme/html/asserts/scss/lib/font-awesome/fonts/fontawesome-webfont.ttf?v=4.2.0") format("truetype"), url("//localdemos.techumber.com/blogger/new-theme/html/asserts/scss/lib/font-awesome/fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -3072,7 +3072,7 @@ html, body {
 
 /* line 30, ../scss/style.scss */
 .tu_head {
-  max-width: 68em;
+  max-width: 75em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -3108,43 +3108,31 @@ html, body {
   color: #fff;
 }
 
-/* line 55, ../scss/style.scss */
-.tu_main_wrap {
-  max-width: 68em;
+/* line 60, ../scss/style.scss */
+.tu_main {
+  max-width: 75em;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
 }
 /* line 15, ../scss/lib/bourbon/addons/_clearfix.scss */
-.tu_main_wrap:after {
+.tu_main:after {
   content: "";
   display: table;
   clear: both;
 }
-
-/* line 60, ../scss/style.scss */
-.tu_main {
-  float: left;
-  display: block;
-  margin-right: 2.3576515979%;
-  width: 100%;
-}
-/* line 38, ../scss/lib/neat/grid/_span-columns.scss */
-.tu_main:last-child {
-  margin-right: 0;
-}
-/* line 62, ../scss/style.scss */
+/* line 63, ../scss/style.scss */
 .tu_main .tu_content {
   float: left;
   display: block;
   margin-right: 2.3576515979%;
   width: 74.4105871005%;
-  padding: 20px;
 }
 /* line 38, ../scss/lib/neat/grid/_span-columns.scss */
 .tu_main .tu_content:last-child {
   margin-right: 0;
 }
-/* line 66, ../scss/style.scss */
+/* line 71, ../scss/style.scss */
 .tu_main .tu_side {
   float: left;
   display: block;
@@ -3156,12 +3144,23 @@ html, body {
   margin-right: 0;
 }
 
-/* line 72, ../scss/style.scss */
+/* line 75, ../scss/style.scss */
+.tu_post_row {
+  display: block;
+}
+/* line 15, ../scss/lib/bourbon/addons/_clearfix.scss */
+.tu_post_row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 80, ../scss/style.scss */
 .tu_post {
   float: left;
   display: block;
   margin-right: 2.3576515979%;
-  width: 40.2913699012%;
+  width: 31.7615656014%;
   border: 1px solid #E0E0E0;
   margin-bottom: 20px;
 }
@@ -3169,57 +3168,65 @@ html, body {
 .tu_post:last-child {
   margin-right: 0;
 }
-/* line 76, ../scss/style.scss */
+/* line 52, ../scss/lib/neat/grid/_omega.scss */
+.tu_post:nth-child(3n) {
+  margin-right: 0;
+}
+/* line 57, ../scss/lib/neat/grid/_omega.scss */
+.tu_post:nth-child(3n+1) {
+  clear: left;
+}
+/* line 85, ../scss/style.scss */
 .tu_post .tu_post_thumbnail {
   width: 100%;
 }
-/* line 79, ../scss/style.scss */
+/* line 88, ../scss/style.scss */
 .tu_post .tu_article_content {
   padding: 20px;
   text-align: center;
 }
 
-/* line 84, ../scss/style.scss */
+/* line 93, ../scss/style.scss */
 .tu_post_title {
   font-size: 1.375rem;
   line-height: 1.5;
   margin-bottom: 1.25rem;
 }
-/* line 88, ../scss/style.scss */
+/* line 97, ../scss/style.scss */
 .tu_post_title a {
   color: #000;
   text-decoration: none;
 }
 
-/* line 93, ../scss/style.scss */
+/* line 106, ../scss/style.scss */
 .tu_post .tu_article_content {
   margin-bottom: 1.25rem;
 }
-/* line 95, ../scss/style.scss */
+/* line 108, ../scss/style.scss */
 .tu_post .tu_article_content .tu_byline {
   margin-bottom: 1.875rem;
 }
-/* line 99, ../scss/style.scss */
+/* line 112, ../scss/style.scss */
 .tu_post .tu_article_content .tu_date, .tu_post .tu_article_content .tu_comment, .tu_post .tu_article_content .tu_tags {
   font-size: 0.6875rem;
   float: left;
   margin-left: 10px;
   color: #bbb;
 }
-/* line 113, ../scss/style.scss */
+/* line 126, ../scss/style.scss */
 .tu_post .tu_article_content .tu_tags li {
   margin-left: 5px;
   float: left;
 }
-/* line 116, ../scss/style.scss */
+/* line 129, ../scss/style.scss */
 .tu_post .tu_article_content .tu_tags li a {
   color: inherit;
 }
-/* line 118, ../scss/style.scss */
+/* line 131, ../scss/style.scss */
 .tu_post .tu_article_content .tu_tags li a:hover {
   text-decoration: underline;
 }
-/* line 124, ../scss/style.scss */
+/* line 137, ../scss/style.scss */
 .tu_post .tu_article_content .tu_read_more {
   color: #333333;
   background-color: #e7e7e7;
@@ -3231,7 +3238,7 @@ html, body {
   -moz-transition: all 0.8s;
   transition: all 0.8s;
 }
-/* line 132, ../scss/style.scss */
+/* line 145, ../scss/style.scss */
 .tu_post .tu_article_content .tu_read_more:hover {
   background-color: #d3d3d3;
   border: 1px solid #bbb;
