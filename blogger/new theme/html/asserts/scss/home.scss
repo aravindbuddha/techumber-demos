@@ -1,0 +1,91 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+@import "compass/reset";
+@import "lib/bourbon/bourbon";
+// @import "lib/base/grid-settings";
+@import "lib/neat/neat";
+@import "lib/base/base";
+@import "lib/font-awesome/scss/font-awesome";
+@import "partials/common";
+@import "partials/head";
+@import "partials/side";
+@import "partials/foot";
+
+.#{$ns}_post{
+	@include span-columns(4,12);
+	@include omega(3n);
+	border: 1px solid #E0E0E0;
+	margin-bottom:20px;
+	.#{$ns}_post_thumbnail{
+		width: 100%;
+	}
+	.#{$ns}_article_content{
+		padding:20px;
+		text-align: center;
+	}
+}
+.#{$ns}_post_title{
+	font-size: rem(22);
+	line-height: 1.5;
+	margin-bottom: rem(20);
+	a{
+		color: #000;
+		text-decoration: none;
+	}
+}
+.#{$ns}_posts_loop{
+	 @extend %clearfix ;
+}
+
+.#{$ns}_post .#{$ns}_article_content{
+	margin-bottom:rem(20);
+	.#{$ns}_byline{
+		  margin-bottom: rem(30);
+		  @extend %clearfix ;
+	}
+	.#{$ns}_date,.#{$ns}_comment,.#{$ns}_tags{
+		font-size:rem(11);
+		float: left;
+		margin-left: 10px;
+		color:#bbb;
+	}
+
+	.#{$ns}_tags{
+		 @extend %clearfix;
+		
+		 .fa-icon{
+		 	@extend .fa;
+		 	@extend .fa-tags;
+		 }
+		li{
+			margin-left: 5px;
+			float: left;
+			a{
+				color: inherit;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	.#{$ns}_read_more {
+		color: #333333;
+		background-color: #e7e7e7;
+		line-height: 1.5;
+		border: 1px solid #dadada;
+		padding: 8px 16px;
+		text-align: center;
+		font-size: rem(11);
+		@include transition(all 0.8s);
+		&:hover{
+			background-color: #d3d3d3;
+			border: 1px solid #bbb;
+		}
+	}
+}
+
+

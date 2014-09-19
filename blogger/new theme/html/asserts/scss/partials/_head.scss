@@ -1,0 +1,65 @@
+.#{$ns}_head_wrap{
+	@include fill-parent;
+	background:url("../img/clouds.jpg");
+    @include image-rendering(optimizeSpeed);
+    height:rem(200);
+    @extend %clearfix ;
+    // position: fixed;
+}
+.#{$ns}_head{
+	@include outer-container;
+}
+
+.#{$ns}_logo{
+	display: block;
+	background:url("../img/techumberlogo.png") no-repeat;
+	width: rem(190);
+	height: rem(90);
+	margin-top:rem(50); 
+	float:left;
+}
+
+.#{$ns}_nav{
+	float:right;
+	margin-top: rem(100);
+	li{
+		float: left;
+		padding:0 20px;
+		a{
+			color: #fff;
+		}
+	}
+}
+
+.#{$ns}_main_wrap{
+	
+}
+
+
+.#{$ns}_main{
+	@include outer-container;
+	margin-top:20px;
+	.#{$ns}_content{
+		@include span-columns(9);
+		.#{$ns}_more_posts{
+			text-align: center;
+			a{
+				@extend %button;
+				background-color: #e7e7e7;
+				border: 1px solid #dadada;
+				color:#333;
+				&:hover{
+					background-color: #d3d3d3;
+					border: 1px solid #bbb;
+					color:#333;
+				}	
+			}
+		}
+	}	
+	.#{$ns}_side{
+		 @include span-columns(3);
+	}
+}
+.#{$ns}_post_row{
+	@include row();
+}

@@ -1,0 +1,65 @@
+.#{$ns}_side{
+	@include span-columns(3);
+	.#{$ns}_side_widget,.#{$ns}_side_widget_accord{
+		background-color: #FFF;
+		padding: 5px 10px;
+		border: 1px solid #E0E0E0;
+		@include box-shadow(0 2px 4px #E7E7E7);
+		margin-bottom: rem(20);
+		.widget{
+			margin: 0 0 5px;
+		}
+		 h2 {
+			line-height: 30px;
+			font-size: 20px;
+			border-bottom: 3px solid #333;
+		}
+		.widget-content{
+			margin:10px;
+		}
+	}
+	.#{$ns}_side_widget_accord h2 {
+			border: 0;
+			background-color: #EBEBEB;
+			margin: 0;
+			padding: 0 8px;
+			cursor: pointer;
+			@include border-radius(2px);
+			@include box-shadow( 0 0 3px #8F8D8D,inset 0 0 1px #FFF);
+			line-height: 30px;
+			font-size: 20px;
+			&:target{
+				font-weight:bolder;
+			}
+		}
+}
+
+.#{$ns}_side .#{$ns}_about_me{
+	.#{$ns}_profile_pic {
+		float: left;
+		margin:0 5px 5px 0;
+		padding: 4px;
+		border: 1px solid #ccc;
+	}		
+	.#{$ns}_name_title{
+		font-weight: bold;
+	}
+	.#{$ns}_about_my_social{
+		margin-top: 10px;
+	}
+}
+
+
+
+
+
+
+.#{$ns}_side li{
+	margin: 0;
+	line-height: 1.5em;
+	border-bottom: 1px dashed;
+	padding: 5px;
+	&:last-child{
+		border:0;
+	}	
+}
