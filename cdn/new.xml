@@ -26,8 +26,9 @@
     <!-- JavaScript
 ================================================== -->
     <b:if cond='data:blog.pageType == &quot;item&quot;'>
-      <script src='http://labs.techumber.com/LABS/js/prettyfiy/prettify.js' type='text/javascript'/>
-      <link href='//demos.techumber.com/blogger/lib/prettyfiy/prettify-dark.css' rel='stylesheet' type='text/css'/>
+       <link href='//demos.techumber.com/cdn/js/lib/prettify/prettify-dark.css' rel="stylesheet" type='text/css' />
+      <script src='//demos.techumber.com/cdn/js/lib/prettify/prettify.js' type='text/javascript'/>
+
     </b:if>
     <!-- SEO
 ================================================== -->
