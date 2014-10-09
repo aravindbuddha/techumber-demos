@@ -1,0 +1,1 @@
+   function resizeThumb(e,b){var c=document.getElementById(e),d=c.getElementsByTagName("img");for(var a=0;a<d.length;a++){d[a].src=d[a].src.replace(/\/s72\-c/,"/w"+b);d[a].width=b}}
