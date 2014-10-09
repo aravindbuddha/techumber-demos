@@ -7,7 +7,7 @@ require 'compass'
 http_path = "/"
 css_dir = "css"
 sass_dir = "scss"
-images_dir = "images_dir"
+images_dir = "img"
 javascripts_dir = "js"
 
 # You can select your preferred output style here (can be overridden via the command line):
