@@ -1,3 +1,6 @@
+console.log("hi");
+
+
 // var Dpage=(function(){
 //   var
 //     $my_domain = window.location.host,
