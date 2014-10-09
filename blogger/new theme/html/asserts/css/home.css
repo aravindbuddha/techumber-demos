@@ -3,7 +3,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,45 +25,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -3258,6 +3258,79 @@ a {
 /* line 62, ../scss/partials/_side.scss */
 .tu_side li:last-child {
   border: 0;
+}
+
+/* line 1, ../scss/partials/_foot.scss */
+.tu_foot {
+  background: #333;
+  height: 300px;
+  margin-top: 50px;
+  color: #fff;
+  padding: 60px 0;
+}
+
+/* line 8, ../scss/partials/_foot.scss */
+.tu_foot_copy {
+  height: 100px;
+  background: #555;
+  text-align: center;
+  color: #f2f2f2;
+  padding: 15px 0;
+}
+/* line 14, ../scss/partials/_foot.scss */
+.tu_foot_copy a {
+  color: #fff;
+}
+
+/* line 19, ../scss/partials/_foot.scss */
+.tu_foot_inner {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 15, ../scss/lib/bourbon/addons/_clearfix.scss */
+.tu_foot_inner:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 22, ../scss/partials/_foot.scss */
+.tu_foot_inner .tu_links {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+}
+/* line 38, ../scss/lib/neat/grid/_span-columns.scss */
+.tu_foot_inner .tu_links:last-child {
+  margin-right: 0;
+}
+/* line 24, ../scss/partials/_foot.scss */
+.tu_foot_inner .tu_links h2 {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 17px;
+  letter-spacing: 1.5px;
+  margin-bottom: 17px;
+  font-weight: 600;
+}
+/* line 34, ../scss/partials/_foot.scss */
+.tu_foot_inner ul li {
+  margin-bottom: 7px;
+}
+/* line 36, ../scss/partials/_foot.scss */
+.tu_foot_inner ul li a {
+  color: #747474;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+/* line 42, ../scss/partials/_foot.scss */
+.tu_foot_inner ul li a:hover {
+  color: #f1f1f1;
 }
 
 /* line 18, ../scss/home.scss */

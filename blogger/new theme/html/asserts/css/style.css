@@ -395,7 +395,7 @@ input[type="submit"] {
 /* makes the font 33% larger relative to the icon container */
 /* line 5, ../scss/lib/font-awesome/scss/_larger.scss */
 .fa-lg {
-  font-size: 1.3333333333em;
+  font-size: 1.33333em;
   line-height: 0.75em;
   vertical-align: -15%;
 }
@@ -422,14 +422,14 @@ input[type="submit"] {
 
 /* line 3, ../scss/lib/font-awesome/scss/_fixed-width.scss */
 .fa-fw {
-  width: 1.2857142857em;
+  width: 1.28571em;
   text-align: center;
 }
 
 /* line 4, ../scss/lib/font-awesome/scss/_list.scss */
 .fa-ul {
   padding-left: 0;
-  margin-left: 2.1428571429em;
+  margin-left: 2.14286em;
   list-style-type: none;
 }
 /* line 8, ../scss/lib/font-awesome/scss/_list.scss */
@@ -440,14 +440,14 @@ input[type="submit"] {
 /* line 10, ../scss/lib/font-awesome/scss/_list.scss */
 .fa-li {
   position: absolute;
-  left: -2.1428571429em;
-  width: 2.1428571429em;
-  top: 0.1428571429em;
+  left: -2.14286em;
+  width: 2.14286em;
+  top: 0.14286em;
   text-align: center;
 }
 /* line 16, ../scss/lib/font-awesome/scss/_list.scss */
 .fa-li.fa-lg {
-  left: -1.8571428571em;
+  left: -1.85714em;
 }
 
 /* line 4, ../scss/lib/font-awesome/scss/_bordered-pulled.scss */
@@ -3125,8 +3125,8 @@ html, body {
 .tu_main .tu_content {
   float: left;
   display: block;
-  margin-right: 2.3576515979%;
-  width: 74.4105871005%;
+  margin-right: 2.35765%;
+  width: 74.41059%;
 }
 /* line 38, ../scss/lib/neat/grid/_span-columns.scss */
 .tu_main .tu_content:last-child {
@@ -3136,8 +3136,8 @@ html, body {
 .tu_main .tu_side {
   float: left;
   display: block;
-  margin-right: 2.3576515979%;
-  width: 23.2317613015%;
+  margin-right: 2.35765%;
+  width: 23.23176%;
 }
 /* line 38, ../scss/lib/neat/grid/_span-columns.scss */
 .tu_main .tu_side:last-child {
@@ -3159,8 +3159,8 @@ html, body {
 .tu_post {
   float: left;
   display: block;
-  margin-right: 2.3576515979%;
-  width: 31.7615656014%;
+  margin-right: 2.35765%;
+  width: 31.76157%;
   border: 1px solid #E0E0E0;
   margin-bottom: 20px;
 }
