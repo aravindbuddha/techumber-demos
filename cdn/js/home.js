@@ -1,11 +1,16 @@
-   function resizeThumb(e,b){var c=document.getElementById(e),d=c.getElementsByTagName("img");for(var a=0;a<d.length;a++){d[a].src=d[a].src.replace(/\/s72\-c/,"/w"+b);d[a].width=b}}
-
-
-
-
    
-          resizeThumb("Blog1",300);
+
+function resizeThumb(e,b){var c=document.getElementById(e),d=c.getElementsByTagName("img");for(var a=0;a<d.length;a++){d[a].src=d[a].src.replace(/\/s72\-c/,"/w"+b);d[a].width=b}}
+
+
+
+$(function(){
+   resizeThumb("Blog1",300);
           datenya ();
+
+});
+   
+       
           function isonyax(){var a=jQuery(".blog-posts.hfeed");var b;if(a.width()<320){b=1}else{if(a.width()<500){b=2}else{if(a.width()<720){b=3}else{b=4}}}a.isotope({itemSelector:".post",resizable:false,masonry:{columnWidth:a.width()/b}})};
           jQuery(window).load(isonyax);
           jQuery(window).smartresize(isonyax);
