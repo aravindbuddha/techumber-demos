@@ -3,13 +3,13 @@
 <HTML expr:dir='data:blog.languageDirection'>
   <head lang='en'>
     <!-- Basic Page Requirements
-================================================== -->
+  ================================================== -->
     <b:include data='blog' name='all-head-content'/>
     <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
     <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'/>
     <meta content='text/html; charset=UTF-8' http-equiv='content-type'/>
     <!-- 3rd Party Meta
-================================================== -->
+  ================================================== -->
     <meta content='lPnUoboxkWbfVEi8Ks6naF-xk5QgRSXl_JgNHVDNgzU' name='google-site-verification'/>
     <meta content='W9Pd_dgrDK76LEdsdege0S7vXUo' name='alexaVerifyID'/>
     <meta content='1CD62ABFCF442BE2046CC107369C515B' name='msvalidate.01'/>
@@ -18,22 +18,51 @@
     <meta expr:content='data:blog.title' property='og:site_name'/>
     <meta expr:content='data:blog.pageName' property='og:title'/>
     <!-- Mobile Specific
-================================================== -->
+  ================================================== -->
     <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
-    <!--[if lt IE 9]>
-<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-    <!-- JavaScript
-================================================== -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+    <!-- asserts
+  ================================================== -->
+  <!-- Global page type -->
+  <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+      <b:if cond='data:blog.pageType != &quot;item&quot;'>
+        <script type='text/javascript'>
+            window.TU_PAGE="index";
+          </script> 
+        <b:else/>
+          <script type='text/javascript'>
+            window.TU_PAGE="post";
+          </script>
+      </b:if>
+      <b:else/>
+        <script type='text/javascript'>
+            window.TU_PAGE="static";
+        </script>
+  </b:if>
 
-    <b:if cond='data:blog.pageType == &quot;item&quot;'>
+
+
+    <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+      <b:if cond='data:blog.pageType != &quot;item&quot;'>
+           <link href='http://demos.techumber.com/cdn/css/home.css' rel="stylesheet" type='text/css' />
+        <b:else/>
+          <link href='http://demos.techumber.com/cdn/css/post.css' rel="stylesheet" type='text/css' />
+      </b:if>
+      <b:else/>
+        <link href='http://demos.techumber.com/cdn/css/static.css' rel="stylesheet" type='text/css' />
+    </b:if>
+    <!-- end Global page type -->
+
+
+  <b:if cond='data:blog.pageType == &quot;item&quot;'>
        <link href='//demos.techumber.com/cdn/js/lib/prettify/prettify-dark.css' rel="stylesheet" type='text/css' />
       <script src='//demos.techumber.com/cdn/js/lib/prettify/prettify.js' type='text/javascript'/>
-
-    </b:if>
+  </b:if>
      <script src='//demos.techumber.com/cdn/js/lib/head.min.js' data-headjs-load="//demos.techumber.com/cdn/app/init.js" type='text/javascript'/>
     <!-- SEO
-================================================== -->
+  ================================================== -->
     <b:if cond='data:blog.metaDescription != &quot;&quot;'>
       <meta expr:content='data:blog.metaDescription' name='description'/>
     </b:if>
@@ -64,26 +93,7 @@
     <b:skin>
       <![CDATA[/*Just keep it for blogger*/]]>
     </b:skin>
-    <!-- Global page type -->
-    <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
-      <b:if cond='data:blog.pageType != &quot;item&quot;'>
-          <script type='text/javascript'>
-            window.TU_PAGE="index";
-          </script>
-           <link href='http://demos.techumber.com/cdn/css/home.css' rel="stylesheet" type='text/css' />
-        <b:else/>
-          <script type='text/javascript'>
-            window.TU_PAGE="post";
-          </script>
-          <link href='http://demos.techumber.com/cdn/css/post.css' rel="stylesheet" type='text/css' />
-      </b:if>
-      <b:else/>
-        <script type='text/javascript'>
-            window.TU_PAGE="static";
-          </script>
-     	  <link href='http://demos.techumber.com/cdn/css/static.css' rel="stylesheet" type='text/css' />
-    </b:if>
-    <!-- end Global page type -->
+    
 
 
     <script src='http://demos.techumber.com/cdn/js/lib/easing.js' type='text/javascript'/>
