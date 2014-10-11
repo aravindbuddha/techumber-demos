@@ -11,7 +11,7 @@ var site_array=[
 var index_array=[
   base_url+"css/index.css", 
   base_url+"js/lib/isotope.js",
-  base_url+"index.js"
+  base_url+"js/index.js"
 ];
 
 var post_array=[
