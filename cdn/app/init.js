@@ -39,15 +39,17 @@ head.ready(document,function(){
     		console.log("index array loadded....");
     	});
     }
-	 // head.test(
-	 //    (TU_PAGE == "index"),
-	 //    index_array,
-	 //    post_array,
-	 //    function(){
-	 //      console.log("head loading done....");
-	 //    }
-	 // );
+    if(TU_PAGE == "post"){
+    	head.load(post_array,function(){
+    		console.log("post array loadded....");
+    	});
+    }
 
+    if(TU_PAGE == "static"){
+    	head.load(static_array,function(){
+    		console.log("post array loadded....");
+    	});
+    }
 
   });
   

@@ -118,7 +118,7 @@ var Home = (function($) {
                 b.append(n);
                 b.append(m);
                 b.insertBefore(e("#blog-pager"));
-                e("#blog-pager").hide()
+                e("#blog-pager").hide();
             }
             e(document).ready(l)
         }
