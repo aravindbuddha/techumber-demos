@@ -35,7 +35,7 @@ head.ready(document,function(){
     console.log("whole site loadded....");
     //test page type
     if(TU_PAGE == "index"){
-    	head.load(post_array,function(){
+    	head.load(index_array,function(){
     		console.log("index array loadded....");
     	});
     }
