@@ -79,8 +79,8 @@ var Home = (function($) {
                     var p = m.find(a).children(".date-outer");
                     e(a).append(p);
                     self.resize_thumb("Blog1", 200);
-                    hoverxa();
-                    datenya();
+                    Site.hoverxa();
+                    Site.datenya();
                     if (window._gaq) {
                         window._gaq.push(["_trackPageview", i])
                     }
