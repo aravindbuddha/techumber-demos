@@ -6,6 +6,7 @@ var site_array=[
     base_url+"js/lib/easing.js",
     base_url +"js/lib/motio.js",
     base_url+"js/lib/preload.js",
+    base_url+"js/lib/hover.js",
     base_url+"js/site.js"
 ];
 
