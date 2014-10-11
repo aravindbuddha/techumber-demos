@@ -5,7 +5,8 @@ var site_array=[
     "//code.jquery.com/jquery-1.11.1.min.js",
     base_url+"js/lib/easing.js",
     base_url +"js/lib/motio.js",
-    base_url+"js/lib/preload.js"
+    base_url+"js/lib/preload.js",
+    base_url+"js/site.js"
 ];
 
 var index_array=[
