@@ -137,7 +137,7 @@ var Site = (function() {
         },
         build_prefetch: function() {
             $('a,img,script').each(function(){
-                $(this).attr('rel':'prefetch');
+                $(this).attr('rel','prefetch');
             });
         },
         datenya: function() {
