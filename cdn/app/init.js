@@ -10,31 +10,38 @@ var site_array=[
 
 var index_array=[
   base_url+"css/index.css", 
-  base_url_+"file2.js"
+  base_url+"js/lib/isotope.js",
+  base_url+"index.js"
 ];
 
 var post_array=[
-  base_url+"",
+  base_url+"css/post.css",
+  base_url+"js/lib/prettify/prettify-dark.css",
+  base_url+"js/lib/prettify/prettify.js",
+  base_url+"js/lib/related-posts.js"
 ];
 
-// var post=[];
+var static_array=[
+	base_url+"css/static.css"
+];
 
-// var stat=[];
 
 
+head.ready(document,function(){
+  //load hole site
+  head.load(site_array,function(){
+    console.log("hole site loadded....");
+    //test page type
+	 head.test(
+	    (TU_PAGE == "index"),
+	    index_array,
+	    post_array,
+	    function(){
+	      console.log("head loading done....");
+	    }
+	 );
 
-// head.ready(document,function(){
-//   //load hole site
-//   head.load(site_array,function(){
-//     console.log("hole site loadded....");
-//   });
-//   //test page type
-//   head.test(
-//     (TU_PAGE == "index"),
-//     index_array,
-//     post_array,
-//     function(){
-//       console.log("head loading done....");
-//     }
-//   );
-// });
+
+  });
+  
+});
