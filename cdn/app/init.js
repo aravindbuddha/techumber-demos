@@ -30,16 +30,21 @@ var static_array=[
 head.ready(document,function(){
   //load hole site
   head.load(site_array,function(){
-    console.log("hole site loadded....");
+    console.log("whole site loadded....");
     //test page type
-	 head.test(
-	    (TU_PAGE == "index"),
-	    index_array,
-	    post_array,
-	    function(){
-	      console.log("head loading done....");
-	    }
-	 );
+    if(TU_PAGE == "index"){
+    	head.load(post_array,function(){
+    		console.log("index array loadded....");
+    	});
+    }
+	 // head.test(
+	 //    (TU_PAGE == "index"),
+	 //    index_array,
+	 //    post_array,
+	 //    function(){
+	 //      console.log("head loading done....");
+	 //    }
+	 // );
 
 
   });
