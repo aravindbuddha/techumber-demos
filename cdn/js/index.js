@@ -42,6 +42,7 @@ var Home = (function($) {
             });
         },
         c_load_more: function(e) {
+            var self=this;
             var h = "http://3.bp.blogspot.com/-iz_MSJzLKJ4/UYl-et5D0iI/AAAAAAAAJDE/TtbzqCN-45I/s000/ajax-loader.gif";
             var i = "";
             var b = null;
@@ -77,7 +78,7 @@ var Home = (function($) {
                     }
                     var p = m.find(a).children(".date-outer");
                     e(a).append(p);
-                    resizeThumb("Blog1", 200);
+                    self.resize_thumb("Blog1", 200);
                     hoverxa();
                     datenya();
                     if (window._gaq) {
