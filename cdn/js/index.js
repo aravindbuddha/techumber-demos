@@ -10,8 +10,8 @@ var Index = (function($) {
             this.next_prev_links();
         },
         resize_thumb: function(e, b) {
-            var c = document.getElementById(e),
-                d = c.getElementsByTagName("img");
+            var c = $("#"+e),
+                d = $(".thumbx").find("img");
             for (var a = 0; a < d.length; a++) {
                 d[a].src = d[a].src.replace(/\/s72\-c/, "/w" + b);
                 d[a].width = b
