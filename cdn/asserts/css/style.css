@@ -458,7 +458,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   box-shadow: 0 2px 5px #CACACA;
 }
 /* line 23, ../scss/partials/_index.scss */
-.index .post img {
+.index .post .thumbx img {
   border: 0;
   width: 100%;
 }
