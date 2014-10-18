@@ -6,6 +6,9 @@ var Index = (function($) {
             this.resize_thumb("Blog1", 300);
             $(window).load(self.isonyax);
             $(window).smartresize(self.isonyax);
+            $(window).resize(function(){
+                self.isonyax();
+            });
             this.c_load_more($);
             this.next_prev_links();
         },
