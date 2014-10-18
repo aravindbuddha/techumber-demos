@@ -2,7 +2,7 @@
 var Site = (function() {
     return {
         init: function() {
-            this.moto_init();
+            // this.moto_init();
             // this.mob_nav_init();
             this.jpre_loader_init();
             this.accordx('#sidebar-wtengah');
