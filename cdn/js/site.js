@@ -7,7 +7,7 @@ var Site = (function() {
             this.jpre_loader_init();
             this.accordx('#sidebar-wtengah');
             this.hoverxa();
-            // this.datenya();
+            this.datenya();
             this.build_prefetch();
         },
         moto_init: function() {

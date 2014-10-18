@@ -601,33 +601,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #FFF;
   overflow: hidden;
 }
-/* line 18, ../scss/partials/_item.scss */
-.item .post .datex {
-  top: -2px;
-  right: 10px;
-  left: auto;
-  width: 40px;
-  height: 55px;
-  padding: 5px 0;
-  -moz-border-radius: 0 0 2px 2px;
-  -webkit-border-radius: 0 0 2px 2px;
-  border-radius: 0 0 2px 2px;
-  box-shadow: 0 0 0;
-}
-/* line 29, ../scss/partials/_item.scss */
-.item .post .datex strong {
-  font-size: 22px;
-  width: 100%;
-  padding: 0 0 3px;
-  float: none;
-}
-/* line 35, ../scss/partials/_item.scss */
-.item .post .datex span, .item .post .datex small {
-  float: none;
-  width: 100%;
-  font-size: 9px;
-  line-height: 12px;
-}
 /* line 42, ../scss/partials/_item.scss */
 .item .post h1.post-title {
   margin: 5px 0 15px;
