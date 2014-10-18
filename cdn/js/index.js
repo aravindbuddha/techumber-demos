@@ -1,4 +1,4 @@
-var Home = (function($) {
+var Index = (function($) {
 
     return {
         init: function() {
@@ -139,4 +139,4 @@ var Home = (function($) {
     }
 })(jQuery);
 
-Home.init();
+Index.init();

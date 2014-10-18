@@ -1,4 +1,4 @@
-var Post=(function(){
+var Item=(function(){
   return{
     init:function(){
     
@@ -40,4 +40,4 @@ var Post=(function(){
   }
 }());
 
-Post.init();
+Item.init();
