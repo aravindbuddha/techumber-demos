@@ -20,7 +20,7 @@ var item_array=[
   // base_url+"asserts/css/item.css",
   base_url+"js/lib/prettify/prettify-dark.css",
   base_url+"js/lib/prettify/prettify.js",
-  base_url+"js/lib/related-items.js"
+  base_url+"js/lib/related-posts.js"
 ];
 
 var static_array=[
