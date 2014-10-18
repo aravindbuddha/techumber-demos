@@ -30,10 +30,12 @@ var Post=(function(){
         downa.append('<link rel="prefetch" href="'+newdownval+'" />');
     },
     call_pretty_print:function(){
-      setTimeout(function(){
+      $(function(){
         $('.code').addClass('prettyprint linenums');
         prettyPrint();
-      },100);
+    
+      });
+        
     }
   }
 }());
