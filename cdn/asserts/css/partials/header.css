@@ -1,0 +1,211 @@
+/* Header
+-----------------------------------------------
+*/
+/* line 6, ../../scss/partials/header.scss */
+#header-wrapper {
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #FFF;
+  color: #292929;
+  height: 200px;
+  background: url('http://demos.techumber.com/cdn/asserts/img/cloud.jpg?1413621075');
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-position: 0 0;
+}
+
+/* line 20, ../../scss/partials/header.scss */
+#header {
+  text-align: center;
+  color: #202020;
+  margin: 0;
+  float: left;
+  position: relative;
+  top: 45px;
+}
+/* line 27, ../../scss/partials/header.scss */
+#header h1, #header p {
+  margin: 0;
+  padding: 0 5px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+}
+/* line 33, ../../scss/partials/header.scss */
+#header a {
+  color: #202020;
+  text-decoration: none;
+  width: 200px;
+  float: left;
+}
+/* line 38, ../../scss/partials/header.scss */
+#header a:hover {
+  color: #41B7D8;
+}
+/* line 42, ../../scss/partials/header.scss */
+#header .description {
+  margin: 0 5px;
+  padding: 0 20px 15px;
+  line-height: 1.4em;
+  text-transform: capitalize;
+  color: #5E5C5C;
+}
+
+/* line 53, ../../scss/partials/header.scss */
+.logocircle {
+  -moz-animation: spin 1s infinite linear;
+  -webkit-animation: spin 1s infinite linear;
+  animation: spin 1s infinite linear;
+  -moz-border-radius: 110px;
+  -webkit-border-radius: 110px;
+  border-radius: 110px;
+  background: transparent;
+  border: 5px solid rgba(0, 0, 0, 0.9);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  height: 90px;
+  opacity: .9;
+  width: 90px;
+  top: 45px;
+  left: -203px;
+  position: relative;
+  float: left;
+}
+
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/* Navigation
+----------------------------------------------- */
+/* line 87, ../../scss/partials/header.scss */
+#search-form-feed {
+  padding: 0;
+  width: 240px;
+  float: right;
+  margin-top: 3px;
+  position: relative;
+  margin-right: 5px;
+}
+
+/* line 96, ../../scss/partials/header.scss */
+#mobilenav {
+  display: none;
+}
+
+/* line 100, ../../scss/partials/header.scss */
+#nav {
+  font-weight: 700;
+  height: 35px;
+  position: relative;
+  float: right;
+  width: auto;
+  top: 78px;
+}
+
+/* line 109, ../../scss/partials/header.scss */
+#navinti {
+  height: 35px;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+/* line 114, ../../scss/partials/header.scss */
+#navinti li {
+  list-style: none;
+  display: inline-block;
+  zoom: 1;
+  float: left;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+/* line 122, ../../scss/partials/header.scss */
+#navinti li a {
+  display: block;
+  line-height: 35px;
+  text-decoration: none;
+  color: #FFF;
+  padding: 0 15px;
+  font-weight: normal;
+}
+/* line 130, ../../scss/partials/header.scss */
+#navinti li:hover > a {
+  border-bottom: 1px solid #FFFFFF;
+}
+/* line 134, ../../scss/partials/header.scss */
+#navinti ul {
+  position: absolute;
+  z-index: 10;
+  padding: 0;
+  list-style: none;
+  width: 170px;
+  background-color: #F8F8F8;
+  -moz-box-shadow: 0 0 5px #494949;
+  -webkit-box-shadow: 0 0 5px #494949;
+  box-shadow: 0 0 5px #494949;
+  display: none;
+}
+/* line 146, ../../scss/partials/header.scss */
+#navinti li:hover ul.hidden {
+  display: block;
+}
+/* line 150, ../../scss/partials/header.scss */
+#navinti ul a {
+  color: #494949;
+}
+/* line 152, ../../scss/partials/header.scss */
+#navinti ul a:hover {
+  background-color: #fff;
+}
+/* line 156, ../../scss/partials/header.scss */
+#navinti ul li {
+  float: none;
+  display: block;
+}
+/* line 161, ../../scss/partials/header.scss */
+#navinti li.dgnsub > a {
+  padding: 0 20px 0 15px;
+}
+/* line 163, ../../scss/partials/header.scss */
+#navinti li.dgnsub > a::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: #FFF transparent transparent;
+  position: absolute;
+  border-width: 5px 4px;
+  right: 7px;
+  top: 16px;
+}

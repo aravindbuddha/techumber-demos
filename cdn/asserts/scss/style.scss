@@ -1,15 +1,14 @@
 @import "compass";
 @import "compass/reset";
 @import "partials/variables";
+
 @import "partials/index";
 @import "partials/item";
 @import "partials/static";
-@import "semantic";
+
 header, nav, section, aside, article, footer {
   display: block;
 }
-
-
 
 * {
   margin: 0;
@@ -101,22 +100,6 @@ a {
   }
 }
 
-/* Header
------------------------------------------------
-*/
-
-#header-wrapper {
-  margin: 0 auto;
-  padding: 10px;
-  background-color: #FFF;
-  color: #292929;
-  height: 200px;
-  background: url('http://4.bp.blogspot.com/-jb2V0LGNyzQ/UqrkwrlEbaI/AAAAAAAACEw/rIUlFr_CsfY/s1600/clouds.jpg') #679eba;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-position: 0 0;
-}
 
 #content-wrapper {
   position: relative;
@@ -125,152 +108,7 @@ a {
   margin-bottom: 127px;
 }
 
-#header {
-  text-align: center;
-  color: #202020;
-  margin: 0;
-  float: left;
-  position: relative;
-  top: 45px;
-  h1, p {
-    margin: 0;
-    padding: 0 5px;
-    line-height: 1.2em;
-    text-transform: uppercase;
-  }
-  a {
-    color: #202020;
-    text-decoration: none;
-    width: 200px;
-    float: left;
-    &:hover {
-      color: #41B7D8;
-    }
-  }
-  .description {
-    margin: 0 5px;
-    padding: 0 20px 15px;
-    line-height: 1.4em;
-   
-    text-transform: capitalize;
-    color: #5E5C5C;
-  }
-  img! {}
-}
 
-.logocircle {
-  @include experimental(animation, spin 1s infinite linear);
-  @include animation(spin 1s infinite linear);
-
-
-
-  -webkit-animation: spin 1s infinite linear;
-  -moz-animation: spin 1s infinite linear;
-  -ms-animation: spin 1s infinite linear;
-  -o-animation: spin 1s infinite linear;
-  animation: spin 1s infinite linear;
-  background-color: transparent;
-  border: 5px solid rgba(0, 0, 0, 0.9);
-  border-left: 5px solid transparent;
-  border-radius: 110px;
-  border-right: 5px solid transparent;
-  height: 90px;
-  opacity: .9;
-  width: 90px;
-  top: 45px;
-  left: -203px;
-  position: relative;
-  float: left;
-}
-
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-
-@-moz-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-
-@-ms-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-
-@-o-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-
-@keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
 
 
 /* Navigation
