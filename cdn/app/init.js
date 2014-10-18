@@ -31,8 +31,8 @@ var App = (function(){
   return {
     init:function(){
        head.ready(document,function(){
-         console.log("hi");
-          if(TU_PAGE == "index"){
+         head.load(site_array,function(){
+            if(TU_PAGE == "index"){
             $("body").addClass('index').removeClass('static item');
               head.load(index_array,function(){
                 console.log("index array loadded....");
@@ -50,6 +50,8 @@ var App = (function(){
               console.log("item array loadded....");
             });
           }
+         });
+          
 
        });
     }
