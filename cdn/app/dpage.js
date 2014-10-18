@@ -33,10 +33,10 @@ var Dpage=(function(){
       return false;
     },
     triggers: function () {
-      this.pretty();
+     
       this.load_comments();
       this.set_class();
-      this.load_related_post();
+     
     },
     set_class:function(){
        if(TU_PAGE == "index"){
