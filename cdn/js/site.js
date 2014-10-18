@@ -153,7 +153,7 @@ var Site = (function() {
                 }
                 var d = $(this).parents(".post");
                 var h = d.children(".datex");
-                $("strong", h).html("posted by " +e+f+c);
+                $("strong", h).html("Posted by " +e+" "+f+" "+c);
                 // $("small", h).html(f);
                 // $("span", h).html(c)
             });
