@@ -121,7 +121,7 @@ var Home = (function($) {
                 e("#blog-pager").hide();
             }
             e(document).ready(l)
-        }
+        },
         next_prev_links:function(){
           $(window).load(function(){
             var newerLink = $('a.blog-pager-newer-link').attr('href');
