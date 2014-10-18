@@ -6,7 +6,6 @@ var Post=(function(){
       this.make_demo_dl_links();
       this.call_pretty_print();
     },
-
     call_related_posts_widget:function(){
       relatedPostsWidget({
         related_title: "Related Posts",
@@ -31,8 +30,10 @@ var Post=(function(){
         downa.append('<link rel="prefetch" href="'+newdownval+'" />');
     },
     call_pretty_print:function(){
-      $('.code').addClass('prettyprint linenums');
-      prettyPrint();
+      setTimeout(function(){
+        $('.code').addClass('prettyprint linenums');
+        prettyPrint();
+      },100);
     }
   }
 }());
