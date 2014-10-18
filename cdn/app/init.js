@@ -1,7 +1,7 @@
 var base_url="//demos.techumber.com/cdn/";
 
 var site_array=[
-    base_url+"css/style.css",
+    base_url+"asserts/css/style.css",
     "//code.jquery.com/jquery-1.11.1.min.js",
     base_url+"js/lib/easing.js",
     base_url +"js/lib/motio.js",
@@ -11,20 +11,20 @@ var site_array=[
 ];
 
 var index_array=[
-  base_url+"css/index.css", 
+  // base_url+"asserts/css/index.css", 
   base_url+"js/lib/isotope.js",
   base_url+"js/index.js"
 ];
 
-var post_array=[
-  base_url+"css/post.css",
+var item_array=[
+  // base_url+"asserts/css/item.css",
   base_url+"js/lib/prettify/prettify-dark.css",
   base_url+"js/lib/prettify/prettify.js",
-  base_url+"js/lib/related-posts.js"
+  base_url+"js/lib/related-items.js"
 ];
 
 var static_array=[
-	base_url+"css/static.css"
+	base_url+"asserts/css/static.css"
 ];
 
 
@@ -35,19 +35,22 @@ head.ready(document,function(){
     console.log("whole site loadded....");
     //test page type
     if(TU_PAGE == "index"){
+     $("body").addClass('index').removeClass('static item');
     	head.load(index_array,function(){
     		console.log("index array loadded....");
     	});
     }
-    if(TU_PAGE == "post"){
-    	head.load(post_array,function(){
-    		console.log("post array loadded....");
+    if(TU_PAGE == "item"){
+    	head.load(item_array,function(){
+        $("body").addClass('item').removeClass('static index');
+    		console.log("item array loadded....");
     	});
     }
 
-    if(TU_PAGE == "static"){
+    if(TU_PAGE == "static_page"){
     	head.load(static_array,function(){
-    		console.log("post array loadded....");
+          $("body").addClass('static').removeClass('item index');
+    		console.log("item array loadded....");
     	});
     }
 

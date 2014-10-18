@@ -7,7 +7,6 @@ var Home = (function($) {
             $(window).load(self.isonyax);
             $(window).smartresize(self.isonyax);
             this.c_load_more($);
-            this.next_prev_links();
         },
         resize_thumb: function(e, b) {
             var c = document.getElementById(e),
@@ -17,6 +16,7 @@ var Home = (function($) {
                 d[a].width = b
             }
         },
+ 
         isonyax: function() {
 
             var b, a = $(".blog-posts.hfeed");
@@ -42,7 +42,6 @@ var Home = (function($) {
             });
         },
         c_load_more: function(e) {
-            var self=this;
             var h = "http://3.bp.blogspot.com/-iz_MSJzLKJ4/UYl-et5D0iI/AAAAAAAAJDE/TtbzqCN-45I/s000/ajax-loader.gif";
             var i = "";
             var b = null;
@@ -78,9 +77,9 @@ var Home = (function($) {
                     }
                     var p = m.find(a).children(".date-outer");
                     e(a).append(p);
-                    self.resize_thumb("Blog1", 200);
-                    Site.hoverxa();
-                    Site.datenya();
+                    resizeThumb("Blog1", 200);
+                    hoverxa();
+                    datenya();
                     if (window._gaq) {
                         window._gaq.push(["_trackPageview", i])
                     }
@@ -118,23 +117,9 @@ var Home = (function($) {
                 b.append(n);
                 b.append(m);
                 b.insertBefore(e("#blog-pager"));
-                e("#blog-pager").hide();
+                e("#blog-pager").hide()
             }
             e(document).ready(l)
-        }
-        next_prev_links:function(){
-          $(window).load(function(){
-            var newerLink = $('a.blog-pager-newer-link').attr('href');
-            $('a.blog-pager-newer-link').load(newerLink + ' .post-title:first', function () {
-              var newerLinkTitle = $('a.blog-pager-newer-link').text();
-              $('a.blog-pager-newer-link').html('<h6>Next</h6><h5>' + newerLinkTitle + '</h5>');
-            });
-            var olderLink = $('a.blog-pager-older-link').attr('href');
-            $('a.blog-pager-older-link').load(olderLink + ' .post-title:first', function () {
-              var olderLinkTitle = $('a.blog-pager-older-link').text();
-              $('a.blog-pager-older-link').html('<h6>Previous</h6><h5>' + olderLinkTitle + '</h5>');
-            });
-          });
         }
     }
 })(jQuery);
