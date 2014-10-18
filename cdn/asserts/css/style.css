@@ -605,7 +605,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 43, ../scss/partials/_item.scss */
 .item .post h1.post-title {
   margin: 5px 0 15px;
-  border-bottom: 4px solid #41B7D8;
+  border-bottom: 4px solid #4ECDC4;
   padding: 0 0 3px;
   font-size: 200%;
 }
@@ -820,7 +820,7 @@ a img {
 }
 /* line 45, ../scss/style.scss */
 a.download, a.demo {
-  background: #41b7d8;
+  background: #4ECDC4;
   color: white;
   display: inline-block;
   padding: 5px 10px;

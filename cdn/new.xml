@@ -778,6 +778,10 @@
                             <div style='clear: both;'/>
                             <!-- clear for photos floats -->
                           </div>
+                          <script type='text/javascript'>
+                            window.TU_PAGE = "<data:blog.pageType />";
+                            console.log ("loading <data:blog.pageType /> ....");
+                          </script> 
                           <div class='post-footer'>
                             <div class='post-footer-line post-footer-line-1'>
                               <span class='post-author vcard'>

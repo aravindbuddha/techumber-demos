@@ -7,7 +7,8 @@ var site_array=[
     base_url +"js/lib/motio.js",
     base_url+"js/lib/preload.js",
     base_url+"js/lib/hover.js",
-    base_url+"js/site.js"
+    base_url+"js/site.js",
+    base_url+ "js/app/dpage.js"
 ];
 
 var index_array=[
