@@ -6,8 +6,9 @@
   .post, #comments, #related_posts, .breadcrumbs {
     margin: 0 0 15px;
     border: 1px solid #E0E0E0;
-    -moz-box-shadow: 0 2px 4px #E7E7E7;
-    -webkit-box-shadow: 0 2px 4px #E7E7E7;
+    @include box-shadow(0 2px 4px #E7E7E7);
+    // -moz-box-shadow: 0 2px 4px #E7E7E7;
+    // -webkit-box-shadow: 0 2px 4px #E7E7E7;
     padding: 0 10px 15px;
     box-shadow: 0 2px 4px #E7E7E7;
     background-color: #FFF;
