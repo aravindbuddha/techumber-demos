@@ -14,6 +14,7 @@
   padding: 0 0 5px;
   box-shadow: 0 2px 4px #E7E7E7;
   overflow: hidden;
+  text-align: center;
   &:hover {
     -moz-box-shadow: 0 2px 5px #CACACA;
     -webkit-box-shadow: 0 2px 5px #CACACA;
@@ -29,6 +30,7 @@
     font-size: 160%;
     a {
       color: #0F0F0F;
+
       &:hover {
         color: #32A4D6;
       }

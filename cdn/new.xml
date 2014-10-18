@@ -951,9 +951,9 @@
                     </div>
                     <div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id'>
                       <b:if cond='data:blog.pageType == &quot;index&quot;'>
-                        <p>
+                     <!--    <p>
                           <data:post.snippet/>
-                        </p>
+                        </p> -->
                       <b:else />
                         <data:post.body/>
                       </b:if>  

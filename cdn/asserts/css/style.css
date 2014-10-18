@@ -449,38 +449,39 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 0 0 5px;
   box-shadow: 0 2px 4px #E7E7E7;
   overflow: hidden;
+  text-align: center;
 }
-/* line 17, ../scss/partials/_index.scss */
+/* line 18, ../scss/partials/_index.scss */
 .index .post:hover {
   -moz-box-shadow: 0 2px 5px #CACACA;
   -webkit-box-shadow: 0 2px 5px #CACACA;
   box-shadow: 0 2px 5px #CACACA;
 }
-/* line 22, ../scss/partials/_index.scss */
+/* line 23, ../scss/partials/_index.scss */
 .index .post img {
   border: 0;
   width: 100%;
 }
-/* line 26, ../scss/partials/_index.scss */
+/* line 27, ../scss/partials/_index.scss */
 .index .post h2.post-title {
   padding: 4px 8px 0;
   margin: 0 0 5px;
   font-size: 160%;
 }
-/* line 30, ../scss/partials/_index.scss */
+/* line 31, ../scss/partials/_index.scss */
 .index .post h2.post-title a {
   color: #0F0F0F;
 }
-/* line 32, ../scss/partials/_index.scss */
+/* line 34, ../scss/partials/_index.scss */
 .index .post h2.post-title a:hover {
   color: #32A4D6;
 }
-/* line 39, ../scss/partials/_index.scss */
+/* line 41, ../scss/partials/_index.scss */
 .index .post-body p {
   margin: 0;
   padding: 0 8px;
 }
-/* line 45, ../scss/partials/_index.scss */
+/* line 47, ../scss/partials/_index.scss */
 .index .post .jump-link {
   position: absolute;
   bottom: -25px;
@@ -495,12 +496,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-box-shadow: inset 0 2px 4px #D1CACA;
   box-shadow: inset 0 2px 4px #D1CACA;
 }
-/* line 58, ../scss/partials/_index.scss */
+/* line 60, ../scss/partials/_index.scss */
 .index .post .jump-link a:hover {
   color: black;
   text-decoration: none;
 }
-/* line 63, ../scss/partials/_index.scss */
+/* line 65, ../scss/partials/_index.scss */
 .index .post .thumbx {
   display: block;
   padding: 5px;
@@ -508,7 +509,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   position: relative;
   border-bottom: 1px solid #DFDFDF;
 }
-/* line 69, ../scss/partials/_index.scss */
+/* line 71, ../scss/partials/_index.scss */
 .index .post .thumbx::before {
   position: absolute;
   content: "";
@@ -521,15 +522,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-repeat: no-repeat;
   left: 0;
 }
-/* line 84, ../scss/partials/_index.scss */
+/* line 86, ../scss/partials/_index.scss */
 .index .post-body {
   margin-bottom: 20px;
 }
-/* line 88, ../scss/partials/_index.scss */
+/* line 90, ../scss/partials/_index.scss */
 .index .post img.noimage {
   height: 100px;
 }
-/* line 92, ../scss/partials/_index.scss */
+/* line 94, ../scss/partials/_index.scss */
 .index a.loadpost {
   display: block;
   width: 320px;
@@ -541,40 +542,40 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-radius: 3px;
   box-shadow: 0 0 3px #E7E7E7,inset 0 0 2px white;
 }
-/* line 104, ../scss/partials/_index.scss */
+/* line 106, ../scss/partials/_index.scss */
 .index .imgload {
   width: 32px;
   height: 32px;
 }
-/* line 109, ../scss/partials/_index.scss */
+/* line 111, ../scss/partials/_index.scss */
 .index #blog-pager {
   display: none;
 }
 @media only screen and (min-width: 768px) and (max-width: 983px) {
-  /* line 114, ../scss/partials/_index.scss */
+  /* line 116, ../scss/partials/_index.scss */
   .index .post {
     width: 48%;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 120, ../scss/partials/_index.scss */
+  /* line 122, ../scss/partials/_index.scss */
   .index .post {
     width: 48%;
     margin: 0 1% 15px;
   }
 }
 @media only screen and (max-width: 499px) {
-  /* line 127, ../scss/partials/_index.scss */
+  /* line 129, ../scss/partials/_index.scss */
   .index .post {
     margin: 0 0.8% 15px;
   }
-  /* line 130, ../scss/partials/_index.scss */
+  /* line 132, ../scss/partials/_index.scss */
   .index a.loadpost {
     width: 90%;
   }
 }
 @media only screen and (max-width: 479px) {
-  /* line 136, ../scss/partials/_index.scss */
+  /* line 138, ../scss/partials/_index.scss */
   .index .post {
     width: 100%;
     margin: 0 0 15px;
