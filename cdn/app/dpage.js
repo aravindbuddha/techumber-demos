@@ -34,7 +34,7 @@ var Dpage=(function(){
     },
     triggers: function () {
      
-      this.load_comments();
+      // this.load_comments();
       this.set_class();
      
     },
