@@ -2,7 +2,7 @@ var base_url="//demos.techumber.com/cdn/";
 
 var site_array=[
     base_url+"asserts/css/style.css",
-    "//code.jquery.com/jquery-1.11.1.min.js",
+    "//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js",
     base_url+"js/lib/easing.js",
     base_url +"js/lib/motio.js",
     base_url+"js/lib/preload.js",
