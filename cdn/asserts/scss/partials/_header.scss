@@ -1,0 +1,179 @@
+@import "compass";
+@import "compass/support";
+/* Header
+-----------------------------------------------
+*/
+
+$compass-extensions:compass-extensions();
+$graceful-usage-threshold:100;
+
+#header-wrapper {
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #FFF;
+  color: #292929;
+  height: 200px;
+  background: image-url('cloud.jpg');
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-position: 0 0;
+}
+
+
+#header {
+  text-align: center;
+  color: #202020;
+  margin: 0;
+  float: left;
+  position: relative;
+  top: 45px;
+  h1, p {
+    margin: 0;
+    padding: 0 5px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+  }
+  a {
+    color: #202020;
+    text-decoration: none;
+    width: 200px;
+    float: left;
+    &:hover {
+      color: #41B7D8;
+    }
+  }
+  .description {
+    margin: 0 5px;
+    padding: 0 20px 15px;
+    line-height: 1.4em;
+   
+    text-transform: capitalize;
+    color: #5E5C5C;
+  }
+  img! {}
+}
+
+.logocircle {
+  // @include experimental(animation, spin 1s infinite linear);
+  @include animation(spin 1s infinite linear);
+  @include border-radius(110px);
+  background: transparent;
+  border: 5px solid rgba(0, 0, 0, 0.9);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  height: 90px;
+  opacity: .9;
+  width: 90px;
+  top: 45px;
+  left: -203px;
+  position: relative;
+  float: left;
+}
+//circle animation
+@include keyframes(spin){
+   0% {
+    @include transform(rotate(0deg));
+  }
+  100% {
+    @include transform(rotate(360deg));
+  }
+}
+
+
+
+
+
+
+/* Navigation
+----------------------------------------------- */
+
+#search-form-feed {
+  padding: 0;
+  width: 240px;
+  float: right;
+  margin-top: 3px;
+  position: relative;
+  margin-right: 5px;
+}
+
+#mobilenav {
+  display: none;
+}
+
+#nav {
+  font-weight: 700;
+  height: 35px;
+  position: relative;
+  float: right;
+  width: auto;
+  top: 78px;
+}
+
+#navinti {
+  height: 35px;
+  margin: 0;
+  padding: 0;
+  float: left;
+  li {
+    list-style: none;
+    display: inline-block;
+    zoom: 1;
+    float: left;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    a {
+      display: block;
+      line-height: 35px;
+      text-decoration: none;
+      color: #FFF;
+      padding: 0 15px;
+      font-weight: normal;
+    }
+    &:hover > a {
+      border-bottom: 1px solid #FFFFFF;
+    }
+  }
+  ul {
+    position: absolute;
+    z-index: 10;
+    padding: 0;
+    list-style: none;
+    width: 170px;
+    background-color: #F8F8F8;
+    -moz-box-shadow: 0 0 5px #494949;
+    -webkit-box-shadow: 0 0 5px #494949;
+    box-shadow: 0 0 5px #494949;
+    display: none;
+  }
+  li:hover ul.hidden {
+    display: block;
+  }
+  ul {
+    a {
+      color: #494949;
+      &:hover {
+        background-color: #fff;
+      }
+    }
+    li {
+      float: none;
+      display: block;
+    }
+  }
+  li.dgnsub > a {
+    padding: 0 20px 0 15px;
+    &::after {
+      content: "";
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-color: #FFF transparent transparent;
+      position: absolute;
+      border-width: 5px 4px;
+      right: 7px;
+      top: 16px;
+    }
+  }
+}

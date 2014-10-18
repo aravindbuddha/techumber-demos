@@ -1,7 +1,7 @@
 @import "compass";
 @import "compass/reset";
 @import "partials/variables";
-
+@import "partials/header";
 @import "partials/index";
 @import "partials/item";
 @import "partials/static";
@@ -110,99 +110,6 @@ a {
 
 
 
-
-/* Navigation
------------------------------------------------ */
-
-#search-form-feed {
-  padding: 0;
-  width: 240px;
-  float: right;
-  margin-top: 3px;
-  position: relative;
-  margin-right: 5px;
-}
-
-#mobilenav {
-  display: none;
-}
-
-#nav {
-  font-weight: 700;
-  height: 35px;
-  position: relative;
-  float: right;
-  width: auto;
-  top: 78px;
-}
-
-#navinti {
-  height: 35px;
-  margin: 0;
-  padding: 0;
-  float: left;
-  li {
-    list-style: none;
-    display: inline-block;
-    zoom: 1;
-    float: left;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    a {
-      display: block;
-      line-height: 35px;
-      text-decoration: none;
-      color: #FFF;
-      padding: 0 15px;
-      font-weight: normal;
-    }
-    &:hover > a {
-      border-bottom: 1px solid #FFFFFF;
-    }
-  }
-  ul {
-    position: absolute;
-    z-index: 10;
-    padding: 0;
-    list-style: none;
-    width: 170px;
-    background-color: #F8F8F8;
-    -moz-box-shadow: 0 0 5px #494949;
-    -webkit-box-shadow: 0 0 5px #494949;
-    box-shadow: 0 0 5px #494949;
-    display: none;
-  }
-  li:hover ul.hidden {
-    display: block;
-  }
-  ul {
-    a {
-      color: #494949;
-      &:hover {
-        background-color: #fff;
-      }
-    }
-    li {
-      float: none;
-      display: block;
-    }
-  }
-  li.dgnsub > a {
-    padding: 0 20px 0 15px;
-    &::after {
-      content: "";
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-color: #FFF transparent transparent;
-      position: absolute;
-      border-width: 5px 4px;
-      right: 7px;
-      top: 16px;
-    }
-  }
-}
 
 /* Outer-Wrapper
 ----------------------------------------------- */
