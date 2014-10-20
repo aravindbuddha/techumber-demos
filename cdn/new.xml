@@ -781,10 +781,7 @@
                             <div style='clear: both;'/>
                             <!-- clear for photos floats -->
                           </div>
-                          <script type='text/javascript'>
-                            window.TU_PAGE = "<data:blog.pageType />";
-                            console.log ("loading <data:blog.pageType /> ....");
-                          </script> 
+                         
                           <div class='post-footer'>
                             <div class='post-footer-line post-footer-line-1'>
                               <span class='post-author vcard'>
@@ -899,6 +896,7 @@
                 </b:includable>
                 <b:includable id='post' var='post'>
                   <article class='post hentry' expr:id='data:post.id' itemscope='' itemtype='http://schema.org/BlogPosting'>
+                   <span class="tu_type" expr:data-value='data:blog.pageType'></span>
                     <b:if cond='data:blog.pageType != &quot;item&quot;'>
                       <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
                         <b:if cond='data:post.thumbnailUrl'>
