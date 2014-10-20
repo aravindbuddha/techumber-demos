@@ -5,7 +5,7 @@ var Index = (function($) {
             var self = this;
             this.resize_thumb("Blog1", 300);
             $(window).load(self.isonyax);
-            $(window).smartresize(self.isonyax);
+            // $(window).smartresize(self.isonyax);
             $(window).resize(function(){
                 self.isonyax();
             });
