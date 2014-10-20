@@ -2,7 +2,7 @@ requirejs.config({
     urlArgs: "bust=" +  (new Date()).getTime(),
     baseUrl: '//demos.techumber.com/cdn/',
     paths: {
-        app: '/app',
+        app: 'app',
        "jquery": "//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min",
         easing:"js/lib/easing",
         motio:"js/lib/motio",
