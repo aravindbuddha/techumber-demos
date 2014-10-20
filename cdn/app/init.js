@@ -42,6 +42,7 @@ var App = (function(){
       console.log(TU_PAGE);
       if(TU_PAGE == "index"){
         $("body").addClass('index').removeClass('static item');
+          console.log(index_array);
           head.load(index_array,function(){
             console.log("index array loadded....");
           });
