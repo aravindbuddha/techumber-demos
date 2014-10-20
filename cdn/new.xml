@@ -47,9 +47,16 @@
       window.TU_PAGE = "<data:blog.pageType />";
       console.log ("loading <data:blog.pageType /> ....");
     </script> 
-<!-- <script src='//demos.techumber.com/cdn/js/lib/head.min.js' data-headjs-load="//demos.techumber.com/cdn/app/init.js" type='text/javascript'/>  -->
+    <script src='//demos.techumber.com/cdn/js/lib/load.js' type='text/javascript'/> 
 
-    <script src='//demos.techumber.com/cdn/js/lib/require.js'  data-main="//demos.techumber.com/cdn/app/main.js" type='text/javascript'/> 
+
+    <script src='//demos.techumber.com/cdn/app/init.js' type='text/javascript'/> 
+
+
+    <!-- 
+<script src='//demos.techumber.com/cdn/js/lib/head.min.js' data-headjs-load="//demos.techumber.com/cdn/app/init.js" type='text/javascript'/> 
+ -->
+  <!--   <script src='//demos.techumber.com/cdn/js/lib/require.js'  data-main="//demos.techumber.com/cdn/app/main.js" type='text/javascript'/>  -->
     <!-- deskripsi dan keyword -->
     <b:skin>
       <![CDATA[/*Just keep it for blogger*/]]>
