@@ -40,6 +40,7 @@ var Dpage=(function(){
     triggers: function () {
       App.load_all();
       this.events();
+      this.load_comments();
     },
     set_class:function(){
         
