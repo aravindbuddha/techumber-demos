@@ -11,10 +11,12 @@ var Dpage=(function(){
     events: function () {
       var self = this;
       $('a').on('click', function (e) {
-        e.preventDefault();
-        var url = $(this).attr('href');
-        history.pushState(null, null, url);
-        self.load_content(url);
+         var url = $(this).attr('href');
+        if(is_my_domain(url)){
+           e.preventDefault();
+          history.pushState(null, null, url);
+          self.load_content(url);
+        }
       });
     },
     load_content: function (url) {
