@@ -36,11 +36,8 @@ var Dpage=(function(){
       return false;
     },
     triggers: function () {
-     
-      // this.load_comments();
-      console.log(App);
       App.load_all();
-     
+      this.events();
     },
     set_class:function(){
         
