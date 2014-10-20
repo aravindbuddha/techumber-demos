@@ -1,18 +1,21 @@
 requirejs.config({
-    //By default load any module IDs from js/lib
     baseUrl: '//demos.techumber.com/cdn/',
-    //except, if the module ID starts with "app",
-    //load it from the js/app directory. paths
-    //config is relative to the baseUrl, and
-    //never includes a ".js" extension since
-    //the paths config could be for a directory.
     paths: {
-        app: '../app'
+        app: '/app',
+       "jquery": "//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min",
+        easing:"js/lib/easing",
+        motio:"js/lib/motio",
+        preload:"js/lib/preload",
+        hover:"js/lib/hover",
+        site:"js/site",
+        dpage:"app/dpage"
     }
 });
 
 // Start the main app logic.
-requirejs(['jquery', 'canvas', 'app/sub'],function   ($,        canvas,   sub) {
-    //jQuery, canvas and the app/sub module are all
-    //loaded and can be used here now.
+requirejs(['app/app'],function   (App) {
+    App.init();
 });
+
+
+
