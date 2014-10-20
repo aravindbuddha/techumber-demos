@@ -21,8 +21,9 @@ requirejs.config({
 });
 
 // Start the main app logic.
-requirejs(['app/app'],function   (App) {
+requirejs(['app/app','app/dpage'],function   (App,Dpage) {
     App.init();
+    Dpage.init();
 });
 
 
