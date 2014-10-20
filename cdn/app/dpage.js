@@ -12,7 +12,7 @@ var Dpage=(function(){
       var self = this;
       $('a').on('click', function (e) {
          var url = $(this).attr('href');
-        if(is_my_domain(url)){
+        if(self.is_my_domain(url)){
            e.preventDefault();
           history.pushState(null, null, url);
           self.load_content(url);
