@@ -98,7 +98,7 @@ var TU=(function(){
 	            //console.log("already exist");
 	            callback();
 	        }
-	    }
+	    },
    		load_on_dom_ready:function(callback){
    			if (document.addEventListener) { // native event
 			    document.addEventListener("DOMContentLoaded", callback, false);
