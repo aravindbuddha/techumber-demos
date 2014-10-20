@@ -22,6 +22,7 @@ var Dpage=(function(){
       if (this.is_my_domain(url)) {
         console.log("loading " + url + ">>>>>>>>>>");
         $main.load(url + " #main", function () {
+          console.log("l"+ TU_PAGE);
           self.triggers();
         });
       }
