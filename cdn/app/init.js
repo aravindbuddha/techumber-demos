@@ -38,6 +38,7 @@ var App = (function(){
        });
     },
     load:function(){
+      console.log("lodddddd..");
         head.load(site_array,function(){
             if(TU_PAGE == "index"){
               $("body").addClass('index').removeClass('static item');

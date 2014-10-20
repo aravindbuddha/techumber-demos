@@ -22,7 +22,7 @@ var Dpage=(function(){
       if (this.is_my_domain(url)) {
         console.log("loading " + url + ">>>>>>>>>>");
         $main.load(url + " #main", function () {
-          self.triggers();
+          App.load();
         });
       }
     },
@@ -35,7 +35,7 @@ var Dpage=(function(){
     triggers: function () {
      
       // this.load_comments();
-      App.load();
+      
      
     },
     set_class:function(){
