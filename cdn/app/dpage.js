@@ -21,8 +21,10 @@ var Dpage=(function(){
       var self = this;
       if (this.is_my_domain(url)) {
         console.log("loading " + url + ">>>>>>>>>>");
+        $("#main-wrapper").css({'opacity': 0.5});
         $main.load(url + " #main", function () {
           window.TU_PAGE=$('.tu_type').data('value');
+          $("#main-wrapper").css({'opacity': 1});
           self.triggers();
         });
       }
