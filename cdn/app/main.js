@@ -9,7 +9,14 @@ requirejs.config({
         preload:"js/lib/preload",
         hover:"js/lib/hover",
         site:"js/site",
-        dpage:"app/dpage"
+        dpage:"app/dpage",
+        //index pages
+        isotop:"js/lib/isotope",
+        index:"js/index",
+        //item
+        pretty:"js/lib/prettify/prettify",
+        related:"js/lib/related-posts",
+        item:"js/item"
     }
 });
 
