@@ -37,8 +37,8 @@ var App = (function(){
       //   });
       // });
 
-      DOMReady(function () {
-        loadJS(site_array, function () {
+      TU.load_on_dom_ready(function () {
+        TU.load(site_array, function () {
           console.log("All Scripts Loaded");
           self.load_all();
         })
@@ -49,18 +49,18 @@ var App = (function(){
       if(TU_PAGE == "index"){
         $("body").addClass('index').removeClass('static item');
           console.log(index_array);
-          loadJS(index_array,function(){
+         TU.load(index_array,function(){
             console.log("index array loadded....");
           });
       }
       if(TU_PAGE == "item"){
-        loadJS(item_array,function(){
+        TU.load(item_array,function(){
           $("body").addClass('item').removeClass('static index');
           console.log("item array loadded....");
         });
       }
       if(TU_PAGE == "static_page"){
-         loadJS(static_array,function(){
+         TU.load(static_array,function(){
           $("body").addClass('static').removeClass('item index');
           console.log("item array loadded....");
         });
