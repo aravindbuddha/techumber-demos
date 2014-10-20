@@ -2,7 +2,7 @@ define(['jquery','app/app'],function($,App){
   var
     $my_domain = window.location.host,
     $main = $('#main-wrapper');
-
+    console.log(App);
   return {
     init: function () {
       this.events();
