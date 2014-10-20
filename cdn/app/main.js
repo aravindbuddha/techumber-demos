@@ -1,4 +1,5 @@
 requirejs.config({
+    urlArgs: "bust=" +  (new Date()).getTime(),
     baseUrl: '//demos.techumber.com/cdn/',
     paths: {
         app: '/app',
