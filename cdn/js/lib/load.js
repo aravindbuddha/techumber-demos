@@ -1,6 +1,6 @@
 var TU=(function(){
-	var queue,
-	 uid = new Date().getTime();
+	var queue = [];
+	 	
 	return{
 		loadScript: function(url, callback) {
 	        url = url + ".js";
@@ -26,18 +26,16 @@ var TU=(function(){
 	    load: function(urls, callback) {
             var 
             self = this,
-            // queue[uid] = [];
-             uid = new Date().getTime();
+            uid = new Date().getTime();
             urls.forEach(function(path, index, array) {
-                queue[uid].push(path);
+                queue.push(path);
             });
             self.process_queue(callback, uid);
         },
         process_queue: function(callback, uid) {
             var self = this;
-            //console.log(queue.length);
-            if (queue[uid].length > 0) {
-                var first_on_queue = queue[uid].shift();
+            if (queue.length > 0) {
+                var first_on_queue = queue.shift();
                 self.lScript(first_on_queue, function() {
                     self.process_queue(callback, uid);
                 });
