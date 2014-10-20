@@ -11,9 +11,10 @@ var Dpage=(function(){
     events: function () {
       var self = this;
       $('a').on('click', function (e) {
-         var url = $(this).attr('href');
+        var url = $(this).attr('href');
+        console.log(self.is_my_domain(url));
         if(self.is_my_domain(url)){
-           e.preventDefault();
+          e.preventDefault();
           history.pushState(null, null, url);
           self.load_content(url);
         }
