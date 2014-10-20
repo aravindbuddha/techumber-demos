@@ -39,7 +39,8 @@ var App = (function(){
 
       DOMReady(function () {
         loadJS(site_array, function () {
-          alert("All Scripts Loaded");
+          console.log("All Scripts Loaded");
+          self.load_all();
         })
       });
     },
