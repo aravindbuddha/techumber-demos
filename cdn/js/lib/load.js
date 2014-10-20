@@ -27,6 +27,7 @@ var TU=(function(){
             var 
             self = this,
             queue[uid] = [];
+             uid = new Date().getTime();
             urls.forEach(function(path, index, array) {
                 queue[uid].push(path);
             });
