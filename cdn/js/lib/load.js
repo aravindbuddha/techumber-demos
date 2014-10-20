@@ -1,5 +1,5 @@
 var TU=(function(){
-	var queue=[],
+	var queue,
 	 uid = new Date().getTime();
 	return{
 		loadScript: function(url, callback) {
@@ -26,7 +26,7 @@ var TU=(function(){
 	    load: function(urls, callback) {
             var 
             self = this,
-            queue[uid] = [];
+            // queue[uid] = [];
              uid = new Date().getTime();
             urls.forEach(function(path, index, array) {
                 queue[uid].push(path);
