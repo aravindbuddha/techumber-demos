@@ -35,7 +35,7 @@ var Dpage=(function(){
     triggers: function () {
      
       // this.load_comments();
-      App.init();
+      App.load();
      
     },
     set_class:function(){
