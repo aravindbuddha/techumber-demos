@@ -9,7 +9,7 @@ requirejs.config({
         preload:"js/lib/preload",
         hover:"js/lib/hover",
         site:"js/site",
-        dpage:"app/dpage",
+        // dpage:"app/dpage",
         //index pages
         isotop:"js/lib/isotope",
         index:"js/index",
