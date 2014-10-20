@@ -31,12 +31,6 @@ var App = (function(){
   return {
     init:function(){
       var self=this;
-      // head.ready(document,function(){
-      //   head.load(site_array,function(){
-      //       self.load_all();
-      //   });
-      // });
-
       TU.load_on_dom_ready(function () {
         TU.load(site_array, function () {
           console.log("All Scripts Loaded");
@@ -45,18 +39,19 @@ var App = (function(){
       });
     },
     load_all:function(){
-      
       if(TU_PAGE == "index"){
         $("body").addClass('index').removeClass('static item');
           console.log(index_array);
          TU.load(index_array,function(){
             console.log("index array loadded....");
+            Index.init();
           });
       }
       if(TU_PAGE == "item"){
         TU.load(item_array,function(){
           $("body").addClass('item').removeClass('static index');
           console.log("item array loadded....");
+          Item.init();
         });
       }
       if(TU_PAGE == "static_page"){
