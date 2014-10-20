@@ -36,7 +36,7 @@ var Dpage=(function(){
      
       // this.load_comments();
       console.log(App);
-      App.load();
+      App.load_all();
      
     },
     set_class:function(){
