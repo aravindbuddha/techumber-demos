@@ -1,7 +1,7 @@
 var App = (function(){
   var
-    base_url="//demos.techumber.com/cdn/";
-  var site_array=[
+    base_url="//demos.techumber.com/cdn/",
+    site_array=[
       // base_url+"asserts/css/style.css",
       "//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js",
       base_url+"js/lib/easing.js",
