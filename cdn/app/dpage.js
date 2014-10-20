@@ -54,4 +54,4 @@ var Dpage=(function(){
 
 }());
 
-Dpage.init();
+// Dpage.init();
