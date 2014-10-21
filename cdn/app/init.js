@@ -34,7 +34,8 @@ var App = (function(){
       TU.load_on_dom_ready(function () {
         TU.load(site_array, function () {
           console.log("All Scripts Loaded");
-          self.load_all();
+          Site.init();
+          // self.load_all();
         })
       });
     },
