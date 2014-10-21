@@ -142,4 +142,3 @@ var Index = (function($) {
     }
 })(jQuery);
 
-Index.init();

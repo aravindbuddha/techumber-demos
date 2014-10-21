@@ -160,5 +160,3 @@ var Site = (function() {
         },
     }
 }());
-
-Site.init();
