@@ -40,4 +40,4 @@ var Item=(function(){
   }
 }());
 
-Item.init();
+
