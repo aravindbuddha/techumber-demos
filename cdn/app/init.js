@@ -35,7 +35,7 @@ var App = (function(){
         TU.load(site_array, function () {
           console.log("All Scripts Loaded");
           Site.init();
-          // self.load_all();
+          self.load_all();
         })
       });
     },
