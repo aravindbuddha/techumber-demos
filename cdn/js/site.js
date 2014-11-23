@@ -12,8 +12,8 @@ var Site = (function() {
         },
         moto_init: function() {
             var
-                frame = $('#header-wrapper')[0],
-                motio = new Motio(frame, {
+                frame = $('#header-wrapper')[0];
+                window.motio = new Motio(frame, {
                     fps: 30,
                     speedX: 60,
                     bgWidth: 1024,
