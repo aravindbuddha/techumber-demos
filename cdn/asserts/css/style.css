@@ -219,7 +219,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 10px;
   background-color: #FFF;
   color: #292929;
-  height: 200px;
+  height: 250px;
   background: url('http://demos.techumber.com/cdn/asserts/img/cloud.jpg?1413621075');
   position: fixed;
   top: 0;
@@ -364,7 +364,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background: #333;
   height: 50px;
   position: relative;
-  top: 200px;
+  top: 250px;
   border-bottom: 1px solid #ddd;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
@@ -391,7 +391,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 53, ../scss/partials/_nav.scss */
 #navinti li a {
   display: block;
-  line-height: 35px;
   text-decoration: none;
   color: #FFF;
   padding: 0 15px;
@@ -456,8 +455,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-top: 3px;
   position: relative;
   margin-right: 5px;
+  margin-top: 10px;
 }
-/* line 116, ../scss/partials/_nav.scss */
+/* line 117, ../scss/partials/_nav.scss */
 #search-form-feed form {
   float: left;
   width: 0;
@@ -467,7 +467,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-transition: all 1s;
   transition: all 1s;
 }
-/* line 122, ../scss/partials/_nav.scss */
+/* line 123, ../scss/partials/_nav.scss */
 #search-form-feed:hover form {
   width: 250px;
   -moz-transition: all 1s;
@@ -476,7 +476,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transition: all 1s;
 }
 
-/* line 130, ../scss/partials/_nav.scss */
+/* line 131, ../scss/partials/_nav.scss */
 .search-btn {
   width: 50px;
   height: 31px;
@@ -485,7 +485,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   cursor: pointer;
 }
 
-/* line 138, ../scss/partials/_nav.scss */
+/* line 139, ../scss/partials/_nav.scss */
 #feed-q-input {
   display: block;
   width: 100%;
@@ -502,13 +502,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background: transparent;
   border-bottom: 1px solid #565656;
 }
-/* line 151, ../scss/partials/_nav.scss */
+/* line 152, ../scss/partials/_nav.scss */
 #feed-q-input:focus {
   color: #565656;
   outline: none;
 }
 
-/* line 157, ../scss/partials/_nav.scss */
+/* line 158, ../scss/partials/_nav.scss */
 #search-result-container {
   width: 300px;
   overflow: hidden;
@@ -526,7 +526,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
 }
-/* line 176, ../scss/partials/_nav.scss */
+/* line 177, ../scss/partials/_nav.scss */
 #search-result-container li {
   margin: 0 0 5px;
   padding: 0;
@@ -538,7 +538,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #FFF;
   text-transform: none;
 }
-/* line 186, ../scss/partials/_nav.scss */
+/* line 187, ../scss/partials/_nav.scss */
 #search-result-container li a {
   text-decoration: none;
   font-weight: 700;
@@ -548,29 +548,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 0;
   font-weight: 700;
 }
-/* line 196, ../scss/partials/_nav.scss */
+/* line 197, ../scss/partials/_nav.scss */
 #search-result-container mark {
   background-color: #FF0;
   color: #000;
 }
-/* line 200, ../scss/partials/_nav.scss */
+/* line 201, ../scss/partials/_nav.scss */
 #search-result-container h4 {
   margin: 0 0 10px;
   font: normal bold 12px;
   color: #000;
 }
-/* line 205, ../scss/partials/_nav.scss */
+/* line 206, ../scss/partials/_nav.scss */
 #search-result-container ol {
   margin: 0 0 10px;
   padding: 0;
   overflow: hidden;
   height: 450px;
 }
-/* line 211, ../scss/partials/_nav.scss */
+/* line 212, ../scss/partials/_nav.scss */
 #search-result-container:hover ol {
   overflow: auto;
 }
-/* line 214, ../scss/partials/_nav.scss */
+/* line 215, ../scss/partials/_nav.scss */
 #search-result-container li img {
   display: block;
   float: left;
@@ -579,7 +579,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border: 1px solid #D1D1D1;
 }
 
-/* line 223, ../scss/partials/_nav.scss */
+/* line 224, ../scss/partials/_nav.scss */
 #search-result-loader {
   top: 100%;
   position: absolute;
@@ -596,11 +596,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-transform: capitalize;
 }
 
-/* line 240, ../scss/partials/_nav.scss */
+/* line 241, ../scss/partials/_nav.scss */
 #search-result-container p {
   margin: 5px 0;
 }
-/* line 243, ../scss/partials/_nav.scss */
+/* line 244, ../scss/partials/_nav.scss */
 #search-result-container .close {
   position: absolute;
   right: 8px;
@@ -798,7 +798,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-align: center;
   background-color: #333;
   position: relative;
-  top: 200px;
+  top: 250px;
 }
 /* line 10, ../scss/partials/_footer.scss */
 #footer-wrapper a {
@@ -1444,7 +1444,7 @@ a.download:hover, a.demo:hover {
 /* line 109, ../scss/style.scss */
 #content-wrapper {
   position: relative;
-  top: 200px;
+  top: 250px;
   background: #fff;
   margin-bottom: 127px;
 }
