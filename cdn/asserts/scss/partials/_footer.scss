@@ -1,0 +1,48 @@
+
+/* Footer
+----------------------------------------------- */
+
+#footer-wrapper {
+  text-align: center;
+  background-color: #333;
+  position: relative;
+  top: 200px;
+  a{
+     color:#fff;
+  }
+ 
+
+}
+
+#kredit {
+  padding: 5px;
+  background-color: #333;
+  color: #FFF;
+  overflow: hidden;
+}
+
+.botleft {
+  float: left;
+}
+
+.botright {
+  float: right;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+.foot-nav {
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+    float: left;
+    padding-right: 10px;
+    text-transform: lowercase;
+  }
+}

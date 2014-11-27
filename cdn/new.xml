@@ -3,13 +3,13 @@
 <HTML expr:dir='data:blog.languageDirection'>
   <head lang='en'>
     <!-- Basic Page Requirements
-  	================================================== -->
+    ================================================== -->
     <b:include data='blog' name='all-head-content'/>
     <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
     <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'/>
     <meta content='text/html; charset=UTF-8' http-equiv='content-type'/>
     <!-- 3rd Party Meta
-  	================================================== -->
+    ================================================== -->
     <meta content='lPnUoboxkWbfVEi8Ks6naF-xk5QgRSXl_JgNHVDNgzU' name='google-site-verification'/>
     <meta content='W9Pd_dgrDK76LEdsdege0S7vXUo' name='alexaVerifyID'/>
     <meta content='1CD62ABFCF442BE2046CC107369C515B' name='msvalidate.01'/>
@@ -18,34 +18,34 @@
     <meta expr:content='data:blog.title' property='og:site_name'/>
     <meta expr:content='data:blog.pageName' property='og:title'/>
     <!-- Mobile Specific
-  	================================================== -->
+    ================================================== -->
     <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
-  	<!-- SEO
-  	================================================== -->
-	  <b:if cond='data:blog.metaDescription != &quot;&quot;'>
-	    <meta expr:content='data:blog.metaDescription' name='description'/>
-	  </b:if>
-	  <b:if cond='data:blog.pageType != &quot;item&quot;'>
-	    <title>
-	      <data:blog.pageTitle/>
-	      a web development and programming tutorials blog.
-	    </title>
-	    <b:else/>
-	    <title>
-	      <data:blog.pageName/>:<data:blog.title/>
-	    </title>
-	  </b:if>
+    <!-- SEO
+    ================================================== -->
+    <b:if cond='data:blog.metaDescription != &quot;&quot;'>
+      <meta expr:content='data:blog.metaDescription' name='description'/>
+    </b:if>
+    <b:if cond='data:blog.pageType != &quot;item&quot;'>
+      <title>
+        <data:blog.pageTitle/>
+        a web development and programming tutorials blog.
+      </title>
+      <b:else/>
+      <title>
+        <data:blog.pageName/>:<data:blog.title/>
+      </title>
+    </b:if>
     <meta content='web development and programing tutorials,programming blog,Web Design,web programming,codeing,psd to html,HTML5,CSS3,JavaScript,JQuery,plug in,Ajax,SQL,Tutorials,PHP, jquery ajax, ajax php, jquery ajax demos, jquery demos,ajax programming, tutorials, php script, ajax tutorial, ajax examples, jquery tutorial, database, mysql, blogger, google api, google technology,code, examples, php programming, facebook like, Html5 api, hosting, form submit, validation, app development, software, free scripts, free hosting, sql script, programming, jsp, tomcat, java.' name='keywords'/>
     <meta content='Aravind Buddha' name='author'/>
     <meta content='INDEX,FOLLOW' name='robots'/>
     <meta content='index, follow' name='googlebot'/>
     <!-- asserts
-  	================================================== -->
-    <link rel="stylesheet" href="//demos.techumber.com/cdn/asserts/css/style.css" />
-  	<!-- Global page type -->
-  	<script type='text/javascript'>
-      window.TU_PAGE = "<data:blog.pageType />";
-      console.log ("loading <data:blog.pageType /> ....");
+    ================================================== -->
+    <link href='//demos.techumber.com/cdn/asserts/css/style.css' rel='stylesheet'/>
+    <!-- Global page type -->
+    <script type='text/javascript'>
+      window.TU_PAGE = &quot;<data:blog.pageType/>&quot;;
+      console.log (&quot;loading <data:blog.pageType/> ....&quot;);
     </script> 
     <script src='//demos.techumber.com/cdn/js/lib/load.js' type='text/javascript'/> 
 
@@ -58,11 +58,11 @@
  -->
   <!--   <script src='//demos.techumber.com/cdn/js/lib/require.js'  data-main="//demos.techumber.com/cdn/app/main.js" type='text/javascript'/>  -->
     <!-- deskripsi dan keyword -->
-    <b:skin>
-      <![CDATA[/*Just keep it for blogger*/]]>
-    </b:skin>
+    <b:skin><![CDATA[
+      /*Just keep it for blogger*/
+    ]]></b:skin>
   </head>
-  <body itemscope='' itemtype='http://schema.org/WebPage' class='index'>
+  <body class='index' itemscope='' itemtype='http://schema.org/WebPage'>
     <noscript>
       <div id='NoScript'>
         <h6>
@@ -71,149 +71,163 @@
       </div>
     </noscript>
     <div id='outer-wrapper'>
-  	 	<div id='header-wrapper'>
+      <div id='header-wrapper'>
         <header class='inner-wrap' id='header-wrapper-inner' itemscope='' itemtype='http://schema.org/WPHeader'>
           <b:section class='header ' id='header' maxwidgets='1' showaddelement='no'>
             <b:widget id='Header1' locked='true' title='Techumber  (Header)' type='Header'>
-  	         <b:includable id='main'>
-  	              <b:if cond='data:useImage'>
-  	                <b:if cond='data:imagePlacement == &quot;BEHIND&quot;'>
-  	                  <b:if cond='data:mobile'>
-  	                    <div id='header-inner'>
-  	                      <div class='titlewrapper' style='background: transparent'>
-  	                        <b:if cond='data:blog.pageType != &quot;item&quot;'>
-  	                          <h1 class='title' itemprop='name' style='background: transparent; border-width: 0px'>
-  	                            <b:include name='title'/>
-  	                          </h1>
-  	                          <b:else/>
-  	                          <p class='title' itemprop='name' style='background: transparent; border-width: 0px'>
-  	                            <b:include name='title'/>
-  	                          </p>
-  	                        </b:if>
-  	                      </div>
-  	                      <b:include name='description'/>
-  	                    </div>
-  	                    <b:else/>
-  	                    <div expr:style='&quot;background-image: url(\&quot;&quot; + data:sourceUrl + &quot;\&quot;); &quot;                        + &quot;background-position: &quot;                        + data:backgroundPositionStyleStr + &quot;; &quot;                        + data:widthStyleStr                        + &quot;min-height: &quot; + data:height                        + &quot;_height: &quot; + data:height                        + &quot;background-repeat: no-repeat; &quot;' id='header-inner'>
-  	                      <div class='titlewrapper' style='background: transparent'>
-  	                        <b:if cond='data:blog.pageType != &quot;item&quot;'>
-  	                          <h1 class='title' itemprop='name' style='background: transparent; border-width: 0px'>
-  	                            <b:include name='title'/>
-  	                          </h1>
-  	                          <b:else/>
-  	                          <p class='title' itemprop='name' style='background: transparent; border-width: 0px'>
-  	                            <b:include name='title'/>
-  	                          </p>
-  	                        </b:if>
-  	                      </div>
-  	                      <b:include name='description'/>
-  	                    </div>
-  	                  </b:if>
-  	                  <b:else/>
-  	                  <!--Show the image only-->
-  	                  <div id='header-inner'>
-  	                    <a expr:href='data:blog.homepageUrl' itemprop='url' style='display:block'>
-  	                      <img async='async' expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &quot;_headerimg&quot;' expr:src='data:sourceUrl' expr:width='data:width' style='display: block'/>
-  	                    </a>
-  	                    <!--Show the description-->
-  	                    <b:if cond='data:imagePlacement == &quot;BEFORE_DESCRIPTION&quot;'>
-  	                      <b:include name='description'/>
-  	                    </b:if>
-  	                  </div>
-  	                </b:if>
-  	                <b:else/>
-  	                <!--No header image -->
-  	                <div id='header-inner'>
-  	                  <div class='titlewrapper'>
-  	                    <b:if cond='data:blog.pageType != &quot;item&quot;'>
-  	                      <h1 class='title' itemprop='name'>
-  	                        <b:include name='title'/>
-  	                      </h1>
-  	                      <b:else/>
-  	                      <p class='title' itemprop='name'>
-  	                        <b:include name='title'/>
-  	                      </p>
-  	                    </b:if>
-  	                  </div>
-  	                  <b:include name='description'/>
-  	                </div>
-  	              </b:if>
-  	            </b:includable>
-  	            <b:includable id='description'>
-  	              <div class='descriptionwrapper'>
-  	                <p class='description'>
-  	                  <span>
-  	                    <data:description/>
-  	                  </span>
-  	                </p>
-  	              </div>
-  	            </b:includable>
-  	            <b:includable id='title'>
-  	              <b:if cond='data:blog.url == data:blog.homepageUrl'>
-  	                <data:title/>
-  	                <b:else/>
-  	                <a expr:href='data:blog.homepageUrl'>
-  	                  <data:title/>
-  	                </a>
-  	              </b:if>
-  	            </b:includable>
-  	          </b:widget>
-  	        </b:section>
-  	         <div class='logocircle'/>
-  	     		<nav id='nav'>
-    	        <a href='#' id='mobilenav'>
-    	          Select a Page
-    	        </a>
-    	        <ul id='navinti'>
-    	          <li>
-    	            <a expr:href='data:blog.homepageUrl'>
-    	              Home
-    	            </a>
-    	          </li>
-    	          <li>
-    	               <link expr:href='data:blog.homepageUrl + &quot;search/label/HTML5&quot;' rel='prefetch'/>
-    	            <a expr:href='data:blog.homepageUrl + &quot;search/label/HTML5&quot;' title='HTML5'>
-    	              HTML5
-    	            </a>
-    	          </li>
-    	          <li>
-    	              <link expr:href='data:blog.homepageUrl + &quot;search/label/CSS3&quot;' rel='prefetch'/>
-    	            <a expr:href='data:blog.homepageUrl + &quot;search/label/CSS3&quot;' title='CSS3'>
-    	              CSS3
-    	            </a>
-    	          </li>
-    	          <li>
-    	            <link expr:href='data:blog.homepageUrl + &quot;search/label/javaScript&quot;' rel='prefetch'/>
-    	            <a expr:href='data:blog.homepageUrl + &quot;search/label/javaScript&quot;' title='javaScript'>
-    	              JavaScript
-    	            </a>
-    	          </li>
-    	          <li>
-    	              <link expr:href='data:blog.homepageUrl + &quot;search/label/JQuery&quot;' rel='prefetch'/>
-    	             <a expr:href='data:blog.homepageUrl + &quot;search/label/JQuery&quot;' title='JQuery'>
-    	              JQuery
-    	            </a>
-    	          </li>
-    	           <li>
-    	            <link expr:href='data:blog.homepageUrl + &quot;search/label/PHP&quot;' rel='prefetch'/>
-    	            <a expr:href='data:blog.homepageUrl + &quot;search/label/PHP&quot;' title='PHP'>
-    	              PHP
-    	            </a>
-    	          </li>     
-    	        </ul>
-    	        <div id='search-form-feed'>
-    	          <div class='search-btn'/>  
-    	          <form expr:action='data:blog.homepageUrl + &quot;search/&quot;' onsubmit='return updateScript();'>
-    	            <input id='feed-q-input' name='q' onblur='if (this.value == &quot;&quot;) {this.value = &quot;To search type and hit enter...&quot;;}' onfocus='if (this.value == &quot;To search type and hit enter...&quot;) {this.value = &quot;&quot;;}' onkeyup='resetField();' type='search' value='To search type and hit enter...' x-webkit-speech='true'/>
-    	          </form>
-    	          <!--<div id='search-result-container'/>
-    	          <div id='search-result-loader'>
-    	            Searching...
-    	          </div>-->
-    	        </div>
-  	      	</nav>
-  	        <div class='clear'/>
+              <b:includable id='main'>
+                  <b:if cond='data:useImage'>
+                    <b:if cond='data:imagePlacement == &quot;BEHIND&quot;'>
+                      <b:if cond='data:mobile'>
+                        <div id='header-inner'>
+                          <div class='titlewrapper' style='background: transparent'>
+                            <b:if cond='data:blog.pageType != &quot;item&quot;'>
+                              <h1 class='title' itemprop='name' style='background: transparent; border-width: 0px'>
+                                <b:include name='title'/>
+                              </h1>
+                              <b:else/>
+                              <p class='title' itemprop='name' style='background: transparent; border-width: 0px'>
+                                <b:include name='title'/>
+                              </p>
+                            </b:if>
+                          </div>
+                          <b:include name='description'/>
+                        </div>
+                        <b:else/>
+                        <div expr:style='&quot;background-image: url(\&quot;&quot; + data:sourceUrl + &quot;\&quot;); &quot;                        + &quot;background-position: &quot;                        + data:backgroundPositionStyleStr + &quot;; &quot;                        + data:widthStyleStr                        + &quot;min-height: &quot; + data:height                        + &quot;_height: &quot; + data:height                        + &quot;background-repeat: no-repeat; &quot;' id='header-inner'>
+                          <div class='titlewrapper' style='background: transparent'>
+                            <b:if cond='data:blog.pageType != &quot;item&quot;'>
+                              <h1 class='title' itemprop='name' style='background: transparent; border-width: 0px'>
+                                <b:include name='title'/>
+                              </h1>
+                              <b:else/>
+                              <p class='title' itemprop='name' style='background: transparent; border-width: 0px'>
+                                <b:include name='title'/>
+                              </p>
+                            </b:if>
+                          </div>
+                          <b:include name='description'/>
+                        </div>
+                      </b:if>
+                      <b:else/>
+                      <!--Show the image only-->
+                      <div id='header-inner'>
+                        <a expr:href='data:blog.homepageUrl' itemprop='url' style='display:block'>
+                          <img async='async' expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &quot;_headerimg&quot;' expr:src='data:sourceUrl' expr:width='data:width' style='display: block'/>
+                        </a>
+                        <!--Show the description-->
+                        <b:if cond='data:imagePlacement == &quot;BEFORE_DESCRIPTION&quot;'>
+                          <b:include name='description'/>
+                        </b:if>
+                      </div>
+                    </b:if>
+                    <b:else/>
+                    <!--No header image -->
+                    <div id='header-inner'>
+                      <div class='titlewrapper'>
+                        <b:if cond='data:blog.pageType != &quot;item&quot;'>
+                          <h1 class='title' itemprop='name'>
+                            <b:include name='title'/>
+                          </h1>
+                          <b:else/>
+                          <p class='title' itemprop='name'>
+                            <b:include name='title'/>
+                          </p>
+                        </b:if>
+                      </div>
+                      <b:include name='description'/>
+                    </div>
+                  </b:if>
+                </b:includable>
+              <b:includable id='description'>
+                  <div class='descriptionwrapper'>
+                    <p class='description'>
+                      <span>
+                        <data:description/>
+                      </span>
+                    </p>
+                  </div>
+                </b:includable>
+              <b:includable id='title'>
+                  <b:if cond='data:blog.url == data:blog.homepageUrl'>
+                    <data:title/>
+                    <b:else/>
+                    <a expr:href='data:blog.homepageUrl'>
+                      <data:title/>
+                    </a>
+                  </b:if>
+                </b:includable>
+            </b:widget>
+          </b:section>
+             <div class='logocircle'/>
+            <div class="blog-description social-icons">
+              <a href="http://www.facebook.com/techumber" target="_blank"><img src="http://3.bp.blogspot.com/-1zlK-ljPbXc/VHMzZ1LSoBI/AAAAAAAACwQ/-GK6DeEdq24/s1600/facebook.png"></a>
+              <a href="http://www.twitter.com/aravindbuddha" target="_blank"><img src="http://2.bp.blogspot.com/-FdSDPRPDqY4/VHMzcRFDdSI/AAAAAAAACw8/zAKH92P6TJw/s1600/twitter.png"></a>
+              <a href="https://plus.google.com/+Techumber" target="_blank"><img src="http://1.bp.blogspot.com/-QaYSLyh7SbQ/VHMzbPtTU8I/AAAAAAAACwo/vcPpJgdJqk0/s1600/google-plus.png"></a>
+              <a href="#" target="_blank"><img src="http://3.bp.blogspot.com/-OMIrAEIOmsw/VHMzbZ5JYaI/AAAAAAAACwk/QpG7_JxdWEw/s1600/pinterest.png"></a>
+              <a href="#" target="_blank"><img src="http://1.bp.blogspot.com/-Y_73rCXWDfY/VHMzZgdbJ_I/AAAAAAAACwI/GC_4ReJoMeo/s1600/behance.png"></a>
+              <a href="#" target="_blank"><img src="http://3.bp.blogspot.com/-ot9IicWrNo8/VHMzZ42aVdI/AAAAAAAACwM/V_TtaMmUQlY/s1600/dribbble.png"></a>
+              <a href="#" target="_blank"><img src="http://2.bp.blogspot.com/-g1FMmlrY15A/VHMzaho8TeI/AAAAAAAACwg/Mqc3ylHei9I/s1600/flickr.png"></a>
+              <a href="#" target="_blank"><img src="http://4.bp.blogspot.com/-6-f7QwSmtv4/VHMzcpQ2CHI/AAAAAAAACw4/CqFQTIygGdI/s1600/youtube.png&quot;"></a>
+            </div>
+
+
+            <div class='clear'/>
         </header>
+      </div>
+      <div id="nav-wrapper">
+        <nav id='nav' class="inner-wrap">
+              <a href='#' id='mobilenav'>
+                Select a Page
+              </a>
+              <ul id='navinti'>
+                <li>
+                  <a expr:href='data:blog.homepageUrl'>
+                    Home
+                  </a>
+                </li>
+                <li>
+                     <link expr:href='data:blog.homepageUrl + &quot;search/label/HTML5&quot;' rel='prefetch'/>
+                  <a expr:href='data:blog.homepageUrl + &quot;search/label/HTML5&quot;' title='HTML5'>
+                    HTML5
+                  </a>
+                </li>
+                <li>
+                    <link expr:href='data:blog.homepageUrl + &quot;search/label/CSS3&quot;' rel='prefetch'/>
+                  <a expr:href='data:blog.homepageUrl + &quot;search/label/CSS3&quot;' title='CSS3'>
+                    CSS3
+                  </a>
+                </li>
+                <li>
+                  <link expr:href='data:blog.homepageUrl + &quot;search/label/javaScript&quot;' rel='prefetch'/>
+                  <a expr:href='data:blog.homepageUrl + &quot;search/label/javaScript&quot;' title='javaScript'>
+                    JavaScript
+                  </a>
+                </li>
+                <li>
+                    <link expr:href='data:blog.homepageUrl + &quot;search/label/JQuery&quot;' rel='prefetch'/>
+                   <a expr:href='data:blog.homepageUrl + &quot;search/label/JQuery&quot;' title='JQuery'>
+                    JQuery
+                  </a>
+                </li>
+                 <li>
+                  <link expr:href='data:blog.homepageUrl + &quot;search/label/PHP&quot;' rel='prefetch'/>
+                  <a expr:href='data:blog.homepageUrl + &quot;search/label/PHP&quot;' title='PHP'>
+                    PHP
+                  </a>
+                </li>     
+              </ul>
+              <div id='search-form-feed'>
+                <div class='search-btn'/>  
+                <form expr:action='data:blog.homepageUrl + &quot;search/&quot;' onsubmit='return updateScript();'>
+                  <input id='feed-q-input' name='q' onblur='if (this.value == &quot;&quot;) {this.value = &quot;To search type and hit enter...&quot;;}' onfocus='if (this.value == &quot;To search type and hit enter...&quot;) {this.value = &quot;&quot;;}' onkeyup='resetField();' type='text' value='To search type and hit enter...' x-webkit-speech='true'/>
+                </form>
+                <!--<div id='search-result-container'/>
+                <div id='search-result-loader'>
+                  Searching...
+                </div>-->
+              </div>
+            </nav>
       </div>
       <div id='content-wrapper'>
         <div class='inner-wrap'>
@@ -903,7 +917,7 @@
                 </b:includable>
                 <b:includable id='post' var='post'>
                   <article class='post hentry' expr:id='data:post.id' itemscope='' itemtype='http://schema.org/BlogPosting'>
-                   <span class="tu_type" expr:data-value='data:blog.pageType'></span>
+                   <span class='tu_type' expr:data-value='data:blog.pageType'/>
                     <b:if cond='data:blog.pageType != &quot;item&quot;'>
                       <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
                         <b:if cond='data:post.thumbnailUrl'>
@@ -966,7 +980,7 @@
                      <!--    <p>
                           <data:post.snippet/>
                         </p> -->
-                      <b:else />
+                      <b:else/>
                         <data:post.body/>
                       </b:if>  
                     </div>
@@ -1125,6 +1139,15 @@
                     <div id='related_posts'/>
                   </b:if>
                 </b:includable>
+                <b:includable id='postQuickEdit' var='post'>
+  <b:if cond='data:post.editUrl'>
+    <span expr:class='&quot;item-control &quot; + data:post.adminClass'>
+      <a expr:href='data:post.editUrl' expr:title='data:top.editPostMsg'>
+        <img alt='' class='icon-action' height='18' src='http://img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+      </a>
+    </span>
+  </b:if>
+</b:includable>
                 <b:includable id='shareButtons' var='post'>
                   <b:if cond='data:top.showEmailButton'>
                     <a class='goog-inline-block share-button sb-email' expr:href='data:post.sharePostUrl + &quot;&amp;target=email&quot;' expr:title='data:top.emailThisMsg' target='_blank'>
@@ -1583,7 +1606,7 @@
           </aside>        
         </div>
         <!-- spacer for skins that want sidebar and main to be the same height-->
-        <div class='clear'></div>
+        <div class='clear'/>
       </div>
       <!-- end content-wrapper -->
       <footer id='footer-wrapper' itemscope='' itemtype='http://schema.org/WPFooter'>
@@ -1674,12 +1697,12 @@
       </footer>
     </div>
     <!-- end outer-wrapper -->
-	    <!-- This section is for Splash Screen -->
-	    <section id='jSplash'>
-	      <div id='ball'/>
-	      <div id='ball-0'/>
-	      <div id='ball-1'/>
-	    </section>
+      <!-- This section is for Splash Screen -->
+      <section id='jSplash'>
+        <div id='ball'/>
+        <div id='ball-0'/>
+        <div id='ball-1'/>
+      </section>
 
     <b:include data='blog' name='google-analytics'/>
   </body>

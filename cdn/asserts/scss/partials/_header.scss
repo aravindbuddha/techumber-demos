@@ -28,6 +28,9 @@ $graceful-usage-threshold:100;
   float: left;
   position: relative;
   top: 45px;
+  left: 50%;
+  margin-left: -100px;
+
   h1, p {
     margin: 0;
     padding: 0 5px;
@@ -54,6 +57,23 @@ $graceful-usage-threshold:100;
   img! {}
 }
 
+.social-icons{
+  text-align: center;
+  position: relative;
+  top: 70px;
+    a {
+      margin: 3px;
+      padding: 2px 1.5px;
+      transition: all 0.25s;
+      &:hover img{
+        opacity: 0.7;
+      }
+    }
+    img {
+      height: 50px;
+    }
+}
+
 .logocircle {
   // @include experimental(animation, spin 1s infinite linear);
   @include animation(spin 1s infinite linear);
@@ -66,9 +86,9 @@ $graceful-usage-threshold:100;
   opacity: .9;
   width: 90px;
   top: 45px;
-  left: -203px;
+  left: 50%;
   position: relative;
-  float: left;
+  margin-left: -102px;
 }
 //circle animation
 @include keyframes(spin){
@@ -83,97 +103,3 @@ $graceful-usage-threshold:100;
 
 
 
-
-
-/* Navigation
------------------------------------------------ */
-
-#search-form-feed {
-  padding: 0;
-  width: 240px;
-  float: right;
-  margin-top: 3px;
-  position: relative;
-  margin-right: 5px;
-}
-
-#mobilenav {
-  display: none;
-}
-
-#nav {
-  font-weight: 700;
-  height: 35px;
-  position: relative;
-  float: right;
-  width: auto;
-  top: 78px;
-}
-
-#navinti {
-  height: 35px;
-  margin: 0;
-  padding: 0;
-  float: left;
-  li {
-    list-style: none;
-    display: inline-block;
-    zoom: 1;
-    float: left;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    a {
-      display: block;
-      line-height: 35px;
-      text-decoration: none;
-      color: #FFF;
-      padding: 0 15px;
-      font-weight: normal;
-    }
-    &:hover > a {
-      border-bottom: 1px solid #FFFFFF;
-    }
-  }
-  ul {
-    position: absolute;
-    z-index: 10;
-    padding: 0;
-    list-style: none;
-    width: 170px;
-    background-color: #F8F8F8;
-    -moz-box-shadow: 0 0 5px #494949;
-    -webkit-box-shadow: 0 0 5px #494949;
-    box-shadow: 0 0 5px #494949;
-    display: none;
-  }
-  li:hover ul.hidden {
-    display: block;
-  }
-  ul {
-    a {
-      color: #494949;
-      &:hover {
-        background-color: #fff;
-      }
-    }
-    li {
-      float: none;
-      display: block;
-    }
-  }
-  li.dgnsub > a {
-    padding: 0 20px 0 15px;
-    &::after {
-      content: "";
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-color: #FFF transparent transparent;
-      position: absolute;
-      border-width: 5px 4px;
-      right: 7px;
-      top: 16px;
-    }
-  }
-}
