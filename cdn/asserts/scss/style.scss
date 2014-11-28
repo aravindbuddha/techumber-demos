@@ -474,7 +474,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #ball, #ball-0, #ball-1 {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 50%;
   z-index: 11;
   margin: -8px 0 0 -8px;
@@ -510,26 +510,26 @@ h1, h2, h3, h4, h5, h6 {
 
 @include keyframes(jump){
    0% {
-    top: 0;
+    top: 10%;
     -webkit-animation-timing-function: ease-in;
   }
   50% {
-    top: 140px;
+    top: 40%;
     height: 16px;
     -webkit-animation-timing-function: ease-out;
   }
   55% {
-    top: 160px;
+    top: 60%;
     height: 14px;
     -webkit-animation-timing-function: ease-in;
   }
   65% {
-    top: 120px;
+    top: 20%;
     height: 16px;
     -webkit-animation-timing-function: ease-out;
   }
   95%, 100% {
-    top: 0;
+    top: 10%;
     -webkit-animation-timing-function: ease-in;
   }
 }
