@@ -1878,7 +1878,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 493, ../scss/style.scss */
 #ball-0 {
-  left: 20%;
+  left: 40%;
   -webkit-animation-delay: 0.5s;
   -moz-animation-delay: 0.5s;
   -ms-animation-delay: 0.5s;
@@ -1888,7 +1888,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 502, ../scss/style.scss */
 #ball-1 {
-  left: 80%;
+  left: 60%;
   -webkit-animation-delay: 0.2s;
   -moz-animation-delay: 0.2s;
   -ms-animation-delay: 0.2s;
