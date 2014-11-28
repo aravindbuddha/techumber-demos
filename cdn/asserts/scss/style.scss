@@ -486,7 +486,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #55606A;
   opacity: 0;
   filter: alpha(opacity = 0);
-  @include animation(jump 1s infinite forwards);
+  @include animation(jump 2s infinite forwards);
   
 }
 

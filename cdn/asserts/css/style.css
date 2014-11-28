@@ -1871,9 +1871,9 @@ h1, h2, h3, h4, h5, h6 {
   background: #55606A;
   opacity: 0;
   filter: alpha(opacity=0);
-  -moz-animation: jump 1s infinite forwards;
-  -webkit-animation: jump 1s infinite forwards;
-  animation: jump 1s infinite forwards;
+  -moz-animation: jump 2s infinite forwards;
+  -webkit-animation: jump 2s infinite forwards;
+  animation: jump 2s infinite forwards;
 }
 
 /* line 493, ../scss/style.scss */
