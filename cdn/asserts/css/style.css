@@ -1835,7 +1835,17 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: -145px;
 }
 
-/* line 461, ../scss/style.scss */
+/* line 459, ../scss/style.scss */
+#main-wrapper {
+  margin-left: -100%;
+}
+
+/* line 463, ../scss/style.scss */
+#sidebar-wrapper {
+  margin-right: -100%;
+}
+
+/* line 466, ../scss/style.scss */
 #jSplash {
   position: fixed;
   top: 0;
@@ -1846,7 +1856,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 999999;
 }
 
-/* line 471, ../scss/style.scss */
+/* line 475, ../scss/style.scss */
 #ball, #ball-0, #ball-1 {
   position: absolute;
   top: 0;
@@ -1866,7 +1876,7 @@ h1, h2, h3, h4, h5, h6 {
   animation: jump 1s infinite forwards;
 }
 
-/* line 489, ../scss/style.scss */
+/* line 493, ../scss/style.scss */
 #ball-0 {
   left: 20%;
   -webkit-animation-delay: 0.5s;
@@ -1876,7 +1886,7 @@ h1, h2, h3, h4, h5, h6 {
   animation-delay: 0.5s;
 }
 
-/* line 498, ../scss/style.scss */
+/* line 502, ../scss/style.scss */
 #ball-1 {
   left: 80%;
   -webkit-animation-delay: 0.2s;
@@ -1961,7 +1971,7 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-animation-timing-function: ease-in;
   }
 }
-/* line 668, ../scss/style.scss */
+/* line 672, ../scss/style.scss */
 .arrowLeft a {
   position: fixed;
   z-index: 100;
@@ -1973,7 +1983,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: ease-in 0.2s;
   transition: ease-in 0.2s;
 }
-/* line 675, ../scss/style.scss */
+/* line 679, ../scss/style.scss */
 .arrowLeft a:hover {
   left: 0;
   -moz-transition: ease-in 0.2s;
@@ -1983,7 +1993,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-/* line 682, ../scss/style.scss */
+/* line 686, ../scss/style.scss */
 .arrowRight a {
   position: fixed;
   z-index: 100;
@@ -1995,7 +2005,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: ease-in 0.2s;
   transition: ease-in 0.2s;
 }
-/* line 689, ../scss/style.scss */
+/* line 693, ../scss/style.scss */
 .arrowRight a:hover {
   right: 0;
   -moz-transition: ease-in 0.2s;
@@ -2005,7 +2015,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-/* line 696, ../scss/style.scss */
+/* line 700, ../scss/style.scss */
 .arrowNav a {
   background: #000000;
   color: #fff;
@@ -2013,37 +2023,37 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
 }
 
-/* line 703, ../scss/style.scss */
+/* line 707, ../scss/style.scss */
 #main-wrapper {
   padding: 10px 0 10px 10px;
 }
 
-/* line 708, ../scss/style.scss */
+/* line 712, ../scss/style.scss */
 .post-body h1 {
   font-size: 180%;
 }
-/* line 711, ../scss/style.scss */
+/* line 715, ../scss/style.scss */
 .post-body h2 {
   font-size: 160%;
 }
-/* line 714, ../scss/style.scss */
+/* line 718, ../scss/style.scss */
 .post-body h3 {
   font-size: 140%;
 }
-/* line 717, ../scss/style.scss */
+/* line 721, ../scss/style.scss */
 .post-body h4 {
   font-size: 130%;
 }
-/* line 720, ../scss/style.scss */
+/* line 724, ../scss/style.scss */
 .post-body h5 {
   font-size: 120%;
 }
-/* line 723, ../scss/style.scss */
+/* line 727, ../scss/style.scss */
 .post-body h6 {
   font-size: 110%;
 }
 
-/* line 728, ../scss/style.scss */
+/* line 732, ../scss/style.scss */
 .isotope {
   -webkit-transition-duration: .8s;
   -moz-transition-duration: .8s;
@@ -2051,7 +2061,7 @@ h1, h2, h3, h4, h5, h6 {
   -o-transition-duration: .8s;
   transition-duration: .8s;
 }
-/* line 734, ../scss/style.scss */
+/* line 738, ../scss/style.scss */
 .isotope .isotope-item {
   -webkit-transition-duration: .8s;
   -moz-transition-duration: .8s;
@@ -2065,7 +2075,7 @@ h1, h2, h3, h4, h5, h6 {
   transition-property: transform,opacity;
 }
 
-/* line 805, ../scss/style.scss */
+/* line 809, ../scss/style.scss */
 .loadingxx {
   width: 100%;
   min-height: 150px;
@@ -2074,24 +2084,24 @@ h1, h2, h3, h4, h5, h6 {
   text-indent: -9999px;
 }
 
-/* line 814, ../scss/style.scss */
+/* line 818, ../scss/style.scss */
 .rcomnetxx li {
   padding: 10px 0;
 }
-/* line 817, ../scss/style.scss */
+/* line 821, ../scss/style.scss */
 .rcomnetxx .kmtimg {
   float: left;
   margin: 0 5px 5px 0;
 }
-/* line 821, ../scss/style.scss */
+/* line 825, ../scss/style.scss */
 .rcomnetxx p {
   margin: 5px 0 0;
 }
-/* line 824, ../scss/style.scss */
+/* line 828, ../scss/style.scss */
 .rcomnetxx .ketkomt strong {
   display: block;
 }
-/* line 827, ../scss/style.scss */
+/* line 831, ../scss/style.scss */
 .rcomnetxx .date {
   font-size: 8px;
 }

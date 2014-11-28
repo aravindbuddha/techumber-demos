@@ -456,8 +456,13 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: -145px;
 }
 
+#main-wrapper {
+  margin-left: -100%;
+}
 
-
+#sidebar-wrapper {
+  margin-right: -100%;
+}
 #jSplash {
   position: fixed;
   top: 0;
@@ -467,7 +472,6 @@ h1, h2, h3, h4, h5, h6 {
   background: #fff;
   z-index: 999999;
 }
-
 #ball, #ball-0, #ball-1 {
   position: absolute;
   top: 0;
