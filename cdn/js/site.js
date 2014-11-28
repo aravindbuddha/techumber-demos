@@ -9,6 +9,7 @@ var Site = (function() {
             this.hoverxa();
             this.datenya();
             this.build_prefetch();
+            this.fix_nav();
         },
         moto_init: function() {
             var
@@ -158,5 +159,17 @@ var Site = (function() {
                 // $("span", h).html(c)
             });
         },
+        fix_nav:function(){
+            $(window).on("scroll",function(){
+                var 
+                scroll_height=$(document).scrollTop();
+                if(scroll_height > 200){
+                    $("#nav-wrapper").addClass('fixed-nav');
+                }else{
+                     $("#nav-wrapper").removeClass('fixed-nav');
+                }
+            });
+            
+        }
     }
 }());

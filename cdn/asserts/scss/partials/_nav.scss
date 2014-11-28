@@ -3,12 +3,10 @@
 /* Navigation
 ----------------------------------------------- */
 .fixed-nav {
-  box-shadow: none;
-  background-color: rgba(255,255,255,0.8);
-  width: 100%;
-  z-index: 999999;
+  z-index: 99999;
   position: fixed;
-  border-bottom: 1px solid #dedede;
+  top:0;
+  // border-bottom: 1px solid #dedede;
 }
 
 

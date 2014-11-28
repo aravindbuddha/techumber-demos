@@ -345,15 +345,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 ----------------------------------------------- */
 /* line 5, ../scss/partials/_nav.scss */
 .fixed-nav {
-  box-shadow: none;
-  background-color: rgba(255, 255, 255, 0.8);
-  width: 100%;
-  z-index: 999999;
+  z-index: 99999;
   position: fixed;
-  border-bottom: 1px solid #dedede;
+  top: 0;
 }
 
-/* line 16, ../scss/partials/_nav.scss */
+/* line 14, ../scss/partials/_nav.scss */
 #search-form-feed {
   padding: 0;
   width: 240px;
@@ -363,12 +360,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-right: 5px;
 }
 
-/* line 25, ../scss/partials/_nav.scss */
+/* line 23, ../scss/partials/_nav.scss */
 #mobilenav {
   display: none;
 }
 
-/* line 29, ../scss/partials/_nav.scss */
+/* line 27, ../scss/partials/_nav.scss */
 #nav-wrapper {
   width: 100%;
   background: #333;
@@ -381,14 +378,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   line-height: 50px;
 }
 
-/* line 50, ../scss/partials/_nav.scss */
+/* line 48, ../scss/partials/_nav.scss */
 #navinti {
   height: 35px;
   margin: 0;
   padding: 0;
   float: left;
 }
-/* line 55, ../scss/partials/_nav.scss */
+/* line 53, ../scss/partials/_nav.scss */
 #navinti li {
   list-style: none;
   display: inline-block;
@@ -398,7 +395,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin: 0;
   padding: 0;
 }
-/* line 63, ../scss/partials/_nav.scss */
+/* line 61, ../scss/partials/_nav.scss */
 #navinti li a {
   display: block;
   text-decoration: none;
@@ -406,11 +403,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 0 15px;
   font-weight: normal;
 }
-/* line 71, ../scss/partials/_nav.scss */
+/* line 69, ../scss/partials/_nav.scss */
 #navinti li:hover > a {
   border-bottom: 1px solid #FFFFFF;
 }
-/* line 75, ../scss/partials/_nav.scss */
+/* line 73, ../scss/partials/_nav.scss */
 #navinti ul {
   position: absolute;
   z-index: 10;
@@ -423,28 +420,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   box-shadow: 0 0 5px #494949;
   display: none;
 }
-/* line 87, ../scss/partials/_nav.scss */
+/* line 85, ../scss/partials/_nav.scss */
 #navinti li:hover ul.hidden {
   display: block;
 }
-/* line 91, ../scss/partials/_nav.scss */
+/* line 89, ../scss/partials/_nav.scss */
 #navinti ul a {
   color: #494949;
 }
-/* line 93, ../scss/partials/_nav.scss */
+/* line 91, ../scss/partials/_nav.scss */
 #navinti ul a:hover {
   background-color: #fff;
 }
-/* line 97, ../scss/partials/_nav.scss */
+/* line 95, ../scss/partials/_nav.scss */
 #navinti ul li {
   float: none;
   display: block;
 }
-/* line 102, ../scss/partials/_nav.scss */
+/* line 100, ../scss/partials/_nav.scss */
 #navinti li.dgnsub > a {
   padding: 0 20px 0 15px;
 }
-/* line 104, ../scss/partials/_nav.scss */
+/* line 102, ../scss/partials/_nav.scss */
 #navinti li.dgnsub > a::after {
   content: "";
   width: 0;
@@ -457,7 +454,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   top: 16px;
 }
 
-/* line 119, ../scss/partials/_nav.scss */
+/* line 117, ../scss/partials/_nav.scss */
 #search-form-feed {
   padding: 0;
   width: auto;
@@ -467,7 +464,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-right: 5px;
   margin-top: 10px;
 }
-/* line 127, ../scss/partials/_nav.scss */
+/* line 125, ../scss/partials/_nav.scss */
 #search-form-feed form {
   float: left;
   width: 0;
@@ -477,7 +474,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-transition: all 1s;
   transition: all 1s;
 }
-/* line 133, ../scss/partials/_nav.scss */
+/* line 131, ../scss/partials/_nav.scss */
 #search-form-feed:hover form {
   width: 250px;
   -moz-transition: all 1s;
@@ -486,7 +483,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transition: all 1s;
 }
 
-/* line 141, ../scss/partials/_nav.scss */
+/* line 139, ../scss/partials/_nav.scss */
 .search-btn {
   width: 50px;
   height: 31px;
@@ -495,7 +492,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   cursor: pointer;
 }
 
-/* line 149, ../scss/partials/_nav.scss */
+/* line 147, ../scss/partials/_nav.scss */
 #feed-q-input {
   display: block;
   width: 100%;
@@ -512,13 +509,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background: transparent;
   border-bottom: 1px solid #565656;
 }
-/* line 162, ../scss/partials/_nav.scss */
+/* line 160, ../scss/partials/_nav.scss */
 #feed-q-input:focus {
   color: #565656;
   outline: none;
 }
 
-/* line 168, ../scss/partials/_nav.scss */
+/* line 166, ../scss/partials/_nav.scss */
 #search-result-container {
   width: 300px;
   overflow: hidden;
@@ -536,7 +533,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
 }
-/* line 187, ../scss/partials/_nav.scss */
+/* line 185, ../scss/partials/_nav.scss */
 #search-result-container li {
   margin: 0 0 5px;
   padding: 0;
@@ -548,7 +545,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #FFF;
   text-transform: none;
 }
-/* line 197, ../scss/partials/_nav.scss */
+/* line 195, ../scss/partials/_nav.scss */
 #search-result-container li a {
   text-decoration: none;
   font-weight: 700;
@@ -558,29 +555,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 0;
   font-weight: 700;
 }
-/* line 207, ../scss/partials/_nav.scss */
+/* line 205, ../scss/partials/_nav.scss */
 #search-result-container mark {
   background-color: #FF0;
   color: #000;
 }
-/* line 211, ../scss/partials/_nav.scss */
+/* line 209, ../scss/partials/_nav.scss */
 #search-result-container h4 {
   margin: 0 0 10px;
   font: normal bold 12px;
   color: #000;
 }
-/* line 216, ../scss/partials/_nav.scss */
+/* line 214, ../scss/partials/_nav.scss */
 #search-result-container ol {
   margin: 0 0 10px;
   padding: 0;
   overflow: hidden;
   height: 450px;
 }
-/* line 222, ../scss/partials/_nav.scss */
+/* line 220, ../scss/partials/_nav.scss */
 #search-result-container:hover ol {
   overflow: auto;
 }
-/* line 225, ../scss/partials/_nav.scss */
+/* line 223, ../scss/partials/_nav.scss */
 #search-result-container li img {
   display: block;
   float: left;
@@ -589,7 +586,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border: 1px solid #D1D1D1;
 }
 
-/* line 234, ../scss/partials/_nav.scss */
+/* line 232, ../scss/partials/_nav.scss */
 #search-result-loader {
   top: 100%;
   position: absolute;
@@ -606,11 +603,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-transform: capitalize;
 }
 
-/* line 251, ../scss/partials/_nav.scss */
+/* line 249, ../scss/partials/_nav.scss */
 #search-result-container p {
   margin: 5px 0;
 }
-/* line 254, ../scss/partials/_nav.scss */
+/* line 252, ../scss/partials/_nav.scss */
 #search-result-container .close {
   position: absolute;
   right: 8px;
@@ -1772,7 +1769,6 @@ h1, h2, h3, h4, h5, h6 {
 /* line 400, ../scss/style.scss */
 .main .widget, #sidebar-wtengah {
   margin: 0 0 1.5em;
-  padding: 0 0 1.5em;
 }
 
 /* line 405, ../scss/style.scss */
