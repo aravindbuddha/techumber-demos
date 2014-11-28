@@ -510,16 +510,16 @@ h1, h2, h3, h4, h5, h6 {
 
 @include keyframes(jump){
    0% {
-    top: 10%;
+    top: 20%;
     -webkit-animation-timing-function: ease-in;
   }
   50% {
-    top: 40%;
+    top: 50%;
     height: 16px;
     -webkit-animation-timing-function: ease-out;
   }
   55% {
-    top: 60%;
+    top: 80%;
     height: 14px;
     -webkit-animation-timing-function: ease-in;
   }
@@ -529,7 +529,7 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-animation-timing-function: ease-out;
   }
   95%, 100% {
-    top: 10%;
+    top: 20%;
     -webkit-animation-timing-function: ease-in;
   }
 }
