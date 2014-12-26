@@ -160,23 +160,23 @@
             </b:widget>
           </b:section>
              <div class='logocircle'/>
-            <div class="blog-description social-icons">
-              <a href="http://www.facebook.com/techumber" target="_blank"><img src="http://3.bp.blogspot.com/-1zlK-ljPbXc/VHMzZ1LSoBI/AAAAAAAACwQ/-GK6DeEdq24/s1600/facebook.png"></a>
-              <a href="http://www.twitter.com/aravindbuddha" target="_blank"><img src="http://2.bp.blogspot.com/-FdSDPRPDqY4/VHMzcRFDdSI/AAAAAAAACw8/zAKH92P6TJw/s1600/twitter.png"></a>
-              <a href="https://plus.google.com/+Techumber" target="_blank"><img src="http://1.bp.blogspot.com/-QaYSLyh7SbQ/VHMzbPtTU8I/AAAAAAAACwo/vcPpJgdJqk0/s1600/google-plus.png"></a>
-              <a href="#" target="_blank"><img src="http://3.bp.blogspot.com/-OMIrAEIOmsw/VHMzbZ5JYaI/AAAAAAAACwk/QpG7_JxdWEw/s1600/pinterest.png"></a>
-              <a href="#" target="_blank"><img src="http://1.bp.blogspot.com/-Y_73rCXWDfY/VHMzZgdbJ_I/AAAAAAAACwI/GC_4ReJoMeo/s1600/behance.png"></a>
-              <a href="#" target="_blank"><img src="http://3.bp.blogspot.com/-ot9IicWrNo8/VHMzZ42aVdI/AAAAAAAACwM/V_TtaMmUQlY/s1600/dribbble.png"></a>
-              <a href="#" target="_blank"><img src="http://2.bp.blogspot.com/-g1FMmlrY15A/VHMzaho8TeI/AAAAAAAACwg/Mqc3ylHei9I/s1600/flickr.png"></a>
-              <a href="#" target="_blank"><img src="http://4.bp.blogspot.com/-6-f7QwSmtv4/VHMzcpQ2CHI/AAAAAAAACw4/CqFQTIygGdI/s1600/youtube.png&quot;"></a>
+            <div class='blog-description social-icons'>
+              <a href='http://www.facebook.com/techumber' target='_blank'><img src='http://3.bp.blogspot.com/-1zlK-ljPbXc/VHMzZ1LSoBI/AAAAAAAACwQ/-GK6DeEdq24/s1600/facebook.png'/></a>
+              <a href='http://www.twitter.com/aravindbuddha' target='_blank'><img src='http://2.bp.blogspot.com/-FdSDPRPDqY4/VHMzcRFDdSI/AAAAAAAACw8/zAKH92P6TJw/s1600/twitter.png'/></a>
+              <a href='https://plus.google.com/+Techumber' target='_blank'><img src='http://1.bp.blogspot.com/-QaYSLyh7SbQ/VHMzbPtTU8I/AAAAAAAACwo/vcPpJgdJqk0/s1600/google-plus.png'/></a>
+              <a href='#' target='_blank'><img src='http://3.bp.blogspot.com/-OMIrAEIOmsw/VHMzbZ5JYaI/AAAAAAAACwk/QpG7_JxdWEw/s1600/pinterest.png'/></a>
+              <a href='#' target='_blank'><img src='http://1.bp.blogspot.com/-Y_73rCXWDfY/VHMzZgdbJ_I/AAAAAAAACwI/GC_4ReJoMeo/s1600/behance.png'/></a>
+              <a href='#' target='_blank'><img src='http://3.bp.blogspot.com/-ot9IicWrNo8/VHMzZ42aVdI/AAAAAAAACwM/V_TtaMmUQlY/s1600/dribbble.png'/></a>
+              <a href='#' target='_blank'><img src='http://2.bp.blogspot.com/-g1FMmlrY15A/VHMzaho8TeI/AAAAAAAACwg/Mqc3ylHei9I/s1600/flickr.png'/></a>
+              <a href='#' target='_blank'><img src='http://4.bp.blogspot.com/-6-f7QwSmtv4/VHMzcpQ2CHI/AAAAAAAACw4/CqFQTIygGdI/s1600/youtube.png&quot;'/></a>
             </div>
 
 
             <div class='clear'/>
         </header>
       </div>
-      <div id="nav-wrapper">
-        <nav id='nav' class="inner-wrap">
+      <div id='nav-wrapper'>
+        <nav class='inner-wrap' id='nav'>
               <a href='#' id='mobilenav'>
                 Select a Page
               </a>
