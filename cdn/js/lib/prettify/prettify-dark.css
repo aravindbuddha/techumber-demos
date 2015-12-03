@@ -29,9 +29,8 @@
 
  .prettyprint {
   padding: 8px;
-  
-  background-color: rgb(35, 41, 55);
-  border: 1px solid rgb(106, 113, 128);
+  background-color: rgb(35, 41, 55) !important;
+  border: 1px solid rgb(106, 113, 128) !important;
   border-image-source: initial;
   border-image-slice: initial;
   border-image-width: initial;
@@ -45,7 +44,7 @@
   
 }
 .prettyprint.linenums {
-
+box-shadow: none;
 }
 ol.linenums {
   margin: 0;/* IE indents via margin-left */
