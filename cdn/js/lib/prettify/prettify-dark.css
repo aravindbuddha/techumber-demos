@@ -12,58 +12,92 @@
  Specify class=linenums on a pre to get line numbering */
 
 
+/*
+.com { color: #93a1a1; }
+.lit { color: #195f91; }
+.pun, .opn, .clo { color: #93a1a1; }
+.fun { color: #dc322f; }
+.str, .atv { color: #D14; }
+.kwd, .prettyprint .tag { color: #1e347b; }
+.typ, .atn, .dec, .var { color: teal; }
+.pln { color: #48484c; }
+
+
+ Specify class=linenums on a pre to get line numbering */
+
+
 
  .prettyprint {
   padding: 8px;
-  background-color: #f7f7f9;
-  border: 1px solid #e1e1e8;
+  
+  background-color: rgb(35, 41, 55);
+  border: 1px solid rgb(106, 113, 128);
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  color: rgb(255, 255, 255);
+  font-family: Menlo, Monaco, 'Andale Mono', 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.6rem;
+ 
+  
 }
 .prettyprint.linenums {
-  -webkit-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
-     -moz-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
-          box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+
 }
 ol.linenums {
-  margin: 0 0 0 33px; /* IE indents via margin-left */
-  list-style-type: decimal;
-
+  margin: 0;/* IE indents via margin-left */
+  list-style-type: none;
 }
 ol.linenums li {
   padding-left: 12px;
   color: #bebec5;
   line-height: 20px;
- 
+  
 }
 
 
 pre.prettyprint {
-  background: #404445 !important;
-  border: 0px solid transparent !important;
+  background-color: rgb(35, 41, 55);
+  border: 1px solid rgb(106, 113, 128);
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
 }
 /*!
 * tomorrow-night-eighties.fixed.min.css
 */
 .pln {
-  color: #CCC;
+  color: rgb(255, 255, 255);
 }
+
 @media screen {
+  
   .str {
-    color: #99CC99;
+    color: rgb(143, 220, 51);
   }
   .kwd {
-    color: #CC99CC;
+    color: rgb(248, 150, 62);
   }
-  .com {
-    color: #999999;
+ 
+.com{
+    color: rgb(98, 122, 173);
   }
+
   .typ {
-    color: #6699CC;
+    color: rgb(225,225,225);
   }
   .lit {
-    color: #F99157;
+    color: rgb(96, 194, 238);
   }
   .pun {
-    color: #CCC;
+    color: rgb(255, 255, 255);
   }
   .opn {
     color: #CCC;
@@ -71,14 +105,19 @@ pre.prettyprint {
   .clo {
     color: #CCC;
   }
+
+
+
   .tag {
-    color: #F2777A;
+    color: rgb(137, 189, 255);
   }
+
+
   .atn {
-    color: #F99157;
+    color: rgb(189, 183, 107);
   }
   .atv {
-    color: #66CCCC;
+    color: rgb(101, 176, 66);
   }
   .dec {
     color: #F99157;
