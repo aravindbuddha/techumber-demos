@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/css?family=Lato:400,700");
+@import url("http://fonts.googleapis.com/css?family=Roboto:400,100,700");
 /* line 5, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -1365,9 +1365,11 @@ header, nav, section, aside, article, footer {
 
 /* line 33, ../scss/style.scss */
 body {
-  font: 16px / 22px "Lato","HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #7e7e7e;
-  background: #fafafa;
+      font-family: 'Roboto', 'Helvetica', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #616161 ;
 }
 
 /* line 39, ../scss/style.scss */
