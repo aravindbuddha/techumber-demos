@@ -2104,3 +2104,77 @@ h1, h2, h3, h4, h5, h6 {
 .rcomnetxx .date {
   font-size: 8px;
 }
+
+
+
+
+      .index .post {
+          float: left;
+          width: 45%;
+          overflow: hidden;
+          box-sizing: border-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          margin: 8px;
+          box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
+      }
+      .index .post-header {
+          padding: 16px;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+          flex-direction: row;
+      }
+      .index .post-avatar {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          overflow: hidden;
+      }
+      .index .post-header-text {
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-flex: 1;
+          -ms-flex: 1;
+          flex: 1;
+          -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          max-height: 40px;
+          text-align: left;
+          padding-left: 21px;
+          line-height: 1.4;
+      }
+
+      .index .md-title {
+          font-size: 20px;
+          font-weight: 500;
+          letter-spacing: .005em;
+          font-size: 14px;
+
+      }
+
+      .index .md-subhead {
+          font-size: 14px;
+          font-weight: 400;
+          letter-spacing: .010em;
+          line-height: 24px;
+          color: rgba(0,0,0,0.54);
+      }
+
+      .index .post-footer {
+          padding: .75em;
+          color: #999;
+          border: 0;
+          border-top: 1px solid #c2c2c2;
+          margin-top: 15px;
+          background: #fafafa;
+          box-shadow: none;
+      }
