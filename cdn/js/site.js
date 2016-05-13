@@ -152,7 +152,7 @@ var Site = (function() {
                         e = i.substring(8, 10),
                         c = a[parseInt(b, 10) - 1]
                 }
-                var d = $(this).parents(".post");
+                var d = $(this).parents(".post-header");
                 var h = d.children(".datex");
                 h.html("Posted on " +e+" "+c+" "+f);
                 // $("small", h).html(f);
