@@ -154,7 +154,7 @@ var Site = (function() {
                 }
                 var d = $(this).parents(".post-header");
                 var h = d.children(".datex");
-                h.html("Posted on " +e+" "+c+" "+f);
+                $(this).html("Posted on " +e+" "+c+" "+f);
                 // $("small", h).html(f);
                 // $("span", h).html(c)
             });
