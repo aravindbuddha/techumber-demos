@@ -142,7 +142,7 @@ var Site = (function() {
             });
         },
         datenya: function() {
-            $(".timestamp-link .updated.published").each(function() {
+            $(".timestamp-link .published").each(function() {
                 var g = $(this).attr("title");
                 var a = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
                 if (g != "") {
@@ -161,7 +161,7 @@ var Site = (function() {
         },
         fix_nav:function(){
             $(window).on("scroll",function(){
-                var 
+                var
                 scroll_height=$(document).scrollTop();
                 if(scroll_height > 200){
                     $("#nav-wrapper").addClass('fixed-nav');
@@ -169,7 +169,7 @@ var Site = (function() {
                      $("#nav-wrapper").removeClass('fixed-nav');
                 }
             });
-            
+
         }
     }
 }());
