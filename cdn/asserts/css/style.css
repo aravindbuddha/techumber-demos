@@ -489,6 +489,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 130, ../scss/partials/_nav.scss */
 #search-form-feed:hover form {
   width: 250px;
+      margin-top: -13px;
   -moz-transition: all 1s;
   -o-transition: all 1s;
   -webkit-transition: all 1s;
