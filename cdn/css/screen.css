@@ -428,7 +428,7 @@ table.plain tbody > tr:nth-child(odd) > th {
    background: transparent;
 }
 
-iframe, .fluid-width-video-wrapper {
+.fluid-width-video-wrapper {
     display: block;
     margin: 1.75em 0;
 }
