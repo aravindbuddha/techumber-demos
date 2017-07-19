@@ -16,11 +16,8 @@ System.config({
         'npm:': 'https://unpkg.com/'
     },
     packages: {
-        'src/ng4': {
+        'src': {
             defaultExtension: 'ts'
-        },
-        'src/ng1': {
-            defaultExtension: 'js'
         },
         'vendor': {
             defaultExtension: 'js'
