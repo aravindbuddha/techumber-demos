@@ -2,23 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Angular Hybrid</title>
+    <!-- AngularJs -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+    <!-- packages for Angualr -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typescript/2.1.1/typescript.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/zone.js/0.8.4/zone.min.js"></script>
     <script src="https://unpkg.com/zone.js/dist/long-stack-trace-zone.js"></script>
     <script src="https://unpkg.com/reflect-metadata@0.1.3/Reflect.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.41/system.js"></script>
+    <!-- SystemJs and bootstrap -->
     <script src="systemjs.config.js"></script>
     <script>
         System
             .import('src/_bootstrap.ts')
             .catch(console.error.bind(console));
     </script>
-
 </head>
 <body>
+    <ng4-app-component></ng4-app-component>
     <ng1-app-component></ng1-app-component>
 </body>
 </html>
+
+
+
