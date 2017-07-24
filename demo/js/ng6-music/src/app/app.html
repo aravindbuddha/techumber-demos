@@ -1,0 +1,56 @@
+<!--Anything you want to be on every page, place it in this file-->
+ <header>
+        <div class="header__controls">
+            <div class="logo">
+                <a href="index.html">Music Player</a>
+            </div>
+            <div class="volume-control">
+                <a class="volume__down" href="javascript:void(0);" ng-click="volumeDown()"><i class="fa fa-volume-down"></i></a>
+                <div class="volume__level" player-volume="">
+                    <span style="width: {{ volumeLevel }}%"></span>
+                </div>
+                <a class="volume__up" href="javascript:void(0);" ng-click="volumeUp()"><i class="fa fa-volume-up"></i></a>
+            </div>
+            <div class="playback-control">
+                <a class="playback__prev" href="javascript:void(0);" ng-click="playbackPrev()"><i class="fa fa-step-backward"></i></a>
+                <a class="playback__play-pause" href="javascript:void(0);" ng-click="playbackPlayPause()"><i class="fa" ng-class="{true:'fa-play', false:'fa-pause'}[playerPaused]"></i></a>
+                <a class="playback__next" href="javascript:void(0);" ng-click="playbackNext()"><i class="fa fa-step-forward"></i></a>
+            </div>
+            <div class="library-search">
+                <input id="search-input" name="search-input" type="text" placeholder="Search..." ng-model="searchKeyword">
+            </div>
+      </div>
+      <div class="header__playback-info">
+        <div class="playback-info">
+            <div class="playback-info__time-current">{{ playbackTimeCurrent }}</div>
+            <div class="playback-info__song">{{ playbackSong }}</div>
+            <div class="playback-info__time-total">{{ playbackTimeTotal }}</div>
+        </div>
+        <div class="playback-progress" playback-progress="">
+            <span id="playback-progress__slider" style="width: {{ playbackProgress }}%;"></span>
+        </div>
+    </div>
+    <div class="header__section-titles">
+        <div class="title-library">
+            <div class="library-sections">
+                <div class="song">Track</div>
+                <div class="artist">Artist</div>
+                <div class="album">Album</div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div id="playlist">
+    <ul id="playlist-list">
+        <li ng-repeat="item in playlistSongs | filter:searchKeyword" ng-click="playSongOnClick($event)" ng-class="{playing: item.playing}" data-filename="{{ item.file }}">
+            <div class="song">{{ item.song }}</div>
+            <div class="artist">{{ item.artist }}</div>
+            <div class="album">{{ item.album }}</div>
+        </li>
+    </ul>
+</div>
+<div id="loading"></div>
+<div id="player-container">
+    <audio id="player" audio-ended="" audio-timeupdate="" controls></audio>
+</div>
