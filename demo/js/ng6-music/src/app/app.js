@@ -3,13 +3,15 @@ import '@uirouter/angularjs';
 import Common from './common/common';
 import Components from './components/components';
 import AppComponent from './app.component';
+import AppDirectives from './directives/directives';
 
 let appModule = angular.module('app', [
 	'ui.router',
 	Common.name,
-	Components.name
+	Components.name,
+	AppDirectives.name
 ])
-.component('uix-ng-music', AppComponent);
+.component('app', AppComponent);
 
 /*
  * As we are using ES6 with Angular 1.x we can't use ng-app directive
