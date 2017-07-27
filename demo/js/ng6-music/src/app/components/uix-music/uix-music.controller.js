@@ -1,7 +1,7 @@
 import id3 from 'id3js';
 
-class AppController {
-    constructor($scope, $http, $interval, $timeout) {
+class UixMusicController {
+	 constructor($scope, $http, $interval, $timeout) {
         this.$http = $http;
         this.$scope = $scope;
         this.showLibraryModal = true;
@@ -174,4 +174,5 @@ class AppController {
 
 }
 
-export default AppController;
+
+export default UixMusicController;

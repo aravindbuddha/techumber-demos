@@ -1,7 +1,7 @@
 function audoEndedLink($scope, element) {
     element.bind('ended', function() {
-                    $scope.playbackNext();
-                });
+        $scope.playbackNext();
+    });
 }
 
 export default audoEndedLink;
