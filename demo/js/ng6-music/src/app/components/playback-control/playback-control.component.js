@@ -3,8 +3,8 @@ import controller from './playback-control.controller';
 import './playback-control.css';
 
 let playbackControlComponent = {
-		template,
-		controller
+    template,
+	controller
 };
 
 export default playbackControlComponent;

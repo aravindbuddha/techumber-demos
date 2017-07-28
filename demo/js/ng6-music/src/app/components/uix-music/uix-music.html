@@ -5,11 +5,7 @@
                 <a href="index.html">Music Player</a>
             </div>
             <volume-control volume-level="$ctrl.volumeLevel"></volume-control>
-                        <div class="playback-control">
-                <a class="playback__prev" href="javascript:void(0);" ng-click="$ctrl.playbackPrev()"><i class="fa fa-step-backward"></i></a>
-                <a class="playback__play-pause" href="javascript:void(0);" ng-click="$ctrl.playbackPlayPause()"><i class="fa" ng-class="{true:'fa-play', false:'fa-pause'}[$ctrl.playerPaused]"></i></a>
-                <a class="playback__next" href="javascript:void(0);" ng-click="$ctrl.playbackNext()"><i class="fa fa-step-forward"></i></a>
-            </div>
+            <playback-control></playback-control>
             <div class="library-search">
                 <input id="search-input" name="search-input" type="text" placeholder="Search..." ng-model="$ctrl.searchKeyword">
             </div>
@@ -20,9 +16,6 @@
             <div class="playback-info__song">{{ $ctrl.playbackSong }}</div>
             <div class="playback-info__time-total">{{ playbackTimeTotal }}</div>
         </div>
-        <!-- <div class="playback-progress" playback-progress="">
-            <span id="playback-progress__slider" style="width: {{ playbackProgress }}%;"></span>
-        </div> -->
         <playback-progress playbackProgress="playbackProgress"></playback-progress>
     </div>
     <div class="header__section-titles">
