@@ -1,0 +1,44 @@
+<!--Anything you want to be on every page, place it in this file-->
+<header>
+        <div class="header__controls">
+            <div class="logo">
+                <a href="index.html">Music Player</a>
+            </div>
+            <volume-control volume-level="$ctrl.volumeLevel"></volume-control>
+            <playback-control></playback-control>
+            <div class="library-search">
+                <input id="search-input" name="search-input" type="text" placeholder="Search..." ng-model="$ctrl.searchKeyword">
+            </div>
+      </div>
+      <div class="header__playback-info">
+        <div class="playback-info">
+            <div class="playback-info__time-current">{{ playbackTimeCurrent }}</div>
+            <div class="playback-info__song">{{ $ctrl.playbackSong }}</div>
+            <div class="playback-info__time-total">{{ playbackTimeTotal }}</div>
+        </div>
+        <playback-progress playbackProgress="playbackProgress"></playback-progress>
+    </div>
+    <div class="header__section-titles">
+        <div class="title-library">
+            <div class="library-sections">
+                <div class="song">Track</div>
+                <div class="artist">Artist</div>
+                <div class="album">Album</div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div id="playlist">
+    <ul id="playlist-list">
+        <li ng-repeat="item in $ctrl.playlistSongs" ng-click="$ctrl.playSongOnClick($event)" ng-class="{playing: item.playing}" data-filename="{{ item.file }}">
+            <div class="song">{{ item.song }}</div>
+            <div class="artist">{{ item.artist }}</div>
+            <div class="album">{{ item.album }}</div>
+        </li>
+    </ul>
+</div>
+<div id="loading"></div>
+<div id="player-container">
+    <audio id="player" audio-ended="" audio-timeupdate="" controls></audio>
+</div>

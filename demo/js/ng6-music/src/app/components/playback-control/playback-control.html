@@ -1,0 +1,5 @@
+<div class="playback-control">
+    <a class="playback__prev" href="javascript:void(0);" ng-click="$ctrl.playbackPrev()"><i class="fa fa-step-backward"></i></a>
+    <a class="playback__play-pause" href="javascript:void(0);" ng-click="$ctrl.playbackPlayPause(); $ctrl.playerPaused = !$ctrl.playerPaused"><i class="fa" ng-class="{true:'fa-play', false:'fa-pause'}[$ctrl.playerPaused]"></i></a>
+    <a class="playback__next" href="javascript:void(0);" ng-click="$ctrl.playbackNext()"><i class="fa fa-step-forward"></i></a>
+</div>
