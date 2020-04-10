@@ -44,7 +44,7 @@
     <script>
       let param = new URLSearchParams(new URL(location.href).search);
       if (parm.get("of")) {
-        window.location.href = location.host + param.get("of");
+        window.location.href = param.get("of");
       }
     </script>
   </body>
