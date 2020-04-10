@@ -1,0 +1,89 @@
+/*--------------------------------------------------------------------------------------------
+|	@desc:		Amazing Mack Dock with pure css3
+|	@author:	Aravind Buddha
+|	@url:		http://www.techumber.com
+|	@date:		7 OCT 2012
+|	@email:     aravind@techumber.com
+|	@license:	Free! to Share,copy, distribute and transmit , 
+|               but i'll be glad if my name listed in the credits'
+---------------------------------------------------------------------------------------------*/
+body{
+background: #eee;
+}
+.container{
+margin: 0 auto;
+width: 700px;
+}
+.logo{
+text-align: center;
+margin-bottom: 76px;
+}
+.dock ul{
+display: inline-block;
+float: left;
+width: auto;
+margin: 0px;
+padding: 0px;
+list-style: none;
+background: rgba(0, 0, 0, 0.3);
+padding-right: 76px;
+}
+.dock ul li {
+width: auto;
+height: auto;
+display: inline-block;
+bottom: 0;
+vertical-align: bottom;
+margin-top: -43px;
+}
+.dock ul li a {
+display: block;
+height: 100px;
+width: 100px;
+position: relative;
+-webkit-transition-property: width, height,margin-top;
+-webkit-transition-duration: 0.5s;
+-o-transition-property: width, height,margin-top;
+-o-transition-duration: 0.5s;
+-moz-transition-property: width, height,margin-top;
+-moz-transition-duration: 0.5s;
+}
+.dock ul li a:hover {
+width: 150px;
+height: 150px;
+margin-top: -50px;
+}
+.dock ul li a img {
+width: 100%;
+position: absolute;
+bottom: 0;
+left: 0;
+border: none;
+padding: 0px 0px 0px 30px;
+}
+.dock_left{
+width: 31px;
+-webkit-transform: rotate(33deg);
+-moz-transform: rotate(33deg);
+-o-transform: rotate(33deg);
+position: relative;
+background: #EEE;
+overflow: hidden;
+float: left;
+height: 100px;
+z-index: 2;
+margin: -18px;
+}
+.dock_right{
+width: 36px;
+-webkit-transform: rotate(-33deg);
+-moz-transform: rotate(-33deg);
+-o-transform: rotate(-33deg);
+position: relative;
+background: #EEE;
+overflow: hidden;
+float: left;
+height: 100px;
+z-index: 2;
+margin: -18px;
+}

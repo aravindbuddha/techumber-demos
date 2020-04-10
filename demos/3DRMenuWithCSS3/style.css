@@ -1,0 +1,113 @@
+/*--------------------------------------------------------------------------------------------
+|  @desc:     Awesome 3D Rotating Menu With Pure CSS3
+|  @author:   Aravind Buddha
+|  @url:      http://www.techumber.com
+|  @date:     28 September 2012
+|  @email:    aravind@techumber.com
+|  @license:  Free! to Share,copy, distribute and transmit , 
+|             but i'll be glad if my name listed in the credits'
+---------------------------------------------------------------------------------------------*/
+body {
+font-family:  Verdana, Arial;
+font-size: 12px;
+}
+a {
+font-family: 'Georgia', serif;
+font-size: 20px;
+font-weight: bold;
+height: 50px;
+line-height: 50px;
+text-decoration: none;
+color: #fff;
+}
+.logo{
+background: white;
+width: 268px;
+margin: 0 auto;
+border-radius: 78px;
+}
+#conatiner {
+margin: 0px auto;
+margin-bottom: 140px;
+width: 600px;
+height: 400px;
+-webkit-perspective: 800;
+-moz-perspective: 800;
+}
+#wrapper {
+margin: 20 auto;
+width: 600px;
+height: 400px;
+}
+.menu-ring {
+margin: 0 auto;
+height: 110px;
+width: 600px;
+-webkit-transform-style: preserve-3d;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: linear;
+-webkit-animation-name: spin;
+-webkit-animation-duration: 15s;
+-moz-transform-style: preserve-3d;
+-moz-animation-iteration-count: infinite;
+-moz-animation-timing-function: linear;
+-moz-animation-name: spin;
+-moz-animation-duration: 15s;
+}
+.menu-ring > :nth-child(odd) {
+background-color: #515151;
+}
+.menu-ring > :nth-child(even) {
+background-color: #007ACC;
+}
+@-webkit-keyframes spin {
+0%    { -webkit-transform: rotateY(360deg); }
+50%   { -webkit-transform: rotateY(180deg); }
+100%  { -webkit-transform: rotateY(0deg); }
+}
+@-moz-keyframes spin {
+0%    { -moz-transform: rotateY(360deg); }
+50%   { -moz-transform: rotateY(180deg); }
+100%  { -moz-transform: rotateY(0deg); }
+}
+#item1,#item2,#item3,#item4,#item5,#item6,#item7,#item8,#item9{
+position: absolute;
+left: 250px;
+width: 140px;
+height: 50px;
+text-align: center;
+opacity: 0.7;
+color: rgba(0,0,0,0.9);
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+}
+#item1{
+-webkit-transform: rotateY(0deg) translateZ(200px);
+-moz-transform: rotateY(0deg) translateZ(200px);
+}
+#item2{
+-webkit-transform: rotateY(40deg) translateZ(200px);
+-moz-transform: rotateY(40deg) translateZ(200px);
+}
+#item3{
+-webkit-transform: rotateY(80deg) translateZ(200px);
+}
+#item4{
+-webkit-transform: rotateY(120deg) translateZ(200px);
+-moz-transform: rotateY(120deg) translateZ(200px);
+}
+#item5{
+-webkit-transform: rotateY(160deg) translateZ(200px);
+}
+#item6{
+-webkit-transform: rotateY(200deg) translateZ(200px);
+}
+#item7{
+-webkit-transform: rotateY(240deg) translateZ(200px);
+}
+#item8{
+-webkit-transform: rotateY(280deg) translateZ(200px);
+}
+#item9{
+-webkit-transform: rotateY(320deg) translateZ(200px);
+}

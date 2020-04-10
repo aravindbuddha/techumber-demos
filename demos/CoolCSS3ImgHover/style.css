@@ -1,0 +1,80 @@
+*{
+	border: 0;
+	padding:0;
+	margin: 0;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+.main{
+	width: 850px;
+	margin: 0 auto;
+}
+.logo{
+	background: url('http://demo.techumber.com/asserts/img/techumbernlogo.png');
+	display: block;
+	width: 190px;
+	height: 90px;
+	margin: 0 auto;
+	margin-bottom: 100px;
+}
+.item{
+	float: left;
+	width: 240px;
+	height: 240px;
+	margin-left: 40px;
+	margin-bottom: 20px;
+	background-size: cover;
+	background: #1c252c;
+	border-radius: 50%;
+	cursor: pointer;
+	box-shadow: inset 0 0 1px 230px rgba(0,0,0,0.6), inset 0 0 0 0px #1c252c;
+	transition: all 0.5s ease-in;
+	transition: box-shadow 400ms ease-in-out;
+	/* Safari/Chrome, other WebKit */
+	-webkit-border-radius: 50%;
+	-webkit-box-shadow: inset 0 0 1px 230px rgba(0,0,0,0.6), inset 0 0 0 0px #1c252c;
+	-webkit-transition: box-shadow 400ms ease-in-out;
+ /* Firefox, other Gecko */
+	-moz-border-radius: 50%;
+	-moz-box-shadow: inset 0 0 1px 230px rgba(0,0,0,0.6), inset 0 0 0 0px #1c252c;
+	-moz-transition: box-shadow 400ms ease-in-out;
+	 /* Opera/IE 8+ */
+	-o-transition: box-shadow 400ms ease-in-out;
+	-ms-transition: box-shadow 400ms ease-in-out;
+}
+.item:hover  {
+	opacity: 1;
+	-webkit-transition: all 0.5s ease-in;
+	-moz-transition: all 0.5s ease-in;
+	-o-transition: all 0.5s ease-in;
+	transition: all 0.5s ease-in;
+	box-shadow: inset 0 0 0 0 rgba(0,0,0,0.6), inset 0 0 0 0px #1c252c, 0 0 10px rgba(0,0,0,0.3);
+}
+
+.pic1{
+	background: url('img/1.jpg') no-repeat;
+}
+.pic2{
+	background: url('img/2.jpg') no-repeat;
+}
+.pic3{
+	background: url('img/3.jpg') no-repeat;
+}
+.pic4{
+	background: url('img/4.jpg') no-repeat;
+}
+.pic5{
+	background: url('img/5.jpg') no-repeat;
+}
+.pic6{
+	background: url('img/6.jpg') no-repeat;
+}
+.imgcredit{
+	position: fixed;
+	bottom: 0;
+}

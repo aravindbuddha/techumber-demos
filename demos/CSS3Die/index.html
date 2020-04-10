@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--
+o                                                    o8      
+o8                                                   88      
+o88oo ooooooo   oooo 88   88  ooo  ooo  oo   oo    oo 88oooo.  ooooooo  ooooodb
+88   88       88     88   88  88   88   88P"Y8bP"Y8b  d8   8b  88        88 
+88   8888888  88     8888888  88   88   88   88   88  88   88  8888888   88
+88   88       88     88   88  88   88   88   88   88  88   88  88        88    
+888  ooooooo   8ooo  88   88   V888V   o88o o88o o88o  Y8b8P   oooooooo   d88b   
+
+@url: www.techumber.com
+-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Cool!  Die Roll Using CSS3 AND JQuery:demo.techumber.com</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
+
+<!-- styleing -->
+<style type="text/css">
+* {
+margin: 0; 
+padding: 0;
+border:0;
+}
+body {
+background: #343434;
+font-family: helvetica,"Comic Sans MS",arial,sans-serif;
+overflow: hidden; height: 101%;
+}
+.container{
+width: 1000px;
+margin: 0 auto;
+}
+.logo{
+text-align: center;
+
+}
+.logo a{color: #fff;}
+p{
+  color: #fff;
+}
+#roll-wrap {
+perspective: 800;
+perspective-origin: 50% 200px;
+}
+#play{
+color: #333;
+background: #fff;
+line-height: 40px;
+padding: 10px 33px;
+border-radius: 5px;
+font-weight: bolder;
+}
+#play:hover{
+  cursor: pointer;
+}
+#dice {
+  position: relative;
+  margin: 10px auto 0;
+  height: 400px;
+  width: 400px;
+  transition: transform 2s linear;
+  transform-style: preserve-3d;
+}
+.sf {
+  position: absolute;
+  height: 62px;
+  width: 62px;
+  padding: 20px;
+  background-color: rgba(50, 50, 50, 0.7);
+  font-size: 37px;
+  color: #fff;
+  border: 1px solid #555;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 62px;
+}
+#dice .f1  {
+  transform: rotateX(90deg) translateZ(50px);
+}
+#dice .f2 {
+  transform: translateZ(50px);
+}
+#dice .f3 {
+  transform: rotateY(90deg) translateZ(50px);
+}
+#dice .f4 {
+  transform: rotateY(180deg) translateZ(50px);
+}
+#dice .f5 {
+  transform: rotateY(-90deg) translateZ(50px);
+}
+#dice .f6 {
+  transform: rotateX(-90deg) rotate(180deg) translateZ(50px);
+}
+</style>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="logo">
+            <a href="http://techumber.com">
+              Techumber.com
+            </a>
+          </h1>
+          <p>
+            Click on Play<br />
+            <a id="play" Value="Play">Play</a>
+          </p>
+        </header>
+        
+<section id="roll-wrap">
+<div id="dice" style="transform: rotateX(40deg) rotateY(37deg);">
+    <div class="sf f1">1</div>
+    <div class="sf f2">2</div>
+    <div class="sf f3">3</div>
+    <div class="sf f4">4</div>
+    <div class="sf f5">5</div>
+    <div class="sf f6">6</div>
+</div>
+</section>
+    </div>
+    <script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="prefixfree.min.js"></script>
+    <script type="text/javascript">
+      //Prefix free support code for jquery
+      (function($, self){
+      if(!$ || !self) {
+      return;
+      }
+      for(var i=0; i<self.properties.length; i++) {
+      var property = self.properties[i],
+      camelCased = StyleFix.camelCase(property),
+      PrefixCamelCased = self.prefixProperty(property, true);
+      $.cssProps[camelCased] = PrefixCamelCased;
+      }
+      })(window.jQuery, window.PrefixFree);
+
+    //Actual code for Play Action   
+    $(function(){
+    var x=[0,90,180,270];
+    $("#play").click(function(e){
+      e.preventDefault();
+      var rand1=Math.floor(Math.random()*4);
+      var rand2=Math.floor(Math.random()*4);
+      $("#dice").css("transform","rotateX("+x[rand1]+"deg) rotateY("+x[rand2]+"deg)");
+    });
+    });
+    </script>
+</body>
+</html>

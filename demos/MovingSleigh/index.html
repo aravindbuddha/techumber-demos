@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!--
+  o                                                   o8      
+ o8                                                   88      
+o88oo ooooooo   oooo 88   88  ooo  ooo  oo   oo    oo 88oooo.  ooooooo  ooooodb
+ 88   88       88    88   88  88   88   88P"Y8bP"Y8b  d8   8b  88        88 
+ 88   8888888  88    8888888  88   88   88   88   88  88   88  8888888   88
+ 88   88       88    88   88  88   88   88   88   88  88   88  88        88    
+ 888  ooooooo   8ooo 88   88   V888V   o88o o88o o88o  Y8b8P   oooooooo   d88b   
+
+@url: www.techumber.com
+-->
+<html lang="en">
+    <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Moving Santa Claus's sleigh-demo.techumber.com</title>
+<style type="text/css">
+@font-face { 
+font-family: Androgyne; 
+src: url('Androgyne_TB.otf'); 
+} 
+.container{
+width: 700px;
+margin: 0 auto;
+}
+.logo{
+text-align: center;
+}
+.logo a{
+color:#212121;
+}
+body{
+background: #eee;
+font-family: Androgyne;
+height: 99%;
+left: 0;
+position: absolute;
+top: 0;
+width: 98%;
+}
+/*moving keyframes*/
+@-webkit-keyframes moveing {
+25%{
+bottom: 80%;
+left: 85%;
+-webkit-transform: rotateY(0deg);
+}
+26%{
+-webkit-transform: rotateY(180deg);
+}
+50%{
+  bottom:60%;
+  left: 0%;
+  -webkit-transform: rotateY(180deg);
+}
+51%{
+ -webkit-transform: rotateY(0deg); 
+}
+75%{
+ bottom:40%;
+  left: 85%; 
+  -webkit-transform: rotateY(0deg); 
+}
+76%{
+ bottom:40%;
+  left: 85%; 
+  -webkit-transform: rotateY(180deg); 
+}
+99%{
+ -webkit-transform: rotateY(180deg); 
+}
+
+}
+
+@-moz-keyframes moveing {
+25%{
+bottom: 80%;
+left: 85%;
+-moz-transform: rotateY(0deg);
+}
+26%{
+-moz-transform: rotateY(180deg);
+}
+50%{
+  bottom:60%;
+  left: 0%;
+  -moz-transform: rotateY(180deg);
+}
+51%{
+ -moz-transform: rotateY(0deg); 
+}
+75%{
+ bottom:40%;
+  left: 85%; 
+  -moz-transform: rotateY(0deg); 
+}
+76%{
+ bottom:40%;
+  left: 85%; 
+  -moz-transform: rotateY(180deg); 
+}
+99%{
+ -moz-transform: rotateY(180deg); 
+}
+
+}
+
+@-ms-keyframes moveing {
+25%{
+bottom: 80%;
+left: 85%;
+-ms-transform: rotateY(0deg);
+}
+26%{
+-ms-transform: rotateY(180deg);
+}
+50%{
+  bottom:60%;
+  left: 0%;
+  -ms-transform: rotateY(180deg);
+}
+51%{
+ -ms-transform: rotateY(0deg); 
+}
+75%{
+ bottom:40%;
+  left: 85%; 
+  -ms-transform: rotateY(0deg); 
+}
+76%{
+ bottom:40%;
+  left: 85%; 
+  -ms-transform: rotateY(180deg); 
+}
+99%{
+ -ms-transform: rotateY(180deg); 
+}
+
+}
+@-o-keyframes moveing {
+25%{
+bottom: 80%;
+left: 85%;
+-o-transform: rotateY(0deg);
+}
+26%{
+-o-transform: rotateY(180deg);
+}
+50%{
+  bottom:60%;
+  left: 0%;
+  -o-transform: rotateY(180deg);
+}
+51%{
+ -o-transform: rotateY(0deg); 
+}
+75%{
+ bottom:40%;
+  left: 85%; 
+  -o-transform: rotateY(0deg); 
+}
+76%{
+ bottom:40%;
+  left: 85%; 
+  -o-transform: rotateY(180deg); 
+}
+99%{
+ -o-transform: rotateY(180deg); 
+}
+
+}
+
+@keyframes moveing {
+25%{
+bottom: 80%;
+left: 85%;
+transform: rotateY(0deg);
+}
+26%{
+transform: rotateY(180deg);
+}
+50%{
+  bottom:60%;
+  left: 0%;
+  transform: rotateY(180deg);
+}
+51%{
+ transform: rotateY(0deg); 
+}
+75%{
+ bottom:40%;
+  left: 85%; 
+  transform: rotateY(0deg); 
+}
+76%{
+ bottom:40%;
+  left: 85%; 
+  transform: rotateY(180deg); 
+}
+99%{
+ transform: rotateY(180deg); 
+}
+}
+.raindeer{
+width: 189px;
+height: 100px;
+background: url(img/raindeer.gif);
+background-size: 190px 110px;
+-webkit-animation: moveing 38s infinite linear;
+-moz-animation: moveing 18s infinite linear;
+-ms-animation: moveing 18s infinite linear;
+-o-animation: moveing 18s infinite linear;
+animation: moveing 18s infinite linear;
+bottom: 0%;
+left: 0%;
+position: absolute;
+}
+</style>
+</head>
+    <body>
+        <div class="container">
+          <header>
+            <h1 class="logo">
+                <a href="http://techumber.com">
+                 Techumber.com
+                </a>
+            </h1>
+          </header>
+    <div class="raindeer"></div>
+        </div>
+    </body>
+</html>

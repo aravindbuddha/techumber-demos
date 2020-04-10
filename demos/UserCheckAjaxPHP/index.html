@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--
+o                                                    o8      
+o8                                                   88      
+o88oo ooooooo   oooo 88   88  ooo  ooo  oo   oo    oo 88oooo.  ooooooo  ooooodb
+88   88       88     88   88  88   88   88P"Y8bP"Y8b  d8   8b  88        88 
+88   8888888  88     8888888  88   88   88   88   88  88   88  8888888   88
+88   88       88     88   88  88   88   88   88   88  88   88  88        88    
+888  ooooooo   8ooo  88   88   V888V   o88o o88o o88o  Y8b8P   oooooooo   d88b   
+
+@url: www.techumber.com
+-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Live User Availability Check Using Ajax:demo.techumber.com</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
+
+<!-- styleing -->
+<style type="text/css">
+* {
+margin: 0; 
+padding: 0;
+border: 0;
+}
+body {
+background: #fff; 
+font-family: "Comic Sans MS",helvetica,arial,sans-serif;
+}
+.container{
+width: 700px;
+margin: 0 auto;
+}
+.logo{
+text-align: center;
+}
+#result{
+margin:0 0 0 3px;
+color: white;
+border-radius: 5px;
+padding: 2px;
+}
+.contant{
+
+}
+fieldset{
+padding: 20px;
+border-radius: 5px;
+border: 1px solid #ddd;
+}
+input{
+border: 1px solid #ddd;
+padding: 3px;
+width: 300px;
+line-height: 24px;
+border-radius: 6px;
+outline: none;
+font-size: 18px;
+}
+input[type="submit"]{
+background: #333;
+color: #eee;
+text-transform: uppercase;
+}
+</style>
+<script type="text/javascript">
+window.onload=function() {
+	var xhr;
+	var usrform=document.getElementById('usrform');
+	var usr=document.getElementById('txtUser');
+	var result=document.getElementById('result');
+    //onsumit 
+	usrform.onsubmit=function(){
+		//create xmlhttpreqest objects it will work on IE>7,firefox,chrome
+		try{
+			xhr=new XMLHttpRequest();
+		}
+		catch(e){
+			alert("Sorry! Your Browser doesn't support. Use any latest Browser");
+		}
+		result.style.background='green';
+		result.innerHTML='Checking...';
+		
+		xhr.open('GET','checkuser.php?usr='+usr.value,false);
+		xhr.onreadystatechange = function(){
+			if(xhr.responseText){
+				//If true user name not available
+				result.innerHTML="Sorry! User Name Taken";
+				result.style.background="red";
+				}
+				else{
+				//if false user name available
+				result.innerHTML="Perfect! User Name available";
+				}
+		};
+		
+		xhr.send();
+		return false;
+	};
+}
+
+</script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="logo">
+            <a href="http://techumber.com">
+              <img src="logostd.png" alt="techumber logo" title="techumber logo" />
+            </a>
+          </h1>
+        </header>
+        <section class="contant">
+        	<form method="get" id="usrform" >
+        		<fieldset>
+        			<legend>Check User</legend>
+        		USER: <input type="text" id="txtUser" name="txtUser" placeholder="Enter User Name" required="required"  autofocus="autofocus" /><span id="result"></span>
+        		<br />
+        		<br />
+        		<input type="submit" value="check" id="check" />
+        	</fieldset>
+        	</form>
+        </section>
+    </div>
+</body>
+</html>

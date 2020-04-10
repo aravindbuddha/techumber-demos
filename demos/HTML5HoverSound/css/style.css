@@ -1,0 +1,52 @@
+/*--------------------------------------------------------------------------------------------
+|	@desc:		Playing Sounds On Mouse Hover Using HTML5 Audio
+|	@author:	Aravind Buddha
+|	@url:		http://www.techumber.com
+|	@date:		30 DEC 2012
+|	@email:     aravind@techumber.com
+|	@license:	Free! to Share,copy, distribute and transmit , 
+|               but i'll be glad if my name listed in the credits'
+---------------------------------------------------------------------------------------------*/
+*{ 
+margin: 0; 
+padding: 0; 
+}
+@font-face {
+font-family: Androgyne;
+src: url('Androgyne_TB.otf');
+}
+body { 
+background: #212121;
+font-family: Androgyne;
+height: 100%;
+color: #fff;
+}
+article, aside, figure, footer, header, hgroup,
+menu, nav, section { display: block; }
+p, pre { 
+margin: 0 0 15px 0; 
+}
+section {
+padding: 20px 0; 
+overflow: hidden; 
+text-align: center;
+}
+#wrap{
+margin: 0 auto;
+width: 500px;
+}
+audio{
+display: none;
+}
+.logo{
+text-align: center;
+}
+.logo a{
+color:#fff;
+}
+#welcomeTxt,#shutdownTxt{
+background: #000;
+padding: 10px;
+border-radius: 10px;
+text-decoration: none;
+}

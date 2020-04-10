@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+  o                                                   o8      
+ o8                                                   88      
+o88oo ooooooo   oooo 88   88  ooo  ooo  oo   oo    oo 88oooo.  ooooooo  ooooodb
+ 88   88       88    88   88  88   88   88P"Y8bP"Y8b  d8   8b  88        88 
+ 88   8888888  88    8888888  88   88   88   88   88  88   88  8888888   88
+ 88   88       88    88   88  88   88   88   88   88  88   88  88        88    
+ 888  ooooooo   8ooo 88   88   V888V   o88o o88o o88o  Y8b8P   oooooooo   d88b   
+
+@url: www.techumber.com
+-->
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Online Voting System With PHP And AJAX:demo.techumber.com</title>
+        <style type="text/css">
+            .container{
+                width: 700px;
+                margin: 0 auto;
+            }
+            .logo{
+                text-align: center;
+            }
+            #vote{
+
+            }
+            #vote .result{
+                margin: 0;
+                height: 20px;
+                background: #515151;
+                color: #fff;
+                border-radius: 4px;
+                text-align: center;
+            }
+        </style>
+        <script type="text/javascript">
+            
+function doVote(v){ 
+var xhr;
+if (window.XMLHttpRequest){
+    xhr=new XMLHttpRequest();
+}
+else{
+    alert("Your Browser does not support ajax Please upgrade it!");
+}
+document.getElementById("vote").innerHTML="<img src='img/loading.gif' />";
+xhr.onreadystatechange=function(){
+    if (xhr.readyState==4 && xhr.status==200){
+        document.getElementById("vote").innerHTML=xhr.responseText;
+    }
+}
+xhr.open("GET","vote.php?v="+v,true);
+xhr.send();
+}
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="logo">
+                <a href="http://techumber.com">
+                    <img src="img/logostd.png" alt="techumber logo" title="techumber logo" />
+                </a>
+            </h1>
+            <div id="vote">
+                <h3>Select Your Precedent!</h3>
+                <form>
+                    <input type="radio" name="vote" value="o" onclick="doVote(this.value)" />Obama
+                    <br />
+                    <input type="radio" name="vote" value="r" onclick="doVote(this.value)" />Romney
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

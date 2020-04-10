@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!--
+o                                                    o8      
+o8                                                   88      
+o88oo ooooooo   oooo 88   88  ooo  ooo  oo   oo    oo 88oooo.  ooooooo  ooooodb
+88   88       88     88   88  88   88   88P"Y8bP"Y8b  d8   8b  88        88 
+88   8888888  88     8888888  88   88   88   88   88  88   88  8888888   88
+88   88       88     88   88  88   88   88   88   88  88   88  88        88    
+888  ooooooo   8ooo  88   88   V888V   o88o o88o o88o  Y8b8P   oooooooo   d88b   
+
+@url: www.techumber.com
+-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Calculator Logic using Jquery:demo.techumber.com</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
+
+<!-- styleing -->
+<style type="text/css">
+* {
+margin: 0; 
+padding: 0;
+border:0;
+}
+body {
+background: #fff; 
+font-family: helvetica,arial,"Comic Sans MS",arial,sans-serif;
+}
+.logo a{
+font-family: "Comic Sans MS",helvetica,arial,sans-serif;
+color: #333;
+}
+.container{
+width: 700px;
+margin: 0 auto;
+}
+.logo{
+text-align: center;
+}
+.contant{
+width: 269px;
+margin: 0 auto;
+}
+.calc{
+width: 228px;
+height: 244px;
+border: 1px solid #ddd;
+border: solid 1px #102a3e;
+overflow: visible;
+display: inline-block;
+margin: 60px 0 0 20px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+position: relative;
+box-shadow: inset 0 0 1px #fff;
+-moz-box-shadow: inset 0 0 1px #fff;
+-webkit-box-shadow: inset 0 0 1px #fff;
+background-color: #619bb9;
+background: -moz-linear-gradient(top, rgba(50, 123, 165, 0.75), rgba(46, 75, 90, 0.75) 50%, rgba(92, 176, 220, 0.75));
+background: -webkit-gradient(linear, center top, center bottom, from(#327aa4),color-stop(45%, #2e4b5a), to(#5cb0dc));
+}
+.calc .calc-in{
+width: 212px;
+height: 205px;
+background: #D9E4F1;
+margin: 7px;
+border: solid 1px #102a3e;
+bottom: 0;
+position: absolute;
+}
+
+.calc p{
+background: url("calc-icon.png") no-repeat;
+padding-left: 15px;
+margin: 8px;
+margin-top: 5px;
+color: #fff;
+float: left;
+}
+.wcmd{
+float: right;
+margin-right: 7px;
+}
+.wcmd a{
+float: left;
+}
+.wcmd .min{
+background:url('min.png') no-repeat;
+width: 29px;
+height: 19px;
+}
+.wcmd .max{
+background:url('max.png') no-repeat;
+width: 27px;
+height: 19px
+}
+.wcmd .close{
+background:url('close.png') no-repeat;
+width: 48px;
+height:19px;
+}
+#display{
+width: 190px;
+margin: 0px;
+border: 1px solid #aaa;
+font-size: 40px;
+color: #333;
+text-align: right;
+font-size: 40px;
+position: relative;
+top: 10px;
+left: 10px;
+height: 50px;
+border-radius: 3px;
+background: #fff;
+}
+.num-wrap{
+margin: 20px auto;
+width: 186px;
+}
+#n0{
+width: 71px;
+height: 25px;
+}
+#neq{
+	width: 34px;
+	height: 59px;
+	float: right;
+}
+.calc button{
+	width: 34px;
+	height: 27px;
+	border: 1px solid #9EAABB;
+	border-radius: 3px;	
+	margin-bottom: 5px;
+}
+button:hover{
+cursor:pointer;
+}
+</style>
+<script type="text/javascript" src="jquery-1.8.1.min.js"></script>
+<script type="text/javascript">
+$(function(){
+//Calc Object with display,clear,doCal methods
+var Calc={
+	display:function(v){
+		$("#display").val(v);
+	},
+	clear:function(){
+		$("#display").val(" ");
+	},
+	doCal:function(val){
+	var result="";
+	var dtemp=$("#display").val();
+	if(dtemp=="0"){
+		this.clear();
+		result=val; 
+	}else if(val=="c"){
+		this.clear();
+	}else if(val=="="){
+		result=eval(dtemp);
+	}else{
+		result=dtemp+val;
+	}
+		this.display(result);
+	}
+}
+	//Keyboard key press event.
+	$("body").keypress(function(e){
+		Calc.doCal(String.fromCharCode(e.which));
+	});
+	//calc UI click events
+	$('.calc button').click(function(e){
+		e.preventDefault();
+		Calc.doCal(this.value);
+	});
+});
+</script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="logo">
+            <a href="http://techumber.com">
+             Techumber.com
+            </a>
+          </h1>
+        </header>
+        <section class="contant">
+<div class="calc">
+	<p>Calculater</p>
+		<div class="wcmd">
+			<a class="min"></a>
+			<a class="max"></a>
+			<a class="close"></a>
+		</div>
+	<div class="calc-in">
+	<form id="calcform">
+		<input id="display" type="text" value="0" disabled="1">
+		<div class="num-wrap">
+		<button id="n7" value="7">7</button>
+		<button id="n8" value="8">8</button>
+		<button id="n9" value="9">9</button>
+		<button id="ndiv" value="/">/</button>
+		<button id="nmod" value="%">%</button>
+		<button id="n4" value="4">4</button>
+		<button id="n5" value="5">5</button>
+		<button id="n6" value="6">6</button>
+		<button id="nmul" value="*">*</button>
+		<button id="nC" value="c">C</button>
+		<button id="n1" value="1">1</button>
+		<button id="n2" value="2">2</button>
+		<button id="n3" value="3">3</button>
+		<button id="nsub" value="-">-</button>
+		<button id="neq" value="=">=</button>
+		<button id="n0" value="0">0</button>
+		<button id="nP" value=".">.</button>
+		<button id="nadd" value="+">+</button>
+		</div>
+	</form>
+</div>
+</div>
+        </section>
+    </div>
+</body>
+</html>

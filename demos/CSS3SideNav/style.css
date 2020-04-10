@@ -1,0 +1,84 @@
+/*Simple reset*/
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	color: #fff;
+	text-decoration: none;
+}
+html,body,#page{
+	width: 100%;
+	height: 100%;
+}
+body{
+	font-family: 'Dosis', sans-serif;
+	font-size: 16px;
+	background: #010001;
+	color: #fff;
+}
+h1{
+	font-size: 2em;
+}
+nav{
+	background: #232323;
+	height: 100%;
+	left: -280px;
+	position: fixed;
+	width: 280px;
+	z-index: 3;
+ 	cursor: pointer;
+ 	border-right: 3px solid #f4a998;
+ 	text-align: center;
+	-webkit-transition: all 1100ms cubic-bezier(0.205, 0.475, 0.720, 1); /* older webkit */
+	-webkit-transition: all 1100ms cubic-bezier(0.205, 0.475, 0.720, 1.505); 
+   -moz-transition: all 1100ms cubic-bezier(0.205, 0.475, 0.720, 1.505); 
+     -o-transition: all 1100ms cubic-bezier(0.205, 0.475, 0.720, 1.505); 
+        transition: all 1100ms cubic-bezier(0.205, 0.475, 0.720, 1.505); /* custom */
+}
+nav:hover,nav:after:hover{
+	left: 0;
+}
+nav:after{
+	content: "";
+	display: block;
+	height: 16px;
+	width: 17px;
+	left: 290px;
+	margin-top: -8px;
+	position: absolute;
+	top: 50%;
+	cursor: pointer;	
+	background-size: 50px 50px;
+	background: #f4a998; /* Old browsers */
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#f4a998), color-stop(0.2, #f4a998), color-stop(0.2, #000000), color-stop(0.2, #f4a998), color-stop(0.2, #000000), color-stop(0.2, #000000), color-stop(0.4, #000000), color-stop(0.4, #f4a998), color-stop(0.4, #f4a998), color-stop(0.6, #f4a998), color-stop(0.6, #000000), color-stop(0.6, #000000), color-stop(0.81, #000000), color-stop(0.81, #f4a998), to(#f4a998));
+  background: -webkit-linear-gradient(#f4a998 0%, #f4a998 20%, #000000 20%, #f4a998 20%, #000000 20%, #000000 20%, #000000 40%, #f4a998 40%, #f4a998 40%, #f4a998 60%, #000000 60%, #000000 60%, #000000 81%, #f4a998 81%, #f4a998 100%);
+  background: -moz-linear-gradient(#f4a998 0%, #f4a998 20%, #000000 20%, #f4a998 20%, #000000 20%, #000000 20%, #000000 40%, #f4a998 40%, #f4a998 40%, #f4a998 60%, #000000 60%, #000000 60%, #000000 81%, #f4a998 81%, #f4a998 100%);
+  background: -o-linear-gradient(#f4a998 0%, #f4a998 20%, #000000 20%, #f4a998 20%, #000000 20%, #000000 20%, #000000 40%, #f4a998 40%, #f4a998 40%, #f4a998 60%, #000000 60%, #000000 60%, #000000 81%, #f4a998 81%, #f4a998 100%);
+  background: linear-gradient(#f4a998 0%, #f4a998 20%, #000000 20%, #f4a998 20%, #000000 20%, #000000 20%, #000000 40%, #f4a998 40%, #f4a998 40%, #f4a998 60%, #000000 60%, #000000 60%, #000000 81%, #f4a998 81%, #f4a998 100%); /* FF3.6+ */ /* Chrome,Safari4+ */ /* Chrome10+,Safari5.1+ */ /* Opera 11.10+ */ /* IE10+ */ /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4a998', endColorstr='#f4a998',GradientType=0 ); /* IE6-9 */
+}
+nav h2{
+	border: 1px solid #fff;
+	border-radius: 50%;
+	width: 34px;
+	padding: 10px;
+	margin: 0 auto;
+	margin-top: 130%;
+}
+nav ul li{
+	font-size: 22px;
+}
+section{
+	height: 100%;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+.logo{
+	background-size: contain;
+	display: block;
+	font-size: 170px;
+	height: 121px;
+	margin-top: 20%;
+}

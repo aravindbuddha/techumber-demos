@@ -1,0 +1,41 @@
+/*--------------------------------------------------------------------------------------------
+|	@desc:		The ultimate Accodion Effect With CSS3
+|	@author:	Aravind Buddha
+|	@url:		http://www.techumber.com
+|	@date:		22 September 2012
+|	@email:     aravind@techumber.com
+|	@license:	Free! to Share,copy, distribute and transmit , 
+|               but i'll be glad if my name listed in the credits'
+---------------------------------------------------------------------------------------------*/
+.container{
+width: 600px;
+margin: 0 auto;
+}
+.logo{
+text-align: center;
+}
+#accordion div{
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+border: 1px solid #ccc;
+margin: 0;
+}
+#accordion div a{
+font-weight: bold;
+text-decoration: none;
+padding: 10px;
+display: block;
+}
+#accordion p {
+-webkit-transition: height 1s ease;
+-moz-transition: height 1s ease;
+transition: height 1s ease;
+height: 0;
+margin: 0;
+overflow: hidden;
+}
+#accordion p:target
+{
+height: 110px;
+}

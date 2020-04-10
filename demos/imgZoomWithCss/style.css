@@ -1,0 +1,51 @@
+/*--------------------------------------------------------------------------------------------
+|	@desc:		stylesheet for image zoom
+|	@author:	Aravind Buddha
+|	@url:		http://www.techumber.com
+|	@date:		18 September 2012
+|	@email:     aravind@techumber.com
+|	@license:	Free! to Share,copy, distribute and transmit , 
+|               but i'll be glad if my name listed in the credits'
+---------------------------------------------------------------------------------------------*/
+.container{
+width:600px;
+margin: 0 auto;
+}
+.mini-layout {
+border: 1px solid #DDD;
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.075);
+-moz-box-shadow: 0 1px 2px rgba(0,0,0,.075);
+box-shadow: 0 1px 2px rgba(0,0,0,.075);
+margin-bottom: 20px;
+padding: 9px;
+width: 533px;
+}
+.imgholder{
+float: left;
+width: 220px;
+height: 318px;
+border: none;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+box-shadow: 0px 0px 2px #999999;
+overflow: hidden;
+padding: 0px;
+margin-left: 30px;
+}
+.imgholder img{
+width: 100%;
+height: 100%;
+-webkit-transition: all 0.8s ease;
+-moz-transition: all 0.8s ease;
+-o-transition: all 0.8s ease;
+}
+.imgholder img:hover {
+height: 110%;
+width: 110%;
+margin-left: -15px;
+margin-top: -15px;
+}

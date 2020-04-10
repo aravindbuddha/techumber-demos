@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+  <!--
+    o                                                   o8      
+   o8                                                   88      
+  o88oo ooooooo   oooo 88   88  ooo  ooo  oo   oo    oo 88oooo.  ooooooo  ooooodb
+   88   88       88    88   88  88   88   88P"Y8bP"Y8b  d8   8b  88        88 
+   88   8888888  88    8888888  88   88   88   88   88  88   88  8888888   88
+   88   88       88    88   88  88   88   88   88   88  88   88  88        88    
+   888  ooooooo   8ooo 88   88   V888V   o88o o88o o88o  Y8b8P   oooooooo   d88b   
+
+@url: www.techumber.com
+-->
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>demo.techumber.com</title>
+   <script type='text/javascript' src='http://www.google.com/jsapi'></script>
+
+  <style type="text/css">
+  .container{
+    width: 860px;
+    margin: 0 auto;
+
+  }
+  .logo{
+    text-align: center;
+  }
+  .charts div{
+  	float: left;
+  }
+  </style>
+  <script type="text/javascript">
+      // The will load chart API and package.
+      google.load('visualization', '1.0',  {'packages':['piechart', 'imagepiechart', 'barchart','imageBarChart','linechart']});
+      //To set a callback to run when API loaded.
+      google.setOnLoadCallback(drawChart);
+
+      //This function will be called in
+      function drawChart() {
+        // To create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Sales');
+        data.addRows([
+          ['Laptops', 300],
+          ['Desktops', 100],
+          ['Ultrabooks', 100],
+          ['Notebooks', 100],
+          ['All-in-Ons', 200]
+        ]);
+
+        //Pie charts
+         var chart = new google.visualization.PieChart(document.getElementById('pie'));
+        chart.draw(data, {width: 400, height: 300, title:'Computers Sales Report in Pie Chart'});
+        //3d pie charts
+         var chart = new google.visualization.PieChart(document.getElementById('pie_3d'));
+        chart.draw(data, {width: 400, height: 300, is3D: true, title:'Computers Sales Report 3D pie charts'});
+        //Image Pie charts
+        var chart = new google.visualization.ImagePieChart(document.getElementById('pie_img'));
+        chart.draw(data, {width: 400, height: 300, title:'Computers Sales Report Image pie charts'});
+        //Image Pie 3D charts
+        var chart = new google.visualization.ImagePieChart(document.getElementById('pie_img_3d'));
+        chart.draw(data, {width: 400, height: 300, is3D: true, title:'Computers Sales Report 3D Image pie charts'});
+        //bar chart
+        var chart = new google.visualization.BarChart(document.getElementById('bar'));
+        chart.draw(data, {width: 400, height: 300, title:'Computers Sales Report Bar charts'});
+         //bar 3D chart
+        var chart = new google.visualization.BarChart(document.getElementById('bar_3d'));
+        chart.draw(data, {width: 400, height: 300, is3D: true, title:'Computers Sales Report Bar 3D charts'});
+
+        //Image Bar chart
+        var chart = new google.visualization.ImageBarChart(document.getElementById('bar_img'));
+        chart.draw(data, {width: 400, height: 300, title:'Computers Sales Report Image Bar charts'});
+        //Image Bar 3D chart
+        var chart = new google.visualization.ImageBarChart(document.getElementById('bar_img_3d'));
+        chart.draw(data, {width: 400, height: 300, is3D: true, title:'Computers Sales Report Image Bar 3D charts'});
+        //line chart
+        var chart = new google.visualization.LineChart(document.getElementById('line'));
+        chart.draw(data, {width: 400, height: 300,  title:'Computers Sales Report Image line charts'});
+        //line Image chart
+        var chart = new google.visualization.ImageLineChart(document.getElementById('line_img'));
+        chart.draw(data, {width: 400, height: 300,  title:'Computers Sales Report Image line charts'});
+        
+
+
+      }
+    </script>
+</head>
+<body>
+  <div class="container">
+    <h1 class="logo">
+    <a href="http://techumber.com">
+      <img src="logostd.png" alt="techumber logo" title="techumber logo" />
+    </a>
+  </h1>
+  <div class="charts">
+	   <div id="pie"></div>
+	   <div id="pie_3d"></div>
+	   <div id="pie_img"></div>
+	   <div id="pie_img_3d"></div>
+	   <div id="bar"></div>
+	   <div id="bar_3d"></div>
+	   <div id="bar_img"></div>
+	   <div id="bar_img_3d"></div>
+	   <div id="line"></div>
+	   <div id="line_img"></div>
+   <div>
+  </div>
+</body>
+</html>
+   

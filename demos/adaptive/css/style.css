@@ -1,0 +1,117 @@
+*{
+	border: 0;
+	padding: 0;
+	margin:0;
+	box-sizing:border-box;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+.wrap{
+	width:  634px;
+	height: 100%;
+	margin: 0 auto;
+}
+header{
+	margin: 25px 0 50px 0;
+}
+.product{
+	width: auto;
+	float: left;
+	width: 300px;
+	margin-left: 10px;
+	margin-bottom: 25px;
+}
+.name,.price{
+	width: 50%;
+	float:left;
+}
+.price{
+	text-align: right;		
+}
+.buy{
+	padding-left: 65px;
+}
+.window{
+	position: absolute;
+	width: 600px;
+	height: 600px;
+	top: 50px;
+	left:50%;
+	margin-left: -300px;
+	border: 5px solid rgba(112, 112, 112, 0.56);
+	border-radius: 5px;
+	background: #fff;
+}
+.window .close{
+	float: right;
+	border: 3px solid #B4B4B4;
+	border-radius: 50%;
+	padding: 5px;
+	width: 25px;
+	height: 25px;
+	line-height: 12px;
+	text-align: center;
+	position: absolute;
+	top: -23px;
+	right: -23px;
+	cursor: pointer;
+}
+#paypalFrame{
+	width: 100%;
+	height: 100%;
+}
+/*Looding animation effect*/
+ .loader {
+  display: block;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  margin: 100px auto;
+  position: relative;
+  box-sizing: border-box;
+  text-align: center;
+  z-index: 0;
+  text-transform: uppercase;
+}
+.loader:before, .loader:after {
+  opacity: 0;
+  box-sizing: border-box;
+  content:"\0020";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  border: 5px solid #019d8c;
+  box-shadow: 0 0 50px #019d8c, inset 0 0 50px #019d8c;
+}
+.loader:after {
+  z-index: 1;
+  -webkit-animation: gogoloader 2s infinite 1s;
+  animation: gogoloader 2s infinite 1s;
+
+}
+.loader:before {
+  z-index: 2;
+  -webkit-animation: gogoloader 2s infinite;
+  animation: gogoloader 2s infinite;
+}
+
+@-webkit-keyframes gogoloader {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}

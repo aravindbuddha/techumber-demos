@@ -1,0 +1,161 @@
+/*--------------------------------------------------------------------------------------------
+|	@desc:		web desing using html5 and css3
+|	@author:	Aravind Buddha
+|	@url:		http://www.techumber.com
+|	@date:		14 September 2012
+|	@email:     aravind@techumber.com
+|	@license:	Free! to Share,copy, distribute and transmit , 
+|               but i'll be glad if my name listed in the credits'
+---------------------------------------------------------------------------------------------*/
+/*---------CSS reset-----------*/
+html, body, div, span, applet, object,
+iframe,h1, h2, h3, h4, h5, h6, p,
+blockquote, pre,a, abbr, acronym, address,
+big, cite, code,del, dfn, em, font, img,
+ins, kbd, q, s, samp,small, strike, strong,
+sub, sup, tt, var,b, u, i, center,dl, dt,
+dd, ol, ul, li, fieldset, form, label,
+legend, table, caption, tbody, tfoot, 
+thead, tr, th, td {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+}
+ol, ul, li{
+list-style: none;
+}
+/*---------html5 display block for ie<9-----------*/
+header,article,section,footer,aside{
+	display: block;
+}
+/*---------General-----------*/
+body{
+background: #FDFDFC;
+font: 12px/21px 'Muli', Arial, sans-serif;
+color: #1E1E1E;
+line-height: 20px;
+text-align: justify;
+}
+h1, h2, a {
+color: #0084D6;
+text-decoration: none;
+}
+/*---------common CSS3 styles-----------*/
+.bs{
+-moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+-khtml-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);	
+}
+.br{
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-khtml-border-radius: 5px;
+border-radius: 5px;
+}
+.black-gradient{
+background: #222;
+background: -moz-linear-gradient(bottom, #131313 0%, #3A3A3A 100%);
+background: -webkit-gradient(linear, left bottom, left bottom, color-stop(0%,#131313), color-stop(100%,#3A3A3A));
+background: -webkit-linear-gradient(bottom, #131313 0%,#3A3A3A 100%);
+background: -o-linear-gradient(bottom, #131313 0%,#3A3A3A 100%);
+background: -ms-linear-gradient(bottom, #131313 0%,#3A3A3A 100%);
+background: linear-gradient(bottom, #131313 0%,#3A3A3A 100%);
+}
+.box{
+background: white;
+border: 1px solid #aaa;
+-moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+-khtml-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-khtml-border-radius: 5px;
+border-radius: 5px;
+padding: 10px;
+padding-bottom: 3%;
+margin: 2% 2% 4% 2%;
+}
+/*---------wrapper-----------*/
+#wrapper{
+margin: 0 auto;
+width: 960px;
+border: 1px solid #aaa;
+overflow: hidden;
+}
+/*---------header section-----------*/
+header{
+background: #676767;
+height: 100px;
+}
+header h1{
+padding: 40px 0px 0px 12px;
+}
+header h1 a{
+
+color: #fff;
+text-decoration: none;
+
+}
+/*---------navgation-----------*/
+nav{
+background: #676767; 
+height: 30px;
+}
+nav ul li{
+border-top: 3px solid #676767;
+float: left; 
+margin-left: 10px;
+height: 27px; 
+line-height: 27px;
+}
+nav ul li:hover{
+background: #3F3F3F;
+border-top: 3px solid #0084D6;
+color: white;
+}
+nav ul li a{ color: #fff; 
+text-decoration: none; 
+text-transform: uppercase;
+}
+/*---------main content area-----------*/
+#main{
+width: 66%;
+float: left;
+}
+
+/*---------sidebar-----------*/
+aside{
+width: 27%;
+float: left;
+}
+aside section{
+margin-bottom: 20px;
+}
+aside section h2{
+
+border-bottom: 1px solid #CCC;
+
+}
+ul.cat li a:hover{
+text-decoration: underline;
+}
+/*---------footer-----------*/
+footer{
+background: #3F3F3F;
+border-top: 1px solid #484848;
+min-height: 50px;
+clear: both;
+color: #fff;
+}
+.copyright{
+height: 50px;
+line-height: 50px;
+padding-left: 20px;
+}
+.copyright a{
+color: #fff;
+text-decoration: underline;
+}

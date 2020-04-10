@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+  <!--
+    o                                                   o8      
+   o8                                                   88      
+  o88oo ooooooo   oooo 88   88  ooo  ooo  oo   oo    oo 88oooo.  ooooooo  ooooodb
+   88   88       88    88   88  88   88   88P"Y8bP"Y8b  d8   8b  88        88 
+   88   8888888  88    8888888  88   88   88   88   88  88   88  8888888   88
+   88   88       88    88   88  88   88   88   88   88  88   88  88        88    
+   888  ooooooo   8ooo 88   88   V888V   o88o o88o o88o  Y8b8P   oooooooo   d88b   
+
+@url: www.techumber.com
+@desc:Wow, Quotes Showcase Widget Using Pure CSS3
+@auther:aravindbuddha
+-->
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>demo.techumber.com</title>
+  <style type="text/css">
+  .container{
+    width: 280px;
+    margin: 0 auto;
+  }
+  .logo{
+    text-align: center;
+  }
+  body {
+  font: 75%/1.5em Arial, sans-serif;
+  }
+
+.quote{
+position: absolute;
+overflow: hidden;
+opacity: 0;
+-moz-opacity: 0;
+filter:alpha(opacity=0);
+border: 1px solid #030303;
+background: url(img/pattern.png) repeat;
+padding-bottom: .5em;
+height: auto;
+width: 200px;
+overflow: hidden;
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+}
+.quote .text {
+padding: 15px 15px 25px 15px;
+color: #fff;
+font-style: italic;
+font-weight: 100;
+zoom: 1;
+font-size: 1.25em;
+}
+.quote .author {
+display: block;
+padding: .5em;
+margin-top: 1em;
+border-top: 1px dotted #4d4d4d;
+color: #7a9f17;
+font-style: normal;
+font-size: 1em;
+font-size: 1.25em;
+margin-right:15px; 
+}
+
+
+/*cross browser animations*/
+.quote:nth-child(1) {
+  -webkit-animation: cycle 15s 0s infinite linear;
+  -moz-animation: cycle 15s 0s infinite linear;
+  -ms-animation: cycle 15s 0s infinite linear;
+  -o-animation: cycle 15s 0s infinite linear;
+  animation: cycle 15s 0s infinite linear;
+}
+ 
+.quote:nth-child(2) {
+  -webkit-animation: cycle 15s 5s infinite linear;
+  -moz-animation: cycle 15s 5s infinite linear;
+  -ms-animation: cycle 15s 5s infinite linear;
+  -o-animation: cycle 15s 5s infinite linear;
+  animation: cycle 15s 5s infinite linear;
+}
+ 
+.quote:nth-child(3) {
+  -webkit-animation: cycle 15s 10s infinite linear;
+  -moz-animation: cycle 15s 10s infinite linear;
+  -ms-animation: cycle 15s 10s infinite linear;
+  -o-animation: cycle 15s 10s infinite linear;
+  animation: cycle 15s 10s infinite linear;
+}
+ 
+/*croass browser keyframe anitmation*/
+@keyframes "cycle" {
+ 0% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+ }
+ 2% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+ }
+ 31% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+ }
+ 33% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+ }
+ 100% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+ }
+ 
+}
+ 
+@-moz-keyframes cycle {
+ 0% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 2% {
+   filter: alpha(opacity=100);
+   opacity: 1;
+ }
+ 31% {
+   filter: alpha(opacity=100);
+   opacity: 1;
+ }
+ 33% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 100% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 
+}
+ 
+@-webkit-keyframes "cycle" {
+ 0% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 2% {
+   filter: alpha(opacity=100);
+   opacity: 1;
+ }
+ 31% {
+   filter: alpha(opacity=100);
+   opacity: 1;
+ }
+ 33% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 100% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 
+}
+ 
+@-ms-keyframes "cycle" {
+ 0% {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 2% {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+ }
+ 31% {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+ }
+ 33% {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 100% {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 
+}
+ 
+@-o-keyframes "cycle" {
+ 0% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 2% {
+   filter: alpha(opacity=100);
+   opacity: 1;
+ }
+ 31% {
+   filter: alpha(opacity=100);
+   opacity: 1;
+ }
+ 33% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 100% {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ 
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="logo">
+    <a href="http://techumber.com">
+      <img src="logostd.png" alt="techumber logo" title="techumber logo" />
+    </a>
+  </h1>
+ <div class="quote-wrapper">
+ 	<div class="quote">
+ 	<div class="text">
+ 		"A man who was completely innocent, offered himself as a sacrifice for the good of others, including his enemies, and became the ransom of the world. It was a perfect act."
+ 	</div>
+ 	<div class="author">
+ 		-Mahatma Gandhi -
+ 	</div>
+ </div>
+ 	<div class="quote">
+ 	<div class="text">
+ 		"Never think there is anything impossible for the soul. It is the greatest heresy to think so. If there is sin, this is the only sin; to say that you are weak, or others are weak."
+ 	</div>
+ 	<div class="author">
+ 		-Swami Vivekananda-
+ 	</div>
+ </div>
+ 	<div class="quote">
+ 	<div class="text">
+ 		"The world is a dangerous place to live; not because of the people who are evil, but because of the people who don't do anything about it." 
+ 	</div>
+ 	<div class="author">
+ 		-Albert Einstein -
+ 	</div>
+ </div>
+</div>
+  </div>
+</body>
+</html>
+   

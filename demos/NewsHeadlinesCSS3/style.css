@@ -1,0 +1,150 @@
+/*--------------------------------------------------------------------------------------------
+|	@desc:		Fancy News Head Lines Scroll Effect With Pure CSS3 
+|	@author:	Aravind Buddha
+|	@url:		http://www.techumber.com
+|	@date:		12 OCT 2012
+|	@email:     aravind@techumber.com
+|	@license:	Free! to Share,copy, distribute and transmit , 
+|               but i'll be glad if my name listed in the credits'
+---------------------------------------------------------------------------------------------*/
+.container {
+margin:0 auto;
+width:700px;
+}
+.logo {
+text-align:center;
+}
+.newshead {
+-webkit-border-radius:5px;
+background-color:#222;
+border:1px solid #000;
+border-radius:5px;
+height:50px;
+margin:25px auto;
+overflow:hidden;
+position:relative;
+width:500px;
+}
+.newshead p {
+-webkit-animation:anim 25s ease infinite;
+-moz-animation:anim 25s ease infinite;
+-o-animation:anim 25s ease infinite;
+width:2150px;
+}
+.newshead a {
+color:#FFF;
+float:left;
+max-width:350px;
+padding-left:80px;
+text-align:center;
+text-decoration:none;
+width:350px;
+}
+@-webkit-keyframes anim {
+0% {
+	-webkit-transform:translateX(100%);
+}
+10% {
+	-webkit-transform:translateX(0);
+}
+20% {
+	-webkit-transform:translateX(0);
+}
+30% {
+	-webkit-transform:translateX(-20%);
+}
+40% {
+	-webkit-transform:translateX(-20%);
+}
+50% {
+	-webkit-transform:translateX(-40%);
+}
+60% {
+	-webkit-transform:translateX(-40%);
+}
+70% {
+	-webkit-transform:translateX(-60%);
+}
+80% {
+	-webkit-transform:translateX(-60%);
+}
+90% {
+	-webkit-transform:translateX(-80%);
+}
+100%{
+	-webkit-transform:translateX(-80%);
+}
+}
+
+@-o-keyframes anim {
+0% {
+	-o-transform:translateX(100%);
+}
+10% {
+	-o-transform:translateX(0);
+}
+20% {
+	-o-transform:translateX(0);
+}
+30% {
+	-o-transform:translateX(-20%);
+}
+40% {
+	-o-transform:translateX(-20%);
+}
+50% {
+	-o-transform:translateX(-40%);
+}
+60% {
+	-o-transform:translateX(-40%);
+}
+70% {
+	-o-transform:translateX(-60%);
+}
+80% {
+	-o-transform:translateX(-60%);
+}
+90% {
+	-o-transform:translateX(-80%);
+}
+100%{
+	-o-transform:translateX(-80%);
+}
+}
+
+@-moz-keyframes anim {
+0% {
+	-moz-transform:translateX(100%);
+}
+10% {
+	-moz-transform:translateX(0);
+}
+20% {
+	-moz-transform:translateX(0);
+}
+30% {
+	-moz-transform:translateX(-20%);
+}
+40% {
+	-moz-transform:translateX(-20%);
+}
+50% {
+	-moz-transform:translateX(-40%);
+}
+60% {
+	-moz-transform:translateX(-40%);
+}
+70% {
+	-moz-transform:translateX(-60%);
+}
+80% {
+	-moz-transform:translateX(-60%);
+}
+90% {
+	-moz-transform:translateX(-80%);
+}
+100%{
+	-moz-transform:translateX(-80%);
+}
+}
+

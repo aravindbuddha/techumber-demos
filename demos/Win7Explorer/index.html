@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<!--
+o                                                    o8      
+o8                                                   88      
+o88oo ooooooo   oooo 88   88  ooo  ooo  oo   oo    oo 88oooo.  ooooooo  ooooodb
+88   88       88     88   88  88   88   88P"Y8bP"Y8b  d8   8b  88        88 
+88   8888888  88     8888888  88   88   88   88   88  88   88  8888888   88
+88   88       88     88   88  88   88   88   88   88  88   88  88        88    
+888  ooooooo   8ooo  88   88   V888V   o88o o88o o88o  Y8b8P   oooooooo   d88b   
+
+@url: www.techumber.com
+-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>demo.techumber.com</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
+<script type="text/javascript" src="prefixfree.min.js"></script>
+
+<!-- styleing -->
+<style type="text/css">
+* {
+margin: 0; 
+padding: 0;
+border:0;
+}
+body {
+background: #333; 
+font-family: helvetica,"Comic Sans MS",arial,sans-serif;
+font-size: 14px;
+
+}.c{
+clear: both;
+}
+.container{
+width: 900px;
+margin: 0 auto;
+}
+.logo{
+text-align: center;
+}
+.logo a{color: #fff;}
+.logo a:hover{color: #fff;}
+
+.window{
+width: 850px;
+height: 500px;
+border: 1px solid #ddd;
+border: solid 1px #102a3e;
+overflow: visible;
+display: inline-block;
+margin: 60px 0 0 20px;
+border-radius: 5px;
+position: relative;
+box-shadow: inset 0 0 1px #fff;
+box-shadow: inset 0 0 1px #fff;
+background-color: #619bb9;
+background: gradient(linear, center top, center bottom, from(#327aa4),color-stop(45%, #2e4b5a), to(#5cb0dc));
+}
+.wcmd{
+float: right;
+margin-right: 7px;
+}
+.wcmd a{
+float: left;
+}
+.wcmd .min{
+width: 29px;
+height: 19px;
+background: linear-gradient(top, #D3CED8 50%,#a69eae 50%);
+text-align: center;
+color: #fff;
+border-radius: 0 0 0 2px;
+border: 1px solid #555;
+border-top-width: 0px;
+border-right-width: 0px;
+text-shadow: -1px 0 #444, 0 1px #444, 1px 0 #444, 0 -1px #444;
+font-size: 30px;
+line-height: 16px;
+}
+.wcmd .max{
+width: 27px;
+height: 19px;
+text-align: center;
+background: linear-gradient(top, #D3CED8 50%,#a69eae 50%);
+color: #fff;
+font-weight: bolder;
+border: 1px solid #555;
+border-top-width: 0;
+border-right-width: 0;
+text-shadow: -1px 0 #444, 0 1px #444, 1px 0 #444, 0 -1px #444;
+font-size: 19px;
+line-height: 14px;
+}
+.wcmd .min:hover,.wcmd .max:hover{
+box-shadow:0px 0px 5px 3px rgba(0,198,255,0.5);
+background: linear-gradient(top, #cedbe9 0%,#aac5de 17%,#6199c7 50%,#3a84c3 51%,#419ad6 59%,#4bb8f0 71%,#3a8bc2 84%,#26558b 100%);
+}
+.wcmd .close{
+width: 48px;
+height:19px;
+background: linear-gradient(top, #f85032 50%,#e73827 50%);
+text-align: center;
+color: #fff;
+border-radius: 0 0 3px 0;
+border: 1px solid #555;
+text-shadow: -1px 0 #444, 0 1px #444, 1px 0 #444, 0 -1px #444;
+border-top-width: 0;
+}
+.wcmd .close:hover{
+box-shadow: 0px 0px 11px 3px #f85032;
+}
+.wcmd a:hover{
+cursor: pointer;
+}
+.wnav{
+width: 100%;
+height: 22px;
+margin: 10px auto 15px;
+}
+.arrow-wrap{
+width: 68px;
+height: 100%;
+float: left;
+margin-left: 6px;
+}
+.wnav .back,.wnav .next{
+height: 26px;
+width: 26px;
+background: linear-gradient(top, #aaabb3 50%,#a69eae 50%);
+border-radius: 50px;
+float: left;
+text-align: center;
+color: #fff;
+line-height: 26px;
+border: 1px solid #767272
+}
+.wnav .back:hover,.wnav .next:hover{
+cursor: pointer;
+box-shadow: 0px 0px 5px 3px rgba(0,198,255,0.5);
+background: linear-gradient(top, #cedbe9 0%,#aac5de 17%,#6199c7 50%,#3a84c3 51%,#419ad6 59%,#4bb8f0 71%,#3a8bc2 84%,#26558b 100%);
+}
+.wnav .back{
+transform: rotateY(180deg);
+}
+.wnav .ltry{
+color: #a69eae;
+padding-top: 8px;
+height: 3px;
+width: 0px;
+font-size: 11px;
+float: left;
+}
+.wnav .address{
+width: 519px;
+height: 24px;
+background: #cccace;
+float: left;
+border: 1px solid #444;
+}
+.wnav .search{
+width: 234px;
+height: 24px;
+margin-left: 10px;
+padding-left: 5px;
+border: 1px solid #444;
+background: url('img/search.png') no-repeat 215px 2px, #cccace;
+background-size: 20px,100%;
+}
+.wnav .search:focus{
+background: url('img/search.png') no-repeat 215px 2px, #fff;
+background-size: 20px,100%;
+outline: none;
+}
+.address div{ float: left;line-height: 24px;}
+.mycomicon img{ width: 20px; height: 20px; margin-left: 2px;}
+.address .rtry{font-size: 11px; margin: 0 5px;}
+.address .ref{
+border-left:1px solid #444; float: right;height: 24px;
+}
+.address .ref img{ width: 24px; }
+.con-wrap{
+border:solid 1px #102a3e;
+margin:10px auto;
+width: 840px;
+background: #fff;
+height: 427px;
+}
+.side{
+width: 177px;
+height: 370px;
+float: left;
+padding-left: 15px;
+overflow-y: scroll;
+overflow-x:hidden;
+}
+.side ul{
+list-style: none;
+}
+.side ul li{
+padding: 2px 0 2px 22px;
+line-height: 16px;
+margin-top: 20px;
+background-position: 2px -2px !important;
+background-size: 20px !important;
+background-repeat: no-repeat !important;
+}
+.side ul li:hover{
+cursor: pointer;
+}
+.side ul li ul {
+margin-left: -10px;
+}
+.side ul li ul li {
+margin-top: 2px;
+border: 1px solid #fff;
+background-position: 2px 2px !important;
+background-size: 15px !important;
+}
+.side ul li ul li:hover{
+border: 1px solid #b8d6fb;
+background: #f2f7fe;
+cursor: pointer;
+border-radius: 3px;
+background: linear-gradient(top, #fafbfd 0%,#ebf3fd 100%);
+}
+.side .fav{
+background: url('img/fav.png') ;
+}
+.side .fav .desk{
+background: url('img/desk.png') ;
+}
+.side .fav .down{
+background: url('img/down.png') ;
+}
+.side .fav .rece{
+background: url('img/rece.png') ;
+}
+.side .lib{
+background: url('img/lib.png') ;
+}
+.side .lib .docu{
+background: url('img/docu.png') ;
+}
+.side .lib .musi{
+background: url('img/music.png') ;
+}
+.side .lib .pict{
+background: url('img/pict.png') ;
+}
+.side .lib .vide{
+background: url('img/vide.png') ;
+}
+.side .homeg{
+background: url('img/homeg.png') ;
+}
+.side .com{
+background: url('img/myc.png') ;
+}
+.side .com li.wind{
+background: url('img/wdrive18.png') ;
+}
+.side .com li.driv{
+background: url('img/drive18.png') ;
+}
+.side .net{
+background: url('img/net.png') ;
+}
+.cont{
+height: 370px;
+float: left;
+width: 648px;
+}
+
+.win-disk-box{
+background: url('img/wdrive.png') no-repeat 2px -10px !important;
+background-size: 55px !important;
+}
+.win-disk-box:hover{
+background:url('img/wdrive.png') no-repeat 2px -10px, linear-gradient(top, #fafbfd 0%,#ebf3fd 100%) !important;
+background-size: 55px,100% !important;	
+}
+.dvd{
+background: url('img/dvd.png') no-repeat 2px 0px !important;
+background-size: 55px !important;
+}
+
+
+.disk-box{
+width: 230px;
+height: 50px;
+padding: 0 2px 2px 55px ;
+background: url('img/drive.png') no-repeat 2px -10px;
+background-size: 55px;
+border: 1px solid #fff;
+margin:10px 0 0 15px;
+float: left;
+
+}
+.disk-box:hover{
+border: 1px solid #b8d6fb;
+cursor: pointer;
+border-radius: 3px;
+background: #f2f7fe;
+background:url('img/drive.png') no-repeat 2px -10px, linear-gradient(top, #fafbfd 0%,#ebf3fd 100%);
+background-size: 55px,100%;
+}
+.disk-box .bar{
+width: 190px;
+height: 13px;
+border: 1px solid #b2b2b2;
+border-radius: 3px;
+margin: 2px 0;
+
+}
+.disk-box .bar .bar-fill{
+width: 70%;
+background: linear-gradient(top, #3FC1E5 50%,#017A96 50%);
+height: 100%;
+}
+.cont p{
+color: #1E3287;
+font-size: 16px;
+padding: 5px;
+margin: 10px 3px 0 0;
+}
+.cont p span{
+height: 1px;
+border-top: 1px solid #e2e2e2;
+display: block;
+width: 78%;
+float: right;
+top: 10px;
+position: relative;
+}
+.foot{
+height: 57px;
+background: #f1f5fb;
+box-shadow: inset 0px 4px 13px #CCD9EA;
+}
+.foot img{
+width: 52px;
+margin-left: 20px;
+float: left;
+}
+.foot b{
+margin: 10px;
+line-height: 40px;
+font-weight: 200;
+}
+.foot label{
+color: #333;
+margin-right: 60px;
+}
+.foot label i{
+color: #555;
+font-weight: normal;
+font-style: normal;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="logo">
+            <a href="http://techumber.com">
+             Techumber.com
+            </a>
+          </h1>
+        </header>
+        <section class="contant">
+        	<div class="window">
+        		<div class="wcmd">
+					<a class="min">-</a>
+					<a class="max">&#9633;</a>
+					<a class="close">&#10006;</a>
+				</div>
+				<br />
+				<div class="c"></div>
+				<div class="wnav">
+					<div class="arrow-wrap">
+						<div class="back">&#10140;</div>
+						<div class="next">&#10140;</div>
+						<div class="ltry">&#9660;</div>
+
+					</div>
+					<div class="address">
+						<div class="mycomicon"><img src="img/myc.png" /></div>
+						<div class="rtry">&#9658;</div>
+						<div class="ctext">
+						Computer</div>
+						<div class="rtry">&#9658;</div>
+						<div class="ref"><img src="img/ref.png" /></div>
+					</div>
+					<input type="text" class="search" placeholder="Search Computer" />
+				</div>
+                <div class="c"></div>
+				<div class="con-wrap">
+					<div class="side">
+						<ul>
+							<li class="fav">Favorites
+								<ul>
+									<li class="desk">Desktop</li>
+									<li class="down">Downloads</li>
+									<li class="rece">Recent Places</li>
+								</ul>
+							</li>
+							<li class="lib">Libraries
+								<ul>
+									<li class="docu">Documents</li>
+									<li class="musi">Music</li>
+									<li class="pict">Pictures</li>
+									<li class="vide">Videos</li>
+								</ul>
+							</li>
+							<li class="homeg">Homegroup</li>
+							<li class="com">Computer
+ 							    <ul>
+									<li class="wind">Local Disk(C:)</li>
+									<li class="driv">Local Disk(D:)</li>
+									<li class="driv">Local Disk(E:)</li>
+									<li class="driv">Local Disk(F:)</li>
+								</ul>
+							</li>
+							<li class="net">Network</li>
+						</ul>
+					</div>
+					<div class="cont">
+						<p>Hard Disk Drives(4)<span></span></p>
+						<div class="disk-box win-disk-box">
+							<label>Local Disk(C:)</label>
+							<div class="bar">
+								<div class="bar-fill"></div>
+							</div>
+							<span class="info">35 GB free of 97 GB</span>
+						</div>
+						<div class="disk-box">
+							<label>Local Disk(D:)</label>
+							<div class="bar">
+								<div class="bar-fill" style="width:45%;"></div>
+							</div>
+							<span class="info">135 GB free of 300 GB</span>
+						</div>
+						<div class="disk-box">
+							<label>Local Disk(E:)</label>
+							<div class="bar">
+								<div class="bar-fill" style="width:41%;"></div>
+							</div>
+							<span class="info">125 GB free of 300 GB</span>
+						</div>
+						<div class="disk-box">
+							<label>Local Disk(F:)</label>
+							<div class="bar">
+								<div class="bar-fill" style="width:66%;"></div>
+							</div>
+							<span class="info">200 GB free of 300 GB</span>
+						</div>
+						<div class="c"></div>
+						<p>Device with removable storage(1)<span style="width: 62%;"></span></p>
+						<div class="disk-box dvd">
+							<br />
+							<label>DVD RW Drive(G:)</label>
+						</div>
+					</div>
+					<div class="c"></div>
+					<div class="foot">
+						<img src="img/myc52.png" />
+						<b>ARAVIND</b>
+						<label><i>Workdgroup:</i>TECHUMBER</label>
+						<label><i>Memory:</i>6.00 GB</label><br />
+						<label style="margin-left: 87px;"><i>Processor:</i>AMD A8-4500M APU With..</label>
+
+					</div>
+				</div>
+
+        	</div>
+        </section>
+    </div>
+</body>
+</html>
+

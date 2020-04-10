@@ -1,0 +1,58 @@
+.button{
+	padding: 10px;
+	padding-bottom: 2px;
+	background-color: deepPink;
+	margin: 10px;
+	color: white;
+	text-shadow: none;
+	box-shadow: 1px 0px 1px #BE3077, 0px 1px 1px #BE3077, 2px 1px 1px #BE3077, 1px 2px 1px #BE3077, 3px 2px 1px #BE3077, 2px 3px 1px #BE3077, 4px 3px 1px #BE3077, 3px 4px 1px #BE3077, 5px 4px 1px #BE3077, 4px 5px 1px #BE3077, 6px 5px 1px #BE3077;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 45px;
+}
+.btn2{
+	background-color: #1abc9c;
+	box-shadow: 1px 0px 1px #16A085, 0px 1px 1px #16A085, 2px 1px 1px #16A085, 1px 2px 1px #16A085, 3px 2px 1px #16A085, 2px 3px 1px #16A085, 4px 3px 1px #16A085, 3px 4px 1px #16A085, 5px 4px 1px #16A085, 4px 5px 1px #16A085, 6px 5px 1px #16A085;
+}
+.btn3{
+	background-color: #2ECC71;
+	box-shadow: 1px 0px 1px #27AE60, 0px 1px 1px #27AE60, 2px 1px 1px #27AE60, 1px 2px 1px #27AE60, 3px 2px 1px #27AE60, 2px 3px 1px #27AE60, 4px 3px 1px #27AE60, 3px 4px 1px #27AE60, 5px 4px 1px #27AE60, 4px 5px 1px #27AE60, 6px 5px 1px #27AE60;
+}
+.btn4{
+	background-color: #3498DB;
+	box-shadow: 1px 0px 1px #2980B9, 0px 1px 1px #2980B9, 2px 1px 1px #2980B9, 1px 2px 1px #2980B9, 3px 2px 1px #2980B9, 2px 3px 1px #2980B9, 4px 3px 1px #2980B9, 3px 4px 1px #2980B9, 5px 4px 1px #2980B9, 4px 5px 1px #2980B9, 6px 5px 1px #2980B9;
+}
+.btn5{
+	background-color: #9B59B6;
+	box-shadow: 1px 0px 1px #8E44AD, 0px 1px 1px #8E44AD, 2px 1px 1px #8E44AD, 1px 2px 1px #8E44AD, 3px 2px 1px #8E44AD, 2px 3px 1px #8E44AD, 4px 3px 1px #8E44AD, 3px 4px 1px #8E44AD, 5px 4px 1px #8E44AD, 4px 5px 1px #8E44AD, 6px 5px 1px #8E44AD;
+}
+.btn6{
+	background-color: #34495E;
+	box-shadow: 1px 0px 1px #2C3E50, 0px 1px 1px #2C3E50, 2px 1px 1px #2C3E50, 1px 2px 1px #2C3E50, 3px 2px 1px #2C3E50, 2px 3px 1px #2C3E50, 4px 3px 1px #2C3E50, 3px 4px 1px #2C3E50, 5px 4px 1px #2C3E50, 4px 5px 1px #2C3E50, 6px 5px 1px #2C3E50;
+}
+.btn7{
+	background-color: #E67E22;
+	box-shadow: 1px 0px 1px #D35400, 0px 1px 1px #D35400, 2px 1px 1px #D35400, 1px 2px 1px #D35400, 3px 2px 1px #D35400, 2px 3px 1px #D35400, 4px 3px 1px #D35400, 3px 4px 1px #D35400, 5px 4px 1px #D35400, 4px 5px 1px #D35400, 6px 5px 1px #D35400;
+}
+.btn8{
+	background-color: #F1C40F;
+	box-shadow: 1px 0px 1px #F39C12, 0px 1px 1px #F39C12, 2px 1px 1px #F39C12, 1px 2px 1px #F39C12, 3px 2px 1px #F39C12, 2px 3px 1px #F39C12, 4px 3px 1px #F39C12, 3px 4px 1px #F39C12, 5px 4px 1px #F39C12, 4px 5px 1px #F39C12, 6px 5px 1px #F39C12;
+}
+.btn9{
+	background-color: #E74C3C;
+	box-shadow: 1px 0px 1px #C0392B, 0px 1px 1px #C0392B, 2px 1px 1px #C0392B, 1px 2px 1px #C0392B, 3px 2px 1px #C0392B, 2px 3px 1px #C0392B, 4px 3px 1px #C0392B, 3px 4px 1px #C0392B, 5px 4px 1px #C0392B, 4px 5px 1px #C0392B, 6px 5px 1px #C0392B;
+}
+.btn10{
+	color: #444;
+	background-color: #ECF0F1;
+	box-shadow: 1px 0px 1px #BDC3C7, 0px 1px 1px #BDC3C7, 2px 1px 1px #BDC3C7, 1px 2px 1px #BDC3C7, 3px 2px 1px #BDC3C7, 2px 3px 1px #BDC3C7, 4px 3px 1px #BDC3C7, 3px 4px 1px #BDC3C7, 5px 4px 1px #BDC3C7, 4px 5px 1px #BDC3C7, 6px 5px 1px #BDC3C7;
+}
+.btn11{
+	background-color: #95A5A6;
+	box-shadow: 1px 0px 1px #7F8C8D, 0px 1px 1px #7F8C8D, 2px 1px 1px #7F8C8D, 1px 2px 1px #7F8C8D, 3px 2px 1px #7F8C8D, 2px 3px 1px #7F8C8D, 4px 3px 1px #7F8C8D, 3px 4px 1px #7F8C8D, 5px 4px 1px #7F8C8D, 4px 5px 1px #7F8C8D, 6px 5px 1px #7F8C8D;
+}
+.btn12{
+	color: #444;
+	background-color: #ddd;
+	box-shadow: 1px 0px 1px #aaa, 0px 1px 1px #aaa, 2px 1px 1px #aaa, 1px 2px 1px #aaa, 3px 2px 1px #aaa, 2px 3px 1px #aaa, 4px 3px 1px #aaa, 3px 4px 1px #aaa, 5px 4px 1px #aaa, 4px 5px 1px #aaa, 6px 5px 1px #aaa;
+}

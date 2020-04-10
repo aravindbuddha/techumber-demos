@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="posts.xsl"?>
+<posts>
+	<post>
+		<title>Simple Chat Engine Using HTML5(Server Sent Events) And PHP</title>
+		<url>http://www.techumber.com/2012/11/Simple-Chat-Engine-Using-HTML5-Server-Sent-Events-And-PHP.html
+		</url>
+	</post>
+	<post>
+		<title>Amazing Photo Flip Effect Using Pure CSS3</title>
+		<url>http://www.techumber.com/2012/11/Amazing-Photo-Flip-Effect-Using-Pure-CSS3.html
+		</url>
+	</post>
+	<post>
+		<title>Basic File Operations Create,Write,Read,Append and Delete In PHP
+		</title>
+		<url>http://www.techumber.com/2012/11/Basic-File-Operations-Create-Write-Read-Append-Delete-Operations-In-PHP.html
+		</url>
+	</post>
+	<post>
+		<title>Simple Meta Tag Generator Using JavaScript</title>
+		<url>http://www.techumber.com/2012/11/Simple-Meta-Tag-Generator-Using-JavaScript.html
+		</url>
+	</post>
+	<post>
+		<title>Wow, Quotes Showcase Widget Using Pure CSS3</title>
+		<url>http://www.techumber.com/2012/11/Wow-Quotes-Showcase-Widget-Using-Pure-CSS3.html
+		</url>
+	</post>
+	<post>
+		<title>Exactly Facebook Like URL Parsing Using PHP and Jquery</title>
+		<url>http://www.techumber.com/2012/11/exactly-facebook-like-url-parsing-using.html
+		</url>
+	</post>
+	<post>
+		<title>Ultimate Matrix Like Effect Using Pure CSS3</title>
+		<url>http://www.techumber.com/2012/11/ultimate-matrix-like-effect-using-pure.html
+		</url>
+	</post>
+	<post>
+		<title>Amazing Neon Text Effect With Pure CSS3</title>
+		<url>http://www.techumber.com/2012/11/amazing-neon-text-effect-with-pure-css3.html
+		</url>
+	</post>
+	<post>
+		<title>Online Voting System With PHP And AJAX</title>
+		<url>http://www.techumber.com/2012/10/online-voting-system-with-php-and-ajax.html
+		</url>
+	</post>
+	<post>
+		<title>Create Twitter Like Follow And Unfollow With Jquery</title>
+		<url>http://www.techumber.com/2012/10/create-twitter-like-follow-and-unfollow.html
+		</url>
+	</post>
+</posts>

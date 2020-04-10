@@ -1,0 +1,96 @@
+/*simple reset*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	-webkit-box-sizing: border-box;
+}
+html,body,.main{
+	height: 100%;
+	width: 100%;
+}
+.main{
+	width: 700px;
+	margin: 0 auto;
+}
+body{
+	background: #fff;
+	font: 16px/18px arial, sans-serif;;
+}
+header{
+	width: 100%;
+}
+form{
+	width: 400px;
+	margin: auto;
+}
+input{
+	border: 2px solid #aaa;
+	border-radius: 5px;
+	padding: 5px;
+	width: 100%;
+	text-align: center;
+	outline: none;
+}
+.logo a{
+	background: url('http://demo.techumber.com/asserts/img/techumbernlogo.png') no-repeat;
+	width: 190px;
+	height: 90px;
+	display: block;
+	margin: 10px auto;
+}
+.logocircle {
+	-webkit-animation: spin 1s infinite linear;
+	-moz-animation: spin 1s infinite linear;
+	background-color: transparent;
+	border: 5px solid rgba(0,0,0,0.9);
+	border-left: 5px solid transparent;
+	border-radius: 110px;
+	-moz-border-radius: 110px;
+	border-right: 5px solid transparent;
+	height: 90px;
+	opacity: .9;
+	width: 90px;
+	position: absolute;
+	top: 10px;
+	left: 50.1%;
+	margin-left: -100px;
+}
+@-webkit-keyframes spin {
+	0% { -webkit-transform:rotate(0deg); }
+	100% { -webkit-transform:rotate(360deg);  }
+}
+@-moz-keyframes spin {
+	0% { -moz-transform:rotate(0deg); }
+	100% { -moz-transform:rotate(360deg);  }
+}
+
+/*Out put styles*/
+#out{
+	padding: 20px;
+	width: 100%;
+	margin-top: 10px;
+	height: 74%;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px #ddd;
+	overflow-y: scroll;
+}
+#out a,#out a:visited{
+	color: #333;
+}
+#out div{
+	padding-bottom: 20px;
+}
+
+#out h2{
+	font-size: 20px;
+	line-height: 21px;
+	padding: 15px 0 15px;
+}
+#out img{
+	float: left;
+	padding: 0 10px 0 0;
+	width: 80px;
+}
+

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+o                                                    o8      
+o8                                                   88      
+o88oo ooooooo   oooo 88   88  ooo  ooo  oo   oo    oo 88oooo.  ooooooo  ooooodb
+88   88       88     88   88  88   88   88P"Y8bP"Y8b  d8   8b  88        88 
+88   8888888  88     8888888  88   88   88   88   88  88   88  8888888   88
+88   88       88     88   88  88   88   88   88   88  88   88  88        88    
+888  ooooooo   8ooo  88   88   V888V   o88o o88o o88o  Y8b8P   oooooooo   d88b   
+
+@url: www.techumber.com
+-->
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+    <meta charset="utf-8">
+    <title>Make Custom Drop down Menu for Google Translate demo:Techumber</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+  ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      
+    <!-- Google Translate  
+    ================================================== -->
+    <meta name="google-translate-customization" content="e6d13f48b4352bb5-f08d3373b31c17a6-g7407ad622769509b-12"></meta>
+ <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+    <!-- CSS
+  ================================================== -->
+<!-- styleing -->
+<link rel="stylesheet" type="text/css" href="css/jquery.selectBox.css"></link>
+<style type="text/css">
+* {
+margin: 0; 
+padding: 0;
+border:0;
+}
+body {
+background: #fff; 
+font-family: helvetica,"Comic Sans MS",arial,sans-serif;
+}
+.container{
+width: 700px;
+margin: 0 auto;
+}
+.logo{
+text-align: center;
+}
+.contant{
+	width: 300px;
+margin-left: -150px;
+position: absolute;
+top: 21%;
+left: 80%;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="logo">
+            <a href="http://techumber.com">
+              <img src="../asserts/img/logostd.png" alt="techumber logo" title="techumber logo" />
+            </a>
+          </h1>
+        </header>
+        <div class="clear"></div>
+        <section class="contant">
+        	<div id="google_translate_element"></div>
+				<script type="text/javascript">
+				    function googleTranslateElementInit() {
+				    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+				    }
+				</script>
+				<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        </section>
+    </div>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.selectBox.js"></script>
+    
+<script type="text/javascript">
+function changeGoogleTranslate() { 
+    if ($('.goog-te-combo option:first-child').text() == "Select Language") {
+        $('.goog-te-combo').selectBox().change(function () {
+            var gObj = $('.goog-te-combo');
+            var db = gObj.get(0);
+            gObj.val($(this).val());
+            fireEvent(db, 'change');
+        });
+    } else {
+        setTimeout(changeGoogleTranslate, 50);
+    }
+}
+changeGoogleTranslate();
+function fireEvent(el,e){
+    if (document.createEventObject){
+        //for IE
+        var evt = document.createEventObject();
+        return el.fireEvent('on'+e,evt)
+    }
+    else{
+        // For other browsers
+        var evt = document.createEvent("HTMLEvents");
+        evt.initEvent(e, true, true ); 
+        return !el.dispatchEvent(evt);
+    }
+}
+</script>
+
+</body>
+</html>

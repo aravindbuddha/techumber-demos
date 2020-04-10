@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+    o           		                      			    o8      
+   o8                   		             			    88      
+  o88oo ooooooo   oooo 88	  88	ooo  ooo  oo   oo    oo 88oooo.  ooooooo  ooooodb
+   88   88	     88	   88	  88    88   88   88P"Y8bP"Y8b  d8   8b  88  	   88 
+   88   8888888  88	   888888888    88   88   88   88  88   88   88  88888     88
+   88   88 		 88	   88	  88	88   88   88   88   88  88   88  88   	   88    
+   888  ooooooo   8ooo 88	  88	 V888V   o88o o88o o88o  Y8b8P   oooooooo   d88b   
+
+@url: www.techumber.com
+@desc: Playing Sounds On Mouse Hover Using HTML5 Audio
+-->
+<html>
+<head>
+	<meta charset='UTF-8'>
+	<title>Play Sound on :hover</title>
+	<link rel='stylesheet' href='css/style.css'>
+
+</head>
+<script type="text/javascript">
+window.onload=function(){
+// collecting elements
+var welcomeSound = document.getElementById('welcomeSound');
+var welcomeTxt=document.getElementById('welcomeTxt');
+
+var sdSound=document.getElementById('shutdownSound');
+var sdTxt=document.getElementById('shutdownTxt');
+//playing welcome sound on mouse over
+welcomeTxt.onmouseover=function(){
+	welcomeSound.play();
+	return false;
+};
+
+sdTxt.onmouseover=function(){
+	sdSound.play();
+	return false;
+};
+
+};
+</script>	
+<body>
+<div id="wrap">
+	<header>
+        <h1 class="logo">
+          <a href="http://techumber.com">
+            Techumber.com
+          </a>
+        </h1>
+     </header>
+<section>
+	<audio id="welcomeSound" controls="controls" preload="auto">
+		<source src="audio/welcome.mp3"></source>
+		<source src="audio/welcome.ogg"></source>
+		Your Browser does not support please use (Firefox 3.5+, Chrome 3+, Opera 10.5+, Safari 4+, IE 9+) browsers.
+	</audio>
+	<audio id="shutdownSound" controls="controls" preload="auto">
+		<source src="audio/shutdown.mp3"></source>
+		<source src="audio/shutdown.ogg"></source>
+		Your Browser does not support please use (Firefox 3.5+, Chrome 3+, Opera 10.5+, Safari 4+, IE 9+) browsers.
+	</audio>
+	<p class="info"> 
+		Use latest Browser Chrome or FireFox.<br /> If you usig Internet download manager please close it.
+	</p>
+	
+	<a id="welcomeTxt" href="#">
+				Welcome(Mouse hover here)
+	</a>
+	<br />
+	<br />
+	<br />
+	<a id="shutdownTxt"  href="#">
+		Shutdown(Mouse hover here)
+	</a>
+</section>
+</div>
+</body>
+</html>

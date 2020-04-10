@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+  <!--
+    o                                                   o8      
+   o8                                                   88      
+  o88oo ooooooo   oooo 88   88  ooo  ooo  oo   oo    oo 88oooo.  ooooooo  ooooodb
+   88   88       88    88   88  88   88   88P"Y8bP"Y8b  d8   8b  88        88 
+   88   8888888  88    8888888  88   88   88   88   88  88   88  8888888   88
+   88   88       88    88   88  88   88   88   88   88  88   88  88        88    
+   888  ooooooo   8ooo 88   88   V888V   o88o o88o o88o  Y8b8P   oooooooo   d88b   
+
+@url: www.techumber.com
+-->
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Amazing showcase ShowCase Widget using Pure CSS3:demo.techumber.com</title>
+  <style type="text/css">
+* {
+margin: 0; 
+padding: 0;
+}
+body {
+background: #ccc; 
+font-family: arial, verdana, tahoma;
+}
+.container{
+width: 700px;
+margin: 0 auto;
+
+}
+.logo{
+text-align: center;
+}
+.showcase {
+width: 805px; 
+height: 320px;
+overflow: hidden;
+margin: 0px auto;
+box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+}
+.showcase ul {
+width: 2000px;
+}
+.showcase li {
+position: relative;
+display: block;
+width: 160px;
+float: left;
+border-left: 1px solid #888;
+box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+transition: all 0.5s;
+}
+.showcase ul:hover li {width: 40px;}
+.showcase ul li:hover {width: 640px;}
+.showcase li img {
+display: block;
+}
+.image_title {
+background: rgba(0, 0, 0, 0.5);
+position: absolute;
+left: 0; bottom: 0;	
+width: 640px;	
+}
+.image_title a {
+display: block;
+color: #fff;
+text-decoration: none;
+padding: 20px;
+font-size: 16px;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="logo">
+    <a href="http://techumber.com">
+      <img src="logostd.png" alt="techumber logo" title="techumber logo" />
+    </a>
+  </h1>
+
+<div class="showcase">
+	<ul>
+		<li>
+			<div class="image_title">
+				<a href="#">KungFu Panda</a>
+			</div>
+			<a href="#">
+				<img src="img/panda.jpg"/>
+			</a>
+		</li>
+		<li>
+			<div class="image_title">
+				<a href="#">Toy Story 2</a>
+			</div>
+			<a href="#">
+				<img src="img/toystory.jpg"/>
+			</a>
+		</li>
+		<li>
+			<div class="image_title">
+				<a href="#">Wall-E</a>
+			</div>
+			<a href="#">
+				<img src="img/walle.jpg"/>
+			</a>
+		</li>
+		<li>
+			<div class="image_title">
+				<a href="#">Up</a>
+			</div>
+			<a href="#">
+				<img src="img/up.jpg"/>
+			</a>
+		</li>
+		<li>
+			<div class="image_title">
+				<a href="#">Cars 2</a>
+			</div>
+			<a href="#">
+				<img src="img/cars2.jpg"/>
+			</a>
+		</li>
+	</ul>
+</div>
+
+
+
+  </div>
+  <script type="text/javascript" src="http://labs.techumber.com/LABS/js/prefixfree.min.js"></script>
+</body>
+</html>
+   
